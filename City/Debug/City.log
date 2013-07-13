@@ -1,0 +1,37 @@
+﻿Build started 2013/7/13 14:44:40.
+     1>Project "F:\Dep.Demo\repos\City\City\City.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "F:\Dep.Demo\repos\City\Debug\".
+       InitializeBuildStatus:
+         Creating "Debug\City.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IF:\Dep.Demo\repos\City\lib/include/VTK /IF:\Dep.Demo\repos\City\lib/include/rapidXML /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt parserDAE.cpp
+         parserDAE.cpp
+     1>f:\dep.demo\repos\city\city\parserdae.cpp(112): warning C4101: 'comma' : unreferenced local variable
+     1>f:\dep.demo\repos\city\city\parserdae.cpp(122): warning C4101: 'comma' : unreferenced local variable
+     1>f:\dep.demo\repos\city\city\parserdae.cpp(324): warning C4018: '<' : signed/unsigned mismatch
+     1>f:\dep.demo\repos\city\city\parserdae.cpp(347): warning C4018: '<' : signed/unsigned mismatch
+     1>f:\dep.demo\repos\city\city\parserdae.cpp(435): warning C4018: '<' : signed/unsigned mismatch
+     1>f:\dep.demo\repos\city\lib\include\rapidxml\rapidxml_utils.hpp(40): warning C4244: 'initializing' : conversion from 'std::streamoff' to 'size_t', possible loss of data
+                 f:\dep.demo\repos\city\lib\include\rapidxml\rapidxml_utils.hpp(28) : while compiling class template member function 'rapidxml::file<>::file(const char *)'
+                 f:\dep.demo\repos\city\city\parserdae.cpp(179) : see reference to class template instantiation 'rapidxml::file<>' being compiled
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\City.exe.embed.manifest.res" Debug\City_manifest.rc 
+       Link:
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Dep.Demo\repos\City\Debug\City.exe" /INCREMENTAL /NOLOGO /LIBPATH:F:\Dep.Demo\repos\City\lib\lib vtkRendering.lib vtkWidgets.lib vtkHybrid.lib vtkCommon.lib vtkFiltering.lib vtkGenericFiltering.lib vtkGraphics.lib vtkjpeg.lib uuid.lib opengl32.lib vtkImaging.lib vtkftgl.lib vtkViews.lib vtksys.lib vtkalglib.lib vtklibxml2.lib vtkpng.lib vtkfreetype.lib ole32.lib vtkIO.lib vtktiff.lib vtkzlib.lib vtkexpat.lib advapi32.lib shell32.lib oleaut32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\City.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Dep.Demo\repos\City\Debug\City.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Dep.Demo\repos\City\Debug\City.lib" /MACHINE:X86 Debug\City.exe.embed.manifest.res
+         Debug\parserDAE.obj
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\City.exe.embed.manifest" /manifest Debug\City.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\City.exe.embed.manifest.res" Debug\City_manifest.rc 
+       LinkEmbedManifest:
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"F:\Dep.Demo\repos\City\Debug\City.exe" /INCREMENTAL /NOLOGO /LIBPATH:F:\Dep.Demo\repos\City\lib\lib vtkRendering.lib vtkWidgets.lib vtkHybrid.lib vtkCommon.lib vtkFiltering.lib vtkGenericFiltering.lib vtkGraphics.lib vtkjpeg.lib uuid.lib opengl32.lib vtkImaging.lib vtkftgl.lib vtkViews.lib vtksys.lib vtkalglib.lib vtklibxml2.lib vtkpng.lib vtkfreetype.lib ole32.lib vtkIO.lib vtktiff.lib vtkzlib.lib vtkexpat.lib advapi32.lib shell32.lib oleaut32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\City.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"F:\Dep.Demo\repos\City\Debug\City.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\Dep.Demo\repos\City\Debug\City.lib" /MACHINE:X86 Debug\City.exe.embed.manifest.res
+         Debug\parserDAE.obj
+         City.vcxproj -> F:\Dep.Demo\repos\City\Debug\City.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\City.unsuccessfulbuild".
+         Touching "Debug\City.lastbuildstate".
+     1>Done Building Project "F:\Dep.Demo\repos\City\City\City.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:17.99
