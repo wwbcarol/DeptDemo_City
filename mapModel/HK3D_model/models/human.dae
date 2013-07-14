@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:245 - Illusoft Collada Exporter v:0.3.159</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file://&lt;memory&gt;</source_data>
+		</contributor>
+		<created>2007-12-30T17:47:16.745000</created>
+		<modified>2007-12-30T17:47:16.745000</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="ForegroundColorID-fx" name="ForegroundColorID-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<phong>
+						<emission>
+							<color>0.00000 0.00000 0.00000 1</color>
+						</emission>
+						<ambient>
+							<color>0.00000 0.00000 0.00000 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.00000 0.00000 0.00000 1</color>
+						</diffuse>
+						<specular>
+							<color>0.33000 0.33000 0.33000 1</color>
+						</specular>
+						<shininess>
+							<float>20.0</float>
+						</shininess>
+						<reflective>
+							<color>1.00000 1.00000 1.00000 1</color>
+						</reflective>
+						<reflectivity>
+							<float>0.1</float>
+						</reflectivity>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>0.0</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="FrontColorID-fx" name="FrontColorID-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<phong>
+						<emission>
+							<color>0.00000 0.00000 0.00000 1</color>
+						</emission>
+						<ambient>
+							<color>0.50000 0.50000 0.50000 1</color>
+						</ambient>
+						<diffuse>
+							<color>1.00000 1.00000 1.00000 1</color>
+						</diffuse>
+						<specular>
+							<color>0.33000 0.33000 0.33000 1</color>
+						</specular>
+						<shininess>
+							<float>20.0</float>
+						</shininess>
+						<reflective>
+							<color>1.00000 1.00000 1.00000 1</color>
+						</reflective>
+						<reflectivity>
+							<float>0.1</float>
+						</reflectivity>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>0.0</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="BackColorID-fx" name="BackColorID-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<phong>
+						<emission>
+							<color>0.00000 0.00000 0.00000 1</color>
+						</emission>
+						<ambient>
+							<color>0.33529 0.34510 0.40000 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.67059 0.69020 0.80000 1</color>
+						</diffuse>
+						<specular>
+							<color>0.33000 0.33000 0.33000 1</color>
+						</specular>
+						<shininess>
+							<float>20.0</float>
+						</shininess>
+						<reflective>
+							<color>1.00000 1.00000 1.00000 1</color>
+						</reflective>
+						<reflectivity>
+							<float>0.1</float>
+						</reflectivity>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>0.0</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="ForegroundColorID" name="ForegroundColorID">
+			<instance_effect url="#ForegroundColorID-fx"/>
+		</material>
+		<material id="FrontColorID" name="FrontColorID">
+			<instance_effect url="#FrontColorID-fx"/>
+		</material>
+		<material id="BackColorID" name="BackColorID">
+			<instance_effect url="#BackColorID-fx"/>
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="mesh2-geometry" name="mesh2-geometry">
+			<mesh>
+				<source id="mesh2-geometry-Position">
+					<float_array count="24" id="mesh2-geometry-Position-array">-2.83314 -1.15390 0.00000 -2.83314 4.48610 0.00000 1.83686 -1.15390 0.00000 1.83686 4.48610 0.00000 -2.83314 4.48610 6.81000 -2.83314 -1.15390 6.81000 1.83686 -1.15390 6.81000 1.83686 4.48610 6.81000</float_array>
+					<technique_common>
+						<accessor count="8" source="#mesh2-geometry-Position-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="mesh2-geometry-Normals">
+					<float_array count="0" id="mesh2-geometry-Normals-array"/>
+					<technique_common>
+						<accessor count="0" source="#mesh2-geometry-Normals-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="mesh2-geometry-Vertex">
+					<input semantic="POSITION" source="#mesh2-geometry-Position"/>
+				</vertices>
+				<lines count="12">
+					<input offset="0" semantic="VERTEX" source="#mesh2-geometry-Vertex"/>
+					<p>0 1 2 0 3 2 1 3 1 4 5 4 6 5 7 6 4 7 3 7 2 6 0 5</p>
+				</lines>
+			</mesh>
+		</geometry>
+		<geometry id="mesh1-geometry" name="mesh1-geometry">
+			<mesh>
+				<source id="mesh1-geometry-Position">
+					<float_array count="24" id="mesh1-geometry-Position-array">1.83686 4.48610 0.00000 -2.83314 -1.15390 0.00000 -2.83314 4.48610 0.00000 1.83686 -1.15390 0.00000 -2.83314 4.48610 6.81000 -2.83314 -1.15390 6.81000 1.83686 -1.15390 6.81000 1.83686 4.48610 6.81000</float_array>
+					<technique_common>
+						<accessor count="8" source="#mesh1-geometry-Position-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="mesh1-geometry-Normals">
+					<float_array count="72" id="mesh1-geometry-Normals-array">0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 1.00000 0.00000 0.00000 0.00000 1.00000 0.00000 0.00000 0.00000 1.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 1.00000 0.00000 1.00000 0.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="24" source="#mesh1-geometry-Normals-array" stride="3">
+							<param type="float" name="X"></param>
+							<param type="float" name="Y"></param>
+							<param type="float" name="Z"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="mesh1-geometry-UV">
+					<float_array count="144" id="mesh1-geometry-UV-array">111.54113 176.61801 -72.31714 176.61801 111.54113 -45.42923 111.54113 -45.42923 -72.31714 176.61801 -72.31714 -45.42923 -176.61801 0.00000 45.42923 0.00000 -176.61801 268.11023 45.42923 268.11023 -176.61801 268.11023 45.42923 0.00000 -111.54113 268.11023 -111.54113 0.00000 72.31714 268.11023 72.31714 0.00000 72.31714 268.11023 -111.54113 0.00000 -45.42923 0.00000 176.61801 0.00000 -45.42923 268.11023 -45.42923 268.11023 176.61801 0.00000 176.61801 268.11023 -72.31714 268.11023 -72.31714 0.00000 111.54113 268.11023 111.54113 268.11023 -72.31714 0.00000 111.54113 0.00000 72.31714 176.61801 -111.54113 176.61801 72.31714 -45.42923 -111.54113 -45.42923 72.31714 -45.42923 -111.54113 176.61801 -72.31714 176.61801 111.54113 176.61801 111.54113 -45.42923 -176.61801 268.11023 45.42923 268.11023 45.42923 0.00000 72.31714 268.11023 72.31714 0.00000 -111.54113 0.00000 -72.31714 -45.42923 -72.31714 176.61801 111.54113 -45.42923 176.61801 0.00000 -45.42923 0.00000 -45.42923 268.11023 176.61801 268.11023 176.61801 0.00000 -45.42923 268.11023 111.54113 0.00000 -72.31714 0.00000 111.54113 268.11023 -72.31714 0.00000 -72.31714 268.11023 111.54113 268.11023 72.31714 -45.42923 -111.54113 -45.42923 -111.54113 176.61801 -111.54113 176.61801 72.31714 176.61801 72.31714 -45.42923 -111.54113 0.00000 -111.54113 268.11023 72.31714 268.11023 45.42923 0.00000 -176.61801 0.00000 -176.61801 268.11023</float_array>
+					<technique_common>
+						<accessor count="72" source="#mesh1-geometry-UV-array" stride="2">
+							<param type="float" name="S"></param>
+							<param type="float" name="T"></param>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="mesh1-geometry-Vertex">
+					<input semantic="POSITION" source="#mesh1-geometry-Position"/>
+				</vertices>
+				<triangles count="12" material="FrontColorID">
+					<input offset="0" semantic="VERTEX" source="#mesh1-geometry-Vertex"/>
+					<input offset="1" semantic="NORMAL" source="#mesh1-geometry-Normals"/>
+					<input offset="2" semantic="TEXCOORD" source="#mesh1-geometry-UV"/>
+					<p>2 0 0 0 0 1 1 0 2 1 1 3 0 1 4 3 1 5 2 2 6 1 2 7 4 2 8 5 3 9 4 3 10 1 3 11 5 4 12 1 4 13 6 4 14 3 5 15 6 5 16 1 5 17 3 6 18 0 6 19 6 6 20 6 7 21 0 7 22 7 7 23 7 8 24 0 8 25 4 8 26 4 9 27 0 9 28 2 9 29 7 10 30 4 10 31 6 10 32 5 11 33 6 11 34 4 11 35</p>
+				</triangles>
+				<triangles count="12" material="BackColorID">
+					<input offset="0" semantic="VERTEX" source="#mesh1-geometry-Vertex"/>
+					<input offset="1" semantic="NORMAL" source="#mesh1-geometry-Normals"/>
+					<input offset="2" semantic="TEXCOORD" source="#mesh1-geometry-UV"/>
+					<p>0 12 36 2 12 37 1 12 38 4 13 39 5 13 40 1 13 41 6 14 42 3 14 43 1 14 44 3 15 45 0 15 46 1 15 47 0 16 48 3 16 49 6 16 50 7 17 51 0 17 52 6 17 53 2 18 54 0 18 55 4 18 56 0 19 57 7 19 58 4 19 59 6 20 60 5 20 61 4 20 62 4 21 63 7 21 64 6 21 65 1 22 66 5 22 67 6 22 68 1 23 69 2 23 70 4 23 71</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="SketchUpScene" name="SketchUpScene">
+			<node layer="L1" id="Model" name="Model">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<node layer="L1" id="mesh2" name="mesh2">
+					<translate sid="translate">0.00000 0.00000 0.00000</translate>
+					<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+					<rotate sid="rotateY">0 1 0 0.00000</rotate>
+					<rotate sid="rotateX">1 0 0 0.00000</rotate>
+					<scale sid="scale">1.00000 1.00000 1.00000</scale>
+					<instance_geometry url="#mesh2-geometry">
+						<bind_material>
+							<technique_common>
+								<instance_material symbol="ForegroundColorID" target="#ForegroundColorID">
+									<bind_vertex_input input_semantic="TEXCOORD" input_set="1" semantic="CHANNEL1"/>
+								</instance_material>
+							</technique_common>
+						</bind_material>
+					</instance_geometry>
+				</node>
+				<node layer="L1" id="mesh1" name="mesh1">
+					<translate sid="translate">0.00000 0.00000 0.00000</translate>
+					<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+					<rotate sid="rotateY">0 1 0 0.00000</rotate>
+					<rotate sid="rotateX">1 0 0 0.00000</rotate>
+					<scale sid="scale">1.00000 1.00000 1.00000</scale>
+					<instance_geometry url="#mesh1-geometry">
+						<bind_material>
+							<technique_common>
+								<instance_material symbol="FrontColorID" target="#FrontColorID">
+									<bind_vertex_input input_semantic="TEXCOORD" input_set="1" semantic="CHANNEL1"/>
+								</instance_material>
+								<instance_material symbol="BackColorID" target="#BackColorID">
+									<bind_vertex_input input_semantic="TEXCOORD" input_set="1" semantic="CHANNEL1"/>
+								</instance_material>
+							</technique_common>
+						</bind_material>
+					</instance_geometry>
+				</node>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#SketchUpScene"/>
+	</scene>
+</COLLADA>

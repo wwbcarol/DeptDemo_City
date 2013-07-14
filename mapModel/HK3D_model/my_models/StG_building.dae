@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:248 - Illusoft Collada Exporter v:0.3.108</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file://C://</source_data>
+		</contributor>
+		<created>2009-01-22T16:11:07.812000</created>
+		<modified>2009-01-22T16:11:07.812000</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="_Brown__bmp-fx" name="_Brown__bmp-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="_Brown__bmp-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="_Beige_1_bmp-fx" name="_Beige_1_bmp-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="_Beige_1_bmp-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="_Black__bmp-fx" name="_Black__bmp-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="_Black__bmp-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Groundcover_Sand_Wind-fx" name="Groundcover_Sand_Wind-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="Groundcover_Sand_Wind-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="_Brown_-Geometry" name="_Brown_-Geometry">
+			<mesh>
+				<source id="_Brown_-Geometry-Position">
+					<float_array count="18" id="_Brown_-Geometry-Position-array">-9.58082 -11.80720 47.06000 -9.58082 -11.80720 54.85000 -19.88720 -9.37284 54.85000 -19.88720 -9.37284 47.06000 -7.13693 -1.46034 54.85000 -7.13693 -1.46034 47.06000</float_array>
+					<technique_common>
+						<accessor count="6" source="#_Brown_-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Brown_-Geometry-Normals">
+					<float_array count="18" id="_Brown_-Geometry-Normals-array">0.52562 -0.85070 0.00000 0.52562 -0.85070 0.00000 -0.22987 -0.97320 0.00000 -0.22987 -0.97320 0.00000 0.97320 -0.22987 0.00000 0.97320 -0.22987 0.00000</float_array>
+					<technique_common>
+						<accessor count="6" source="#_Brown_-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Brown_-Geometry-UV">
+					<float_array count="24" id="_Brown_-Geometry-UV-array">-0.66101 10.90940 -0.66101 12.71520 -1.72001 12.71520 -1.72001 12.71520 -1.72001 10.90940 -0.66101 10.90940 -1.36934 10.90940 -0.30618 10.90940 -0.30618 12.71520 -0.30618 12.71520 -1.36934 12.71520 -1.36934 10.90940</float_array>
+					<technique_common>
+						<accessor count="12" source="#_Brown_-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="_Brown_-Geometry-Vertex">
+					<input semantic="POSITION" source="#_Brown_-Geometry-Position"/>
+					<input semantic="NORMAL" source="#_Brown_-Geometry-Normals"/>
+				</vertices>
+				<triangles count="4" material="_Brown__bmp">
+					<input offset="0" semantic="VERTEX" source="#_Brown_-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#_Brown_-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 0 6 5 7 4 8 4 9 1 10 0 11</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="_Beige_1-Geometry" name="_Beige_1-Geometry">
+			<mesh>
+				<source id="_Beige_1-Geometry-Position">
+					<float_array count="93" id="_Beige_1-Geometry-Position-array">-7.13693 -1.46034 47.06000 -1.62850 -2.76141 47.06000 -1.62850 -2.76141 54.85000 -7.13693 -1.46034 54.85000 -14.47640 13.53510 47.06000 -14.47640 13.53510 29.58500 -21.67130 -16.92610 29.58500 -21.67130 -16.92610 47.06000 -19.88720 -9.37284 47.06000 -13.77770 13.53510 29.58500 -14.47640 13.53510 54.85000 -13.77770 13.53510 54.85000 -21.67130 -16.92610 27.01000 -14.47640 13.53510 27.01000 -14.47640 13.53510 0.00000 -21.67130 -16.92610 0.00000 -13.77770 13.53510 0.00000 -13.77770 13.53510 27.01000 -4.13311 11.25710 0.00000 -4.13311 11.25710 27.01000 1.37532 9.95602 0.00000 1.37532 9.95602 27.01000 -5.85645 -20.66150 0.00000 -5.85645 -20.66150 27.01000 -5.85645 -20.66150 29.58500 -5.85645 -20.66150 47.06000 1.37532 9.95602 29.58500 1.37532 9.95602 54.85000 -4.13311 11.25710 29.58500 -4.13311 11.25710 54.85000 -19.88720 -9.37284 54.85000</float_array>
+					<technique_common>
+						<accessor count="31" source="#_Beige_1-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Beige_1-Geometry-Normals">
+					<float_array count="93" id="_Beige_1-Geometry-Normals-array">-0.22987 -0.97320 0.00000 0.88839 -0.45903 0.00000 0.52562 -0.85070 0.00000 -0.22987 -0.97320 0.00000 -0.62053 0.78417 0.00000 -0.62053 0.78417 0.00000 -0.99594 -0.08966 0.00000 -0.85070 -0.52562 0.00000 -0.97320 0.22987 0.00000 0.07706 0.99701 0.00000 -0.62053 0.78417 0.00000 0.07706 0.99701 0.00000 -0.85070 -0.52562 0.00000 -0.62053 0.78417 0.00000 -0.62053 0.78417 0.00000 -0.85070 -0.52562 0.00000 0.11570 0.99326 0.00000 0.11570 0.99326 0.00000 0.22987 0.97320 0.00000 0.22987 0.97320 0.00000 0.85070 0.52562 0.00000 0.85070 0.52562 0.00000 0.52562 -0.85070 0.00000 0.52562 -0.85070 0.00000 0.76766 -0.64083 0.00000 0.52562 -0.85070 0.00000 0.97327 0.22962 0.00000 0.97327 0.22962 0.00000 0.22987 0.97320 0.00000 0.22987 0.97320 0.00000 -0.97320 0.22987 0.00000</float_array>
+					<technique_common>
+						<accessor count="31" source="#_Beige_1-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Beige_1-Geometry-UV">
+					<float_array count="192" id="_Beige_1-Geometry-UV-array">-1.32202 2.92601 -0.19002 2.92601 -0.19002 3.41036 -0.19002 3.41036 -1.32202 3.41036 -1.32202 2.92601 4.29089 1.67938 -1.96899 1.67938 -1.96899 0.00000 -1.96899 0.00000 4.29089 0.00000 4.29089 1.67938 2.75555 0.00000 2.89529 0.00000 2.89529 1.67938 2.89529 1.67938 2.75555 1.67938 2.75555 0.00000 1.32202 0.00000 3.30402 0.00000 3.30402 1.67938 3.30402 1.67938 1.32202 1.67938 1.32202 0.00000 0.19002 0.00000 1.32202 0.00000 1.32202 1.67938 1.32202 1.67938 0.19002 1.67938 0.19002 0.00000 -4.29089 0.00000 2.00111 0.00000 2.00111 1.67938 2.00111 1.67938 -4.29089 1.67938 -4.29089 0.00000 -3.44002 0.00000 -0.19002 0.00000 -0.19002 1.67938 -0.19002 1.67938 -3.44002 1.67938 -3.44002 0.00000 -3.44002 1.83948 -0.19002 1.83948 -0.19002 2.92601 -0.19002 2.92601 -3.44002 2.92601 -3.44002 1.83948 0.19002 1.83948 1.32202 1.83948 1.32202 3.41036 1.32202 3.41036 0.19002 3.41036 0.19002 1.83948 1.32202 1.83948 3.30402 1.83948 3.30402 3.41036 3.30402 3.41036 1.32202 3.41036 1.32202 1.83948 2.73867 2.92601 2.73867 3.41036 -1.96899 3.41036 -1.96899 3.41036 -1.96899 2.92601 2.73867 2.92601 2.00111 3.41036 -0.61236 3.41036 -0.61236 2.92601 2.00111 1.83948 2.00111 3.41036 -0.61236 2.92601 -0.61236 2.92601 -4.29089 2.92601 -4.29089 1.83948 2.00111 1.83948 -0.61236 2.92601 -4.29089 1.83948 2.89529 2.92601 2.89529 3.41036 2.75555 3.41036 2.89529 2.92601 2.75555 3.41036 2.75555 1.83948 2.89529 1.83948 2.89529 2.92601 2.75555 1.83948 4.29089 1.83948 4.29089 2.92601 2.73867 2.92601 4.29089 1.83948 2.73867 2.92601 -1.96899 2.92601 4.29089 1.83948 -1.96899 2.92601 -1.96899 1.83948</float_array>
+					<technique_common>
+						<accessor count="96" source="#_Beige_1-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="_Beige_1-Geometry-Vertex">
+					<input semantic="POSITION" source="#_Beige_1-Geometry-Position"/>
+					<input semantic="NORMAL" source="#_Beige_1-Geometry-Normals"/>
+				</vertices>
+				<triangles count="32" material="_Beige_1_bmp">
+					<input offset="0" semantic="VERTEX" source="#_Beige_1-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#_Beige_1-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 12 6 13 7 14 8 14 9 15 10 12 11 16 12 14 13 13 14 13 15 17 16 16 17 18 18 16 19 17 20 17 21 19 22 18 23 20 24 18 25 19 26 19 27 21 28 20 29 22 30 20 31 21 32 21 33 23 34 22 35 15 36 22 37 23 38 23 39 12 40 15 41 6 42 24 43 25 44 25 45 7 46 6 47 26 48 28 49 29 50 29 51 27 52 26 53 28 54 9 55 11 56 11 57 29 58 28 59 8 60 30 61 10 62 10 63 4 64 8 65 27 66 2 67 1 68 26 69 27 70 1 71 1 72 25 73 24 74 26 75 1 76 24 77 4 78 10 79 11 80 4 81 11 82 9 83 5 84 4 85 9 86 6 87 7 88 8 89 6 90 8 91 4 92 6 93 4 94 5 95</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="_Black_-Geometry" name="_Black_-Geometry">
+			<mesh>
+				<source id="_Black_-Geometry-Position">
+					<float_array count="36" id="_Black_-Geometry-Position-array">-13.77770 13.53510 29.58500 -13.77770 13.53510 27.01000 -14.47640 13.53510 27.01000 -14.47640 13.53510 29.58500 -4.13311 11.25710 29.58500 -4.13311 11.25710 27.01000 1.37532 9.95602 29.58500 1.37532 9.95602 27.01000 -5.85645 -20.66150 29.58500 -5.85645 -20.66150 27.01000 -21.67130 -16.92610 29.58500 -21.67130 -16.92610 27.01000</float_array>
+					<technique_common>
+						<accessor count="12" source="#_Black_-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Black_-Geometry-Normals">
+					<float_array count="36" id="_Black_-Geometry-Normals-array">0.11570 0.99326 0.00000 0.11570 0.99326 0.00000 -0.62053 0.78417 0.00000 -0.62053 0.78417 0.00000 0.22987 0.97320 0.00000 0.22987 0.97320 0.00000 0.85070 0.52562 0.00000 0.85070 0.52562 0.00000 0.52562 -0.85070 0.00000 0.52562 -0.85070 0.00000 -0.85070 -0.52562 0.00000 -0.85070 -0.52562 0.00000</float_array>
+					<technique_common>
+						<accessor count="12" source="#_Black_-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Black_-Geometry-UV">
+					<float_array count="72" id="_Black_-Geometry-UV-array">3.44443 11.18920 3.44443 10.21530 3.61911 10.21530 3.61911 10.21530 3.61911 11.18920 3.44443 11.18920 4.13003 10.21530 4.13003 11.18920 1.65253 11.18920 1.65253 11.18920 1.65253 10.21530 4.13003 10.21530 0.23753 11.18920 0.23753 10.21530 1.65253 10.21530 1.65253 10.21530 1.65253 11.18920 0.23753 11.18920 -5.36361 11.18920 -5.36361 10.21530 2.50139 10.21530 2.50139 10.21530 2.50139 11.18920 -5.36361 11.18920 -4.30003 11.18920 -4.30003 10.21530 -0.23753 10.21530 -0.23753 10.21530 -0.23753 11.18920 -4.30003 11.18920 -2.46123 11.18920 -2.46123 10.21530 5.36361 10.21530 5.36361 10.21530 5.36361 11.18920 -2.46123 11.18920</float_array>
+					<technique_common>
+						<accessor count="36" source="#_Black_-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="_Black_-Geometry-Vertex">
+					<input semantic="POSITION" source="#_Black_-Geometry-Position"/>
+					<input semantic="NORMAL" source="#_Black_-Geometry-Normals"/>
+				</vertices>
+				<triangles count="12" material="_Black__bmp">
+					<input offset="0" semantic="VERTEX" source="#_Black_-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#_Black_-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 1 6 0 7 4 8 4 9 5 10 1 11 6 12 7 13 5 14 5 15 4 16 6 17 8 18 9 19 7 20 7 21 6 22 8 23 10 24 11 25 9 26 9 27 8 28 10 29 3 30 2 31 11 32 11 33 10 34 3 35</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Groundcover_Sand_Wind-Geometry" name="Groundcover_Sand_Wind-Geometry">
+			<mesh>
+				<source id="Groundcover_Sand_Wind-Geometry-Position">
+					<float_array count="120" id="Groundcover_Sand_Wind-Geometry-Position-array">-4.33528 10.40120 54.85000 -4.13311 11.25710 54.85000 -13.77770 13.53510 54.85000 -14.47640 13.53510 54.85000 -19.88720 -9.37284 54.85000 -9.58082 -11.80720 54.85000 -7.13693 -1.46034 54.85000 -4.82007 8.34867 54.85000 -5.20230 8.43895 54.85000 -9.79054 -10.98650 54.85000 -19.09210 -9.00614 54.85000 -14.06650 12.69970 54.85000 -1.62850 -2.76141 54.85000 1.37532 9.95602 54.85000 0.74290 9.04075 54.85000 -1.99413 -2.20085 54.85000 -6.63045 -1.07947 54.85000 -4.35007 8.34867 54.85000 -20.87270 -16.55330 47.06000 -6.30356 -19.99450 47.06000 -6.30356 -19.99450 46.57000 -20.87270 -16.55330 46.57000 -2.34747 -3.24535 47.06000 -2.34747 -3.24535 46.57000 -6.64153 -2.33256 47.06000 -6.64153 -2.33256 46.57000 -9.17886 -12.28710 47.06000 -9.17886 -12.28710 46.57000 -19.30040 -9.89647 47.06000 -19.30040 -9.89647 46.57000 -4.33528 10.40120 54.06000 0.74290 9.04075 54.06000 -14.06650 12.69970 54.06000 -19.09210 -9.00614 54.06000 -9.79054 -10.98650 54.06000 -5.20230 8.43895 54.06000 -4.82007 8.34867 54.06000 -4.35007 8.34867 54.06000 -1.99413 -2.20085 54.06000 -6.63045 -1.07947 54.06000</float_array>
+					<technique_common>
+						<accessor count="40" source="#Groundcover_Sand_Wind-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Groundcover_Sand_Wind-Geometry-Normals">
+					<float_array count="120" id="Groundcover_Sand_Wind-Geometry-Normals-array">-0.13550 -0.53783 0.83206 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.06388 0.54839 0.83377 -0.42915 0.69460 0.57735 -0.14710 0.23228 0.96146 0.48415 0.30811 0.81890 0.14325 -0.23072 0.96240 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 -0.08182 -0.30543 0.94867 0.07431 0.30735 0.94867 0.10511 0.43468 0.89441 0.00000 0.44719 0.89441 0.85070 0.52562 0.00000 -0.52562 0.85070 0.00000 -0.30345 0.49113 0.81649 0.49113 0.30345 0.81649 -0.84472 -0.53514 0.00000 -0.48399 -0.30662 0.81954 0.52767 -0.84942 0.00000 0.43364 -0.69805 0.56978 0.51808 -0.85531 0.00000 0.17405 -0.28730 0.94186 0.52562 -0.85070 0.00000 0.42915 -0.69460 0.57735 -0.10926 -0.43361 0.89444 -0.08182 -0.30543 0.94867 0.43037 -0.69314 0.57817 0.35710 0.22724 0.90597 -0.43843 0.69231 0.57311 -0.22413 0.36274 0.90451 0.06388 0.54839 0.83377 0.00000 0.31620 0.94867 0.10511 0.43468 0.89441 0.16620 0.68728 0.70708</float_array>
+					<technique_common>
+						<accessor count="40" source="#Groundcover_Sand_Wind-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Groundcover_Sand_Wind-Geometry-UV">
+					<float_array count="348" id="Groundcover_Sand_Wind-Geometry-UV-array">9.02701 64.33180 0.84131 64.33180 0.84131 63.66200 0.84131 63.66200 9.02701 63.66200 9.02701 64.33180 11.43270 64.33180 2.02212 64.33180 2.02212 63.66200 2.02212 63.66200 11.43270 63.66200 11.43270 64.33180 -0.88658 64.33180 -3.28706 64.33180 -3.28706 63.66200 -3.28706 63.66200 -0.88658 63.66200 -0.88658 64.33180 -2.13293 64.33180 -7.75020 64.33180 -7.75020 63.66200 -7.75020 63.66200 -2.13293 63.66200 -2.13293 64.33180 -3.34022 64.33180 -9.02701 64.33180 -9.02701 63.66200 -9.02701 63.66200 -3.34022 63.66200 -3.34022 64.33180 -7.69251 64.33180 -11.43270 64.33180 -11.43270 63.66200 -11.43270 63.66200 -7.69251 63.66200 -7.69251 64.33180 -0.88687 74.98090 -3.76157 74.98090 -3.76157 73.90090 -3.76157 73.90090 -0.88687 73.90090 -0.88687 74.98090 -3.61446 74.98090 -9.08198 74.98090 -9.08198 73.90090 -9.08198 73.90090 -3.61446 73.90090 -3.61446 74.98090 5.03035 74.98090 -7.15250 74.98090 -7.15250 73.90090 -7.15250 73.90090 5.03035 73.90090 5.03035 74.98090 9.18527 74.98090 3.98514 74.98090 3.98514 73.90090 3.98514 73.90090 9.18527 73.90090 9.18527 74.98090 7.07726 74.98090 -3.83700 74.98090 -3.83700 73.90090 -3.83700 73.90090 7.07726 73.90090 7.07726 74.98090 3.82921 74.98090 3.61446 74.98090 3.61446 73.90090 3.61446 73.90090 3.82921 73.90090 3.82921 74.98090 2.63565 74.98090 2.37865 74.98090 2.37865 73.90090 2.37865 73.90090 2.63565 73.90090 2.63565 74.98090 3.38520 74.98090 0.77693 74.98090 0.77693 73.90090 0.77693 73.90090 3.38520 73.90090 3.38520 74.98090 -2.37056 14.21860 -7.69167 17.36070 -10.43970 -12.31150 -2.84465 11.53620 -2.37056 14.21860 -10.43970 -12.31150 -2.63565 11.41280 -2.37056 14.21860 -2.84465 11.53620 -5.35353 -15.01880 -2.84465 11.53620 -10.43970 -12.31150 0.40622 12.35890 -2.37056 14.21860 -2.63565 11.41280 -2.37865 11.41280 0.40622 12.35890 -2.63565 11.41280 -1.09041 -3.00860 0.40622 12.35890 -2.37865 11.41280 -1.09041 -3.00860 -2.37865 11.41280 -3.62557 -1.47566 -1.28361 -4.43644 -3.63163 -3.18865 -5.01906 -16.79670 -3.44683 -27.33280 -1.28361 -4.43644 -5.01906 -16.79670 -5.01906 -16.79670 -10.55360 -13.52860 -11.41330 -22.62860 -3.44683 -27.33280 -5.01906 -16.79670 -11.41330 -22.62860 -2.26001 15.38860 -2.37056 14.21860 0.75203 13.61000 0.75203 13.61000 -2.37056 14.21860 0.40622 12.35890 -0.89047 -3.77489 0.75203 13.61000 0.40622 12.35890 -0.89047 -3.77489 0.40622 12.35890 -1.09041 -3.00860 -2.37865 11.41280 -2.63565 11.41280 -3.90252 -1.99630 -3.62557 -1.47566 -2.37865 11.41280 -3.90252 -1.99630 -1.09041 -3.00860 -3.62557 -1.47566 -3.90252 -1.99630 -1.09041 -3.00860 -3.90252 -1.99630 -0.89047 -3.77489 -7.69167 17.36070 -7.91582 18.50270 -10.87450 -12.81280 -7.53376 18.50270 -7.91582 18.50270 -7.69167 17.36070 -2.26001 15.38860 -7.53376 18.50270 -7.69167 17.36070 -10.43970 -12.31150 -7.69167 17.36070 -10.87450 -12.81280 -7.69167 17.36070 -2.37056 14.21860 -2.26001 15.38860 -2.63565 11.41280 -2.84465 11.53620 -5.35353 -15.01880 -3.90252 -1.99630 -2.63565 11.41280 -5.35353 -15.01880 -5.23886 -16.14060 -3.90252 -1.99630 -5.35353 -15.01880 -5.35353 -15.01880 -10.43970 -12.31150 -10.87450 -12.81280 -5.35353 -15.01880 -10.87450 -12.81280 -5.23886 -16.14060</float_array>
+					<technique_common>
+						<accessor count="174" source="#Groundcover_Sand_Wind-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Groundcover_Sand_Wind-Geometry-Vertex">
+					<input semantic="POSITION" source="#Groundcover_Sand_Wind-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Groundcover_Sand_Wind-Geometry-Normals"/>
+				</vertices>
+				<triangles count="58" material="Groundcover_Sand_Wind-Material">
+					<input offset="0" semantic="VERTEX" source="#Groundcover_Sand_Wind-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Groundcover_Sand_Wind-Geometry-UV"/>
+					<p>18 0 19 1 20 2 20 3 21 4 18 5 19 6 22 7 23 8 23 9 20 10 19 11 22 12 24 13 25 14 25 15 23 16 22 17 24 18 26 19 27 20 27 21 25 22 24 23 26 24 28 25 29 26 29 27 27 28 26 29 28 30 18 31 21 32 21 33 29 34 28 35 14 36 0 37 30 38 30 39 31 40 14 41 0 42 11 43 32 44 32 45 30 46 0 47 11 48 10 49 33 50 33 51 32 52 11 53 10 54 9 55 34 56 34 57 33 58 10 59 9 60 8 61 35 62 35 63 34 64 9 65 8 66 7 67 36 68 36 69 35 70 8 71 7 72 17 73 37 74 37 75 36 76 7 77 16 78 15 79 38 80 38 81 39 82 16 83 30 84 32 85 33 86 35 87 30 88 33 89 36 90 30 91 35 92 34 93 35 94 33 95 31 96 30 97 36 98 37 99 31 100 36 101 38 102 31 103 37 104 38 105 37 106 39 107 23 108 25 109 27 110 20 111 23 112 27 113 27 114 29 115 21 116 20 117 27 118 21 119 1 120 0 121 13 122 13 123 0 124 14 125 12 126 13 127 14 128 12 129 14 130 15 131 17 132 7 133 6 134 16 135 17 136 6 137 15 138 16 139 6 140 15 141 6 142 12 143 11 144 3 145 4 146 2 147 3 148 11 149 1 150 2 151 11 152 10 153 11 154 4 155 11 156 0 157 1 158 7 159 8 160 9 161 6 162 7 163 9 164 5 165 6 166 9 167 9 168 10 169 4 170 9 171 4 172 5 173</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="FrontColor-Geometry" name="FrontColor-Geometry">
+			<mesh>
+				<source id="FrontColor-Geometry-Position">
+					<float_array count="60" id="FrontColor-Geometry-Position-array">-7.13693 -1.46034 47.06000 -6.64153 -2.33256 47.06000 -1.62850 -2.76141 47.06000 -9.17886 -12.28710 47.06000 -9.58082 -11.80720 47.06000 -19.30040 -9.89647 47.06000 -19.88720 -9.37284 47.06000 -20.87270 -16.55330 47.06000 -21.67130 -16.92610 47.06000 -2.34747 -3.24535 47.06000 -5.85645 -20.66150 47.06000 -6.30356 -19.99450 47.06000 -4.35007 8.34867 54.85000 -6.63045 -1.07947 54.85000 -6.63045 -1.07947 54.06000 -4.35007 8.34867 54.06000 -1.99413 -2.20085 54.85000 0.74290 9.04075 54.85000 0.74290 9.04075 54.06000 -1.99413 -2.20085 54.06000</float_array>
+					<technique_common>
+						<accessor count="20" source="#FrontColor-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="FrontColor-Geometry-Normals">
+					<float_array count="60" id="FrontColor-Geometry-Normals-array">0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.97195 -0.23508 0.00000 0.97195 -0.23508 0.00000 0.97195 -0.23508 0.00000 0.97195 -0.23508 0.00000 -0.97159 0.23655 0.00000 -0.97159 0.23655 0.00000 -0.97159 0.23655 0.00000 -0.97159 0.23655 0.00000</float_array>
+					<technique_common>
+						<accessor count="20" source="#FrontColor-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="FrontColor-Geometry-UV">
+					<float_array count="96" id="FrontColor-Geometry-UV-array">-280.98099 -57.49350 -261.47699 -91.83300 -64.11410 -108.71700 -280.98099 -57.49350 -361.37201 -483.74500 -261.47699 -91.83300 -361.37201 -483.74500 -280.98099 -57.49350 -377.19800 -464.85001 -377.19800 -464.85001 -759.85699 -389.62500 -361.37201 -483.74500 -782.96198 -369.01001 -759.85699 -389.62500 -377.19800 -464.85001 -782.96198 -369.01001 -821.75897 -651.70502 -759.85699 -389.62500 -821.75897 -651.70502 -782.96198 -369.01001 -853.20001 -666.38202 -92.42010 -127.77000 -230.56900 -813.44501 -64.11410 -108.71700 -248.17200 -787.18402 -230.56900 -813.44501 -92.42010 -127.77000 -821.75897 -651.70502 -230.56900 -813.44501 -248.17200 -787.18402 -230.56900 -813.44501 -821.75897 -651.70502 -853.20001 -666.38202 -64.11410 -108.71700 -261.47699 -91.83300 -92.42010 -127.77000 279.21399 2159.44995 -102.67600 2159.44995 -102.67600 2128.35010 -102.67600 2128.35010 279.21399 2128.35010 279.21399 2159.44995 102.76100 2159.44995 -352.75101 2159.44995 -352.75101 2128.35010 -352.75101 2128.35010 102.76100 2128.35010 102.76100 2159.44995</float_array>
+					<technique_common>
+						<accessor count="48" source="#FrontColor-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="FrontColor-Geometry-Vertex">
+					<input semantic="POSITION" source="#FrontColor-Geometry-Position"/>
+					<input semantic="NORMAL" source="#FrontColor-Geometry-Normals"/>
+				</vertices>
+				<triangles count="16" material="Groundcover_Sand_Wind-Material">
+					<input offset="0" semantic="VERTEX" source="#FrontColor-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#FrontColor-Geometry-UV"/>
+					<p>0 0 1 1 2 2 0 3 3 4 1 5 3 6 0 7 4 8 4 9 5 10 3 11 6 12 5 13 4 14 6 15 7 16 5 17 7 18 6 19 8 20 9 21 10 22 2 23 11 24 10 25 9 26 7 27 10 28 11 29 10 30 7 31 8 32 2 33 1 34 9 35 12 36 13 37 14 38 14 39 15 40 12 41 16 42 17 43 18 44 18 45 19 46 16 47</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_images>
+		<image id="_Brown__bmp-image" name="_Brown__bmp-image">
+			<init_from>../images/St_George_Building/_Brown_.jpg</init_from>
+		</image>
+		<image id="_Beige_1_bmp-image" name="_Beige_1_bmp-image">
+			<init_from>../images/St_George_Building/_Beige_1.jpg</init_from>
+		</image>
+		<image id="_Black__bmp-image" name="_Black__bmp-image">
+			<init_from>../images/St_George_Building/_Black_.jpg</init_from>
+		</image>
+		<image id="Groundcover_Sand_Wind-image" name="Groundcover_Sand_Wind-image">
+			<init_from>../images/St_George_Building/Groundcover_Sand_Wind.jpg</init_from>
+		</image>
+		<image id="Groundcover_Sand_Wind-image" name="Groundcover_Sand_Wind-image">
+			<init_from>../images/St_George_Building/Groundcover_Sand_Wind.jpg</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="_Brown__bmp" name="_Brown__bmp">
+			<instance_effect url="#_Brown__bmp-fx"/>
+		</material>
+		<material id="_Beige_1_bmp" name="_Beige_1_bmp">
+			<instance_effect url="#_Beige_1_bmp-fx"/>
+		</material>
+		<material id="_Black__bmp" name="_Black__bmp">
+			<instance_effect url="#_Black__bmp-fx"/>
+		</material>
+		<material id="Groundcover_Sand_Wind-Material" name="Groundcover_Sand_Wind-Material">
+			<instance_effect url="#Groundcover_Sand_Wind-fx"/>
+		</material>
+	</library_materials>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node layer="L1" id="_Brown_" name="_Brown_">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#_Brown_-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_Brown__bmp" target="#_Brown__bmp"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="_Beige_1" name="_Beige_1">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#_Beige_1-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_Beige_1_bmp" target="#_Beige_1_bmp"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="_Black_" name="_Black_">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#_Black_-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_Black__bmp" target="#_Black__bmp"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Groundcover_Sand_Wind" name="Groundcover_Sand_Wind">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Groundcover_Sand_Wind-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Groundcover_Sand_Wind-Material" target="#Groundcover_Sand_Wind-Material"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="FrontColor" name="FrontColor">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#FrontColor-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Groundcover_Sand_Wind-Material" target="#Groundcover_Sand_Wind-Material"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

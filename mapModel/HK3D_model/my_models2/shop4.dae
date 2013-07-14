@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:248 - Illusoft Collada Exporter v:0.3.108</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file://C://</source_data>
+		</contributor>
+		<created>2009-03-17T23:31:28.609000</created>
+		<modified>2009-03-17T23:31:28.609000</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="box2_png-fx" name="box2_png-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="box2_png-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="box3_png-fx" name="box3_png-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="box3_png-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="box_png-fx" name="box_png-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="box_png-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="box2-Geometry" name="box2-Geometry">
+			<mesh>
+				<source id="box2-Geometry-Position">
+					<float_array count="24" id="box2-Geometry-Position-array">0.00000 -0.01398 0.00008 0.00000 -0.01398 1.81409 0.00000 3.33202 1.81409 0.00000 3.33202 0.00008 2.62900 -0.01398 0.00008 2.62900 -0.01398 1.81409 2.62900 3.33202 0.00008 2.62900 3.33202 1.81409</float_array>
+					<technique_common>
+						<accessor count="8" source="#box2-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="box2-Geometry-Normals">
+					<float_array count="24" id="box2-Geometry-Normals-array">-0.70708 -0.70708 0.00000 -0.70708 -0.70708 0.00000 -0.70708 0.70708 0.00000 -0.70708 0.70708 0.00000 0.70708 -0.70708 0.00000 0.70708 -0.70708 0.00000 0.70708 0.70708 0.00000 0.70708 0.70708 0.00000</float_array>
+					<technique_common>
+						<accessor count="8" source="#box2-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="box2-Geometry-UV">
+					<float_array count="48" id="box2-Geometry-UV-array">0.00000 0.00000 1.00000 0.00000 1.00000 1.00000 1.00000 1.00000 0.00000 1.00000 0.00000 0.00000 1.00000 1.00000 0.00000 1.00000 -0.00000 -0.00000 -0.00000 -0.00000 1.00000 0.00000 1.00000 1.00000 -0.00000 0.00000 1.00000 0.00000 1.00000 1.00000 1.00000 1.00000 -0.00000 1.00000 -0.00000 0.00000 0.00000 -0.00000 1.00000 -0.00000 1.00000 1.00000 1.00000 1.00000 0.00000 1.00000 0.00000 -0.00000</float_array>
+					<technique_common>
+						<accessor count="24" source="#box2-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="box2-Geometry-Vertex">
+					<input semantic="POSITION" source="#box2-Geometry-Position"/>
+					<input semantic="NORMAL" source="#box2-Geometry-Normals"/>
+				</vertices>
+				<triangles count="8" material="box2_png">
+					<input offset="0" semantic="VERTEX" source="#box2-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#box2-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 1 6 0 7 4 8 4 9 5 10 1 11 6 12 7 13 5 14 5 15 4 16 6 17 3 18 2 19 7 20 7 21 6 22 3 23</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="box3-Geometry" name="box3-Geometry">
+			<mesh>
+				<source id="box3-Geometry-Position">
+					<float_array count="12" id="box3-Geometry-Position-array">0.00000 -0.01398 1.81409 2.62900 -0.01398 1.81409 2.62900 3.33202 1.81409 0.00000 3.33202 1.81409</float_array>
+					<technique_common>
+						<accessor count="4" source="#box3-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="box3-Geometry-Normals">
+					<float_array count="12" id="box3-Geometry-Normals-array">0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#box3-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="box3-Geometry-UV">
+					<float_array count="12" id="box3-Geometry-UV-array">0.00000 -0.00000 1.00000 0.00000 1.00000 1.00000 1.00000 1.00000 -0.00000 1.00000 0.00000 -0.00000</float_array>
+					<technique_common>
+						<accessor count="6" source="#box3-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="box3-Geometry-Vertex">
+					<input semantic="POSITION" source="#box3-Geometry-Position"/>
+					<input semantic="NORMAL" source="#box3-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="box3_png">
+					<input offset="0" semantic="VERTEX" source="#box3-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#box3-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="box-Geometry" name="box-Geometry">
+			<mesh>
+				<source id="box-Geometry-Position">
+					<float_array count="12" id="box-Geometry-Position-array">2.62900 -0.01398 0.00008 0.00000 -0.01398 0.00008 0.00000 3.33202 0.00008 2.62900 3.33202 0.00008</float_array>
+					<technique_common>
+						<accessor count="4" source="#box-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="box-Geometry-Normals">
+					<float_array count="12" id="box-Geometry-Normals-array">0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#box-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="box-Geometry-UV">
+					<float_array count="12" id="box-Geometry-UV-array">0.00000 -0.00000 1.00000 -0.00000 1.00000 1.00000 1.00000 1.00000 0.00000 1.00000 0.00000 -0.00000</float_array>
+					<technique_common>
+						<accessor count="6" source="#box-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="box-Geometry-Vertex">
+					<input semantic="POSITION" source="#box-Geometry-Position"/>
+					<input semantic="NORMAL" source="#box-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="box_png">
+					<input offset="0" semantic="VERTEX" source="#box-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#box-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_images>
+		<image id="box2_png-image" name="box2_png-image">
+			<init_from>../images/shop4/box2.jpg</init_from>
+		</image>
+		<image id="box3_png-image" name="box3_png-image">
+			<init_from>../images/shop4/box3.jpg</init_from>
+		</image>
+		<image id="box_png-image" name="box_png-image">
+			<init_from>../images/shop4/box.jpg</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="box2_png" name="box2_png">
+			<instance_effect url="#box2_png-fx"/>
+		</material>
+		<material id="box3_png" name="box3_png">
+			<instance_effect url="#box3_png-fx"/>
+		</material>
+		<material id="box_png" name="box_png">
+			<instance_effect url="#box_png-fx"/>
+		</material>
+	</library_materials>
+	<library_visual_scenes>
+		<visual_scene id="Scene_001" name="Scene_001">
+			<node layer="L1" id="box2" name="box2">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#box2-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="box2_png" target="#box2_png"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="box3" name="box3">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#box3-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="box3_png" target="#box3_png"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="box" name="box">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#box-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="box_png" target="#box_png"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene_001"/>
+	</scene>
+</COLLADA>

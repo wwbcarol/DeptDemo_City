@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:248 - Illusoft Collada Exporter v:0.3.108</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file://C://</source_data>
+		</contributor>
+		<created>2009-04-15T04:47:59.484000</created>
+		<modified>2009-04-15T04:47:59.484000</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="one_way_left_arrow_pn-fx" name="one_way_left_arrow_pn-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="one_way_left_arrow_pn-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_effects>
+		<effect id="texture0_pn-fx" name="texture0_pn-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="texture0_pn-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="Material1-Geometry" name="Material1-Geometry">
+			<mesh>
+				<source id="Material1-Geometry-Position">
+					<float_array count="144" id="Material1-Geometry-Position-array">14.84380 3.75000 0.00000 13.21880 3.75000 0.00000 13.21880 3.75000 96.00000 14.84380 3.75000 96.00000 12.75000 2.00000 0.00000 12.75000 2.00000 96.00000 12.28130 2.00000 0.00000 12.28130 2.00000 96.00000 15.28130 2.00000 0.00000 15.28130 2.00000 96.00000 15.78130 2.00000 0.00000 15.78130 2.00000 96.00000 -9.53165 3.52870 0.18444 -11.15660 3.52870 0.18444 -11.15660 3.52870 96.18440 -9.53165 3.52870 96.18440 -11.62540 1.77870 0.18444 -11.62540 1.77870 96.18440 -12.09410 1.77870 0.18444 -12.09410 1.77870 96.18440 -9.09415 1.77870 0.18444 -9.09415 1.77870 96.18440 -8.59415 1.77870 0.18444 -8.59415 1.77870 96.18440 -11.16200 -0.00000 -0.18444 -9.53698 -0.00000 -0.18444 -9.53698 -0.00000 95.81560 -11.16200 -0.00000 95.81560 -9.06823 1.75000 -0.18444 -9.06823 1.75000 95.81560 -8.59948 1.75000 -0.18444 -8.59948 1.75000 95.81560 -11.59950 1.75000 -0.18444 -11.59950 1.75000 95.81560 -12.09950 1.75000 -0.18444 -12.09950 1.75000 95.81560 13.21340 0.22130 0.00000 14.83840 0.22130 0.00000 14.83840 0.22130 96.00000 13.21340 0.22130 96.00000 15.30720 1.97130 0.00000 15.30720 1.97130 96.00000 15.77590 1.97130 0.00000 15.77590 1.97130 96.00000 12.77590 1.97130 0.00000 12.77590 1.97130 96.00000 12.27590 1.97130 0.00000 12.27590 1.97130 96.00000</float_array>
+					<technique_common>
+						<accessor count="48" source="#Material1-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Material1-Geometry-Normals">
+					<float_array count="144" id="Material1-Geometry-Normals-array">0.61541 0.78820 0.00000 -0.60878 0.79333 0.00000 -0.60878 0.79333 0.00000 0.61541 0.78820 0.00000 -0.60878 0.79333 0.00000 -0.60878 0.79333 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.61541 0.78820 0.00000 0.61541 0.78820 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.61541 0.78820 0.00000 -0.60878 0.79333 0.00000 -0.60878 0.79333 0.00000 0.61541 0.78820 0.00000 -0.60878 0.79333 0.00000 -0.60878 0.79333 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.61541 0.78820 0.00000 0.61541 0.78820 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 -0.61541 -0.78820 0.00000 0.60878 -0.79330 0.00000 0.60878 -0.79330 0.00000 -0.61541 -0.78820 0.00000 0.60878 -0.79330 0.00000 0.60878 -0.79330 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -0.61541 -0.78820 0.00000 -0.61541 -0.78820 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -0.61541 -0.78820 0.00000 0.60878 -0.79333 0.00000 0.60878 -0.79333 0.00000 -0.61541 -0.78820 0.00000 0.60878 -0.79333 0.00000 0.60878 -0.79333 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -0.61541 -0.78820 0.00000 -0.61541 -0.78820 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="48" source="#Material1-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Material1-Geometry-UV">
+					<float_array count="240" id="Material1-Geometry-UV-array">-14.81250 0.00000 -13.18750 0.00000 -13.18750 96.00000 -13.18750 96.00000 -14.81250 96.00000 -14.81250 0.00000 -5.10249 0.00000 -3.29080 0.00000 -3.29080 96.00000 -3.29080 96.00000 -5.10249 96.00000 -5.10249 0.00000 -12.71880 0.00000 -12.25000 0.00000 -12.25000 96.00000 -12.25000 96.00000 -12.71880 96.00000 -12.71880 0.00000 -3.69867 0.00000 -1.89481 0.00000 -1.89481 96.00000 -1.89481 96.00000 -3.69867 96.00000 -3.69867 0.00000 -15.75000 0.00000 -15.25000 0.00000 -15.25000 96.00000 -15.25000 96.00000 -15.75000 96.00000 -15.75000 0.00000 9.56290 0.18444 11.18790 0.18444 11.18790 96.18440 11.18790 96.18440 9.56290 96.18440 9.56290 0.18444 1.41807 0.18444 3.22976 0.18444 3.22976 96.18440 3.22976 96.18440 1.41807 96.18440 1.41807 0.18444 11.65660 0.18444 12.12540 0.18444 12.12540 96.18440 12.12540 96.18440 11.65660 96.18440 11.65660 0.18444 1.99855 0.18444 3.80240 0.18444 3.80240 96.18440 3.80240 96.18440 1.99855 96.18440 1.99855 0.18444 8.62540 0.18444 9.12540 0.18444 9.12540 96.18440 9.12540 96.18440 8.62540 96.18440 8.62540 0.18444 -14.81250 0.00000 -13.18750 0.00000 -13.18750 96.00000 -13.18750 96.00000 -14.81250 96.00000 -14.81250 0.00000 -5.10249 0.00000 -3.29080 0.00000 -3.29080 96.00000 -3.29080 96.00000 -5.10249 96.00000 -5.10249 0.00000 -12.71880 0.00000 -12.25000 0.00000 -12.25000 96.00000 -12.25000 96.00000 -12.71880 96.00000 -12.71880 0.00000 -3.69867 0.00000 -1.89481 0.00000 -1.89481 96.00000 -1.89481 96.00000 -3.69867 96.00000 -3.69867 0.00000 -15.75000 0.00000 -15.25000 0.00000 -15.25000 96.00000 -15.25000 96.00000 -15.75000 96.00000 -15.75000 0.00000 9.56290 0.18444 11.18790 0.18444 11.18790 96.18440 11.18790 96.18440 9.56290 96.18440 9.56290 0.18444 1.41807 0.18444 3.22976 0.18444 3.22976 96.18440 3.22976 96.18440 1.41807 96.18440 1.41807 0.18444 11.65660 0.18444 12.12540 0.18444 12.12540 96.18440 12.12540 96.18440 11.65660 96.18440 11.65660 0.18444 1.99855 0.18444 3.80240 0.18444 3.80240 96.18440 3.80240 96.18440 1.99855 96.18440 1.99855 0.18444 8.62540 0.18444 9.12540 0.18444 9.12540 96.18440 9.12540 96.18440 8.62540 96.18440 8.62540 0.18444</float_array>
+					<technique_common>
+						<accessor count="120" source="#Material1-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Material1-Geometry-Vertex">
+					<input semantic="POSITION" source="#Material1-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Material1-Geometry-Normals"/>
+				</vertices>
+				<triangles count="40" material="texture0_pn">
+					<input offset="0" semantic="VERTEX" source="#Material1-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Material1-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 1 6 4 7 5 8 5 9 2 10 1 11 4 12 6 13 7 14 7 15 5 16 4 17 8 18 0 19 3 20 3 21 9 22 8 23 10 24 8 25 9 26 9 27 11 28 10 29 12 30 13 31 14 32 14 33 15 34 12 35 13 36 16 37 17 38 17 39 14 40 13 41 16 42 18 43 19 44 19 45 17 46 16 47 20 48 12 49 15 50 15 51 21 52 20 53 22 54 20 55 21 56 21 57 23 58 22 59 24 60 25 61 26 62 26 63 27 64 24 65 25 66 28 67 29 68 29 69 26 70 25 71 28 72 30 73 31 74 31 75 29 76 28 77 32 78 24 79 27 80 27 81 33 82 32 83 34 84 32 85 33 86 33 87 35 88 34 89 36 90 37 91 38 92 38 93 39 94 36 95 37 96 40 97 41 98 41 99 38 100 37 101 40 102 42 103 43 104 43 105 41 106 40 107 44 108 36 109 39 110 39 111 45 112 44 113 46 114 44 115 45 116 45 117 47 118 46 119</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="one_way_left_arrow-Geometry" name="one_way_left_arrow-Geometry">
+			<mesh>
+				<source id="one_way_left_arrow-Geometry-Position">
+					<float_array count="60" id="one_way_left_arrow-Geometry-Position-array">-14.59750 -2.00000 100.71400 -14.59750 -2.00000 89.50790 -13.27710 -2.00000 88.18750 18.40210 -2.00000 88.18750 19.72250 -2.00000 89.50790 19.72250 -2.00000 100.71400 18.44910 -2.00000 101.98700 -13.32410 -2.00000 101.98700 -16.04070 5.75000 89.32340 16.95890 5.75000 88.00310 -14.72040 5.75000 88.00310 18.27930 5.75000 89.32340 -11.92600 5.75000 92.11170 -16.04070 5.75000 100.53000 -11.92600 5.75000 97.61170 10.07400 5.75000 97.61170 18.27930 5.75000 100.53000 10.07400 5.75000 92.11170 -14.76730 5.75000 101.80300 17.00580 5.75000 101.80300</float_array>
+					<technique_common>
+						<accessor count="20" source="#one_way_left_arrow-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="one_way_left_arrow-Geometry-Normals">
+					<float_array count="60" id="one_way_left_arrow-Geometry-Normals-array">0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="20" source="#one_way_left_arrow-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="one_way_left_arrow-Geometry-UV">
+					<float_array count="120" id="one_way_left_arrow-Geometry-UV-array">-1.00410 0.09568 -0.03863 0.00000 -0.96547 0.00000 -0.03863 0.00000 -1.00410 0.09568 -0.00000 0.09568 -0.00000 0.09568 -1.00410 0.09568 -0.88371 0.29773 -0.88371 0.29773 -1.00410 0.09568 -1.00410 0.90772 -0.88371 0.29773 -1.00410 0.90772 -0.88371 0.69628 -0.88371 0.69628 -1.00410 0.90772 -0.24006 0.69628 -0.00000 0.90772 -0.24006 0.69628 -1.00410 0.90772 -0.00000 0.90772 -0.24006 0.29773 -0.24006 0.69628 -0.00000 0.09568 -0.24006 0.29773 -0.00000 0.90772 -0.24006 0.29773 -0.00000 0.09568 -0.88371 0.29773 0.77348 0.69735 0.12983 0.69735 0.12983 0.29880 0.12983 0.29880 0.77348 0.29880 0.77348 0.69735 -0.00000 0.90772 -1.00410 0.90772 -0.96684 1.00000 -0.00000 0.90772 -0.96684 1.00000 -0.03726 1.00000 0.03726 1.00000 0.00000 0.90772 0.96684 1.00000 0.96684 1.00000 0.00000 0.90772 1.00410 0.90772 1.00410 0.90772 0.00000 0.90772 0.00000 0.09568 1.00410 0.09568 1.00410 0.90772 0.00000 0.09568 1.00410 0.09568 0.00000 0.09568 0.03863 0.00000 0.96547 0.00000 1.00410 0.09568 0.03863 0.00000</float_array>
+					<technique_common>
+						<accessor count="60" source="#one_way_left_arrow-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="one_way_left_arrow-Geometry-Vertex">
+					<input semantic="POSITION" source="#one_way_left_arrow-Geometry-Position"/>
+					<input semantic="NORMAL" source="#one_way_left_arrow-Geometry-Normals"/>
+				</vertices>
+				<triangles count="20" material="one_way_left_arrow_pn">
+					<input offset="0" semantic="VERTEX" source="#one_way_left_arrow-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#one_way_left_arrow-Geometry-UV"/>
+					<p>8 0 9 1 10 2 9 3 8 4 11 5 11 6 8 7 12 8 12 9 8 10 13 11 12 12 13 13 14 14 14 15 13 16 15 17 16 18 15 19 13 20 16 21 17 22 15 23 11 24 17 25 16 26 17 27 11 28 12 29 14 30 15 31 17 32 17 33 12 34 14 35 16 36 13 37 18 38 16 39 18 40 19 41 7 42 0 43 6 44 6 45 0 46 5 47 5 48 0 49 1 50 4 51 5 52 1 53 4 54 1 55 2 56 3 57 4 58 2 59</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_images>
+		<image id="one_way_left_arrow_pn-image" name="one_way_left_arrow_pn-image">
+			<init_from>../images/lrsign/one_way_left_arrow.jpg</init_from>
+		</image>
+		<image id="texture0_pn-image" name="texture0_pn-image">
+			<init_from>../images/lrsign/texture0.jpg</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="one_way_left_arrow_pn" name="one_way_left_arrow_pn">
+			<instance_effect url="#one_way_left_arrow_pn-fx"/>
+		</material>
+		<material id="texture0_pn" name="texture0_pn">
+			<instance_effect url="#texture0_pn-fx"/>
+		</material>
+	</library_materials>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node layer="L1" id="Material1" name="Material1">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Material1-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="texture0_pn" target="#texture0_pn"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="one_way_left_arrow" name="one_way_left_arrow">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#one_way_left_arrow-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="one_way_left_arrow_pn" target="#one_way_left_arrow_pn"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

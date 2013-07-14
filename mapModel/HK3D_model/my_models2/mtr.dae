@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:248 - Illusoft Collada Exporter v:0.3.108</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file://C://</source_data>
+		</contributor>
+		<created>2009-04-15T06:21:55.968000</created>
+		<modified>2009-04-15T06:21:55.968000</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="Metal_Seamed_jpg-fx" name="Metal_Seamed_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="Metal_Seamed_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Tile_Mosaic_Multi_jpg-fx" name="Tile_Mosaic_Multi_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="Tile_Mosaic_Multi_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Welcome_MTR_png-fx" name="Welcome_MTR_png-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="Welcome_MTR_png-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Subway_png-fx" name="Subway_png-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="Subway_png-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Metal_Rough_jpg-fx" name="Metal_Rough_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="Metal_Rough_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="_Tile_Mosaic_Multi_1_-fx" name="_Tile_Mosaic_Multi_1_-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="_Tile_Mosaic_Multi_1_-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="MTR_Logo_png-fx" name="MTR_Logo_png-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="MTR_Logo_png-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Tile_Various_Tan_jpg-fx" name="Tile_Various_Tan_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="Tile_Various_Tan_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Metal_Seamed2_jpg-fx" name="Metal_Seamed2_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="Metal_Seamed2_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="Metal_Seamed-Geometry" name="Metal_Seamed-Geometry">
+			<mesh>
+				<source id="Metal_Seamed-Geometry-Position">
+					<float_array count="24" id="Metal_Seamed-Geometry-Position-array">12.34660 -0.97846 4.33984 12.34660 -0.16761 4.33984 11.45660 -0.16761 4.33984 11.45660 -0.97846 4.33984 2.64180 -1.67716 3.48148 2.09180 -1.67716 3.48148 2.09180 -2.19716 3.48148 2.64180 -2.19716 3.48148</float_array>
+					<technique_common>
+						<accessor count="8" source="#Metal_Seamed-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Metal_Seamed-Geometry-Normals">
+					<float_array count="24" id="Metal_Seamed-Geometry-Normals-array">0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000</float_array>
+					<technique_common>
+						<accessor count="8" source="#Metal_Seamed-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Metal_Seamed-Geometry-UV">
+					<float_array count="24" id="Metal_Seamed-Geometry-UV-array">27.00480 -2.14011 27.00480 -0.36660 25.05820 -0.36660 25.05820 -0.36660 25.05820 -2.14011 27.00480 -2.14011 5.77821 -3.66832 4.57523 -3.66832 4.57523 -4.80568 4.57523 -4.80568 5.77821 -4.80568 5.77821 -3.66832</float_array>
+					<technique_common>
+						<accessor count="12" source="#Metal_Seamed-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Metal_Seamed-Geometry-Vertex">
+					<input semantic="POSITION" source="#Metal_Seamed-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Metal_Seamed-Geometry-Normals"/>
+				</vertices>
+				<triangles count="4" material="Metal_Seamed_jpg">
+					<input offset="0" semantic="VERTEX" source="#Metal_Seamed-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Metal_Seamed-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 6 9 7 10 4 11</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Tile_Mosaic_Multi-Geometry" name="Tile_Mosaic_Multi-Geometry">
+			<mesh>
+				<source id="Tile_Mosaic_Multi-Geometry-Position">
+					<float_array count="156" id="Tile_Mosaic_Multi-Geometry-Position-array">2.02486 18.49230 3.52984 2.02486 18.49230 3.51984 2.02486 18.49230 -0.20016 2.02486 5.78486 -0.20016 2.02486 3.29486 -0.20016 2.02486 3.29486 0.12984 2.02486 3.29486 0.31984 2.02486 2.30525 0.31984 2.02486 2.30525 0.12984 2.02486 1.49502 0.12984 2.02486 1.49502 -0.06016 2.02486 0.75393 -0.06016 2.02486 0.75393 -0.20016 2.02486 0.01284 -0.20016 2.02486 0.01284 2.98984 2.02486 0.03284 2.98984 2.02486 0.03284 3.29984 2.02486 0.01284 3.29984 2.02486 0.01284 3.52984 13.18490 0.01284 3.29984 13.18490 0.03284 3.29984 13.18490 0.03284 2.98984 13.18490 0.01284 2.98984 13.18490 0.01284 -0.12805 13.18490 0.75393 -0.12805 13.18490 3.29486 -0.12805 13.18490 3.29486 0.12984 13.18490 2.30525 0.12984 13.18490 2.30525 0.31984 13.18490 3.29486 0.31984 13.18490 3.29486 0.12984 13.18490 3.29486 -0.12805 13.18490 18.49230 -0.12805 13.18490 18.49230 3.51984 13.18490 18.49230 3.52984 13.18490 -1.67716 3.52984 13.18490 -1.67716 2.98984 13.18490 0.01284 2.98984 2.02486 -1.67716 2.98984 2.02486 -1.67716 3.29984 2.02486 -1.67716 3.52984 13.18490 0.75393 -0.20016 13.18490 0.01284 -0.20016 13.18490 3.29486 -0.20016 13.18490 5.78486 -0.20016 13.18490 21.15280 -0.20016 13.18490 21.15280 -0.12805 2.02486 1.49502 -0.20016 2.02486 2.30525 -0.20016 13.18490 21.15280 3.51984 2.02486 21.15280 -0.20016 2.02486 21.15280 3.51984</float_array>
+					<technique_common>
+						<accessor count="52" source="#Tile_Mosaic_Multi-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Tile_Mosaic_Multi-Geometry-Normals">
+					<float_array count="156" id="Tile_Mosaic_Multi-Geometry-Normals-array">-1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 0.33018 0.94333 -0.03262 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -0.31620 0.00000 -0.94867 -0.97012 0.00000 -0.24253 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 0.89441 0.00000 -0.44719 0.00000 0.00000 -1.00000 1.00000 0.00000 0.00000 0.99832 0.05707 -0.00967 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 0.97009 0.24241 0.00955 0.97012 0.24241 -0.00940 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 0.89441 0.00000 -0.44719 1.00000 0.00000 0.00000 -0.44719 0.00000 -0.89441 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 0.99823 0.05707 -0.01514 -1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 0.91565 0.40172 -0.01389 1.00000 0.00000 0.00000 0.94867 0.31620 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 0.70708 0.70708 0.00000 -0.70708 0.70708 0.00000 -0.70708 0.70708 0.00000</float_array>
+					<technique_common>
+						<accessor count="52" source="#Tile_Mosaic_Multi-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Tile_Mosaic_Multi-Geometry-UV">
+					<float_array count="426" id="Tile_Mosaic_Multi-Geometry-UV-array">-0.02809 7.21749 -0.07183 7.21749 -0.07183 6.53945 -0.07183 6.53945 -0.02809 6.53945 -0.02809 7.21749 3.66832 7.21749 -0.02809 7.21749 -0.02809 6.53945 -0.02809 6.53945 3.66832 6.53945 3.66832 7.21749 -0.02809 7.21749 3.66832 7.21749 3.66832 7.72055 3.66832 7.72055 -0.02809 7.72055 -0.02809 7.21749 0.02809 7.21749 0.02809 6.53945 0.07183 6.53945 0.07183 6.53945 0.07183 7.21749 0.02809 7.21749 -0.02809 -0.28007 -1.64902 -0.28007 -1.64902 -0.43780 -1.64902 -0.43780 -0.02809 -0.43780 -0.02809 -0.28007 7.20661 -0.43780 7.20661 -0.28007 1.64902 -0.28007 1.64902 -0.28007 1.64902 -0.43780 7.20661 -0.43780 -3.26994 -0.43780 -1.64902 -0.43780 -1.64902 -0.13159 -1.64902 -0.13159 -3.26994 -0.13159 -3.26994 -0.43780 -5.04211 0.28398 -5.04211 0.69956 -7.20661 0.69956 -7.20661 0.69956 -7.20661 0.28398 -5.04211 0.28398 -7.20661 0.28398 -7.20661 -0.43780 -5.04211 -0.43780 -5.04211 -0.43780 -5.04211 0.28398 -7.20661 0.28398 5.04211 0.28398 7.20661 0.28398 7.20661 0.69956 7.20661 0.69956 5.04211 0.69956 5.04211 0.28398 46.26610 -0.28007 46.26610 7.69868 40.44680 7.69868 40.44680 7.69868 40.44680 -0.28007 46.26610 -0.28007 -4.42884 -0.43780 -4.42884 7.69868 -28.83830 7.69868 -28.83830 7.69868 -28.83830 -0.28007 -4.42884 -0.43780 -46.26610 -0.43780 -40.44680 -0.43780 -40.44680 7.69868 -40.44680 7.69868 -46.26610 7.69868 -46.26610 -0.43780 -3.26994 -0.13159 -3.26994 0.28398 -5.04211 0.28398 -3.26994 -0.13159 -5.04211 0.28398 -5.04211 -0.43780 -3.26994 -0.43780 -3.26994 -0.13159 -5.04211 -0.43780 40.44680 -0.28007 7.20661 -0.28007 7.20661 -0.43780 46.26610 -0.28007 40.44680 -0.28007 7.20661 -0.43780 46.26610 -0.43780 46.26610 -0.28007 7.20661 -0.43780 46.26610 -0.43780 7.20661 -0.43780 12.65280 -0.43780 -4.42884 0.02809 -4.42884 0.07183 -28.83830 0.07183 -4.42884 0.02809 -28.83830 0.07183 -28.83830 0.02809 -4.42884 -3.66832 -4.42884 0.02809 -28.83830 0.02809 -4.42884 -3.66832 -28.83830 0.02809 -28.83830 -3.66832 0.02809 7.21749 -3.66832 7.72055 -3.66832 6.53945 40.44680 7.72055 -3.66832 7.72055 0.02809 7.21749 40.44680 7.69868 40.44680 7.72055 0.02809 7.21749 0.07183 7.21749 40.44680 7.69868 0.02809 7.21749 40.44680 -0.28007 40.44680 7.69868 0.07183 7.21749 0.02809 6.53945 0.02809 7.21749 -3.66832 6.53945 40.44680 -0.28007 0.07183 7.21749 0.07183 6.53945 0.07183 6.53945 0.02809 6.53945 0.02809 -0.28007 5.04211 0.69956 0.07183 6.53945 0.02809 -0.28007 7.20661 0.69956 0.07183 6.53945 5.04211 0.69956 40.44680 -0.28007 0.07183 6.53945 7.20661 0.69956 5.04211 0.28398 5.04211 0.69956 0.02809 -0.28007 40.44680 -0.28007 7.20661 0.69956 7.20661 0.28398 7.20661 0.28398 5.04211 0.28398 0.02809 -0.28007 40.44680 -0.28007 7.20661 0.28398 0.02809 -0.28007 40.44680 -0.28007 0.02809 -0.28007 1.64902 -0.28007 40.44680 -0.28007 1.64902 -0.28007 7.20661 -0.28007 -0.02809 7.72055 -40.44680 7.72055 -0.02809 7.21749 -0.02809 7.21749 -40.44680 7.72055 -40.44680 7.69868 -0.02809 7.21749 -40.44680 7.69868 -0.07183 7.21749 -0.07183 7.21749 -40.44680 7.69868 -40.44680 -0.43780 -0.07183 6.53945 -0.07183 7.21749 -40.44680 -0.43780 -0.02809 -0.43780 -0.02809 6.53945 -0.07183 6.53945 -0.02809 -0.43780 -0.07183 6.53945 -5.04211 0.69956 -5.04211 0.69956 -0.07183 6.53945 -7.20661 0.69956 -7.20661 0.69956 -0.07183 6.53945 -40.44680 -0.43780 -0.02809 -0.43780 -5.04211 0.69956 -3.26994 0.28398 -3.26994 0.28398 -5.04211 0.69956 -5.04211 0.28398 -7.20661 0.28398 -7.20661 0.69956 -40.44680 -0.43780 -0.02809 -0.43780 -3.26994 0.28398 -1.64902 -0.13159 -1.64902 -0.13159 -3.26994 0.28398 -3.26994 -0.13159 -7.20661 -0.43780 -7.20661 0.28398 -40.44680 -0.43780 -0.02809 -0.43780 -1.64902 -0.13159 -1.64902 -0.43780 -12.65280 -0.43780 -7.20661 -0.43780 -40.44680 -0.43780</float_array>
+					<technique_common>
+						<accessor count="213" source="#Tile_Mosaic_Multi-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Tile_Mosaic_Multi-Geometry-Vertex">
+					<input semantic="POSITION" source="#Tile_Mosaic_Multi-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Tile_Mosaic_Multi-Geometry-Normals"/>
+				</vertices>
+				<triangles count="71" material="Tile_Mosaic_Multi_jpg">
+					<input offset="0" semantic="VERTEX" source="#Tile_Mosaic_Multi-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Tile_Mosaic_Multi-Geometry-UV"/>
+					<p>19 0 20 1 21 2 21 3 22 4 19 5 39 6 17 7 14 8 14 9 38 10 39 11 17 12 39 13 40 14 40 15 18 16 17 17 17 18 14 19 15 20 15 21 16 22 17 23 23 24 24 25 41 26 41 27 42 28 23 29 43 30 25 31 24 32 24 33 41 34 43 35 47 36 12 37 11 38 11 39 10 40 47 41 8 42 7 43 6 44 6 45 5 46 8 47 5 48 4 49 48 50 48 51 8 52 5 53 27 54 26 55 29 56 29 57 28 58 27 59 46 60 49 61 33 62 33 63 32 64 46 65 50 66 51 67 49 68 49 69 46 70 50 71 50 72 2 73 1 74 1 75 51 76 50 77 10 78 9 79 8 80 10 81 8 82 48 83 47 84 10 85 48 86 32 87 25 88 43 89 46 90 32 91 43 92 45 93 46 94 43 95 45 96 43 97 44 98 14 99 15 100 21 101 14 102 21 103 22 104 38 105 14 106 22 107 38 108 22 109 36 110 19 111 35 112 36 113 34 114 35 115 19 116 33 117 34 118 19 119 20 120 33 121 19 122 32 123 33 124 20 125 37 126 19 127 36 128 32 129 20 130 21 131 21 132 22 133 23 134 28 135 21 136 23 137 29 138 21 139 28 140 32 141 21 142 29 143 27 144 28 145 23 146 32 147 29 148 26 149 26 150 27 151 23 152 32 153 26 154 23 155 32 156 23 157 24 158 32 159 24 160 31 161 18 162 0 163 17 164 17 165 0 166 1 167 17 168 1 169 16 170 16 171 1 172 2 173 15 174 16 175 2 176 13 177 14 178 15 179 13 180 15 181 7 182 7 183 15 184 6 185 6 186 15 187 2 188 13 189 7 190 9 191 9 192 7 193 8 194 5 195 6 196 2 197 13 198 9 199 11 200 11 201 9 202 10 203 4 204 5 205 2 206 13 207 11 208 12 209 3 210 4 211 2 212</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Color_008-Geometry" name="Color_008-Geometry">
+			<mesh>
+				<source id="Color_008-Geometry-Position">
+					<float_array count="12" id="Color_008-Geometry-Position-array">6.37161 -1.59228 2.92798 6.37161 -1.59228 2.56603 8.79096 -1.59228 2.56603 8.79096 -1.59228 2.92798</float_array>
+					<technique_common>
+						<accessor count="4" source="#Color_008-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Color_008-Geometry-Normals">
+					<float_array count="12" id="Color_008-Geometry-Normals-array">0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#Color_008-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Color_008-Geometry-UV">
+					<float_array count="12" id="Color_008-Geometry-UV-array">250.85100 115.27500 250.85100 101.02500 346.10101 101.02500 346.10101 101.02500 346.10101 115.27500 250.85100 115.27500</float_array>
+					<technique_common>
+						<accessor count="6" source="#Color_008-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Color_008-Geometry-Vertex">
+					<input semantic="POSITION" source="#Color_008-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Color_008-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="Metal_Seamed_jpg">
+					<input offset="0" semantic="VERTEX" source="#Color_008-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Color_008-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Welcome_MTR-Geometry" name="Welcome_MTR-Geometry">
+			<mesh>
+				<source id="Welcome_MTR-Geometry-Position">
+					<float_array count="12" id="Welcome_MTR-Geometry-Position-array">6.59829 -1.60498 2.51922 8.56954 -1.60498 2.51922 8.56954 -1.60498 2.92798 6.59829 -1.60498 2.92798</float_array>
+					<technique_common>
+						<accessor count="4" source="#Welcome_MTR-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Welcome_MTR-Geometry-Normals">
+					<float_array count="12" id="Welcome_MTR-Geometry-Normals-array">0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#Welcome_MTR-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Welcome_MTR-Geometry-UV">
+					<float_array count="12" id="Welcome_MTR-Geometry-UV-array">0.00000 0.00000 1.00000 0.00000 1.00000 1.00000 1.00000 1.00000 0.00000 1.00000 0.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="6" source="#Welcome_MTR-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Welcome_MTR-Geometry-Vertex">
+					<input semantic="POSITION" source="#Welcome_MTR-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Welcome_MTR-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="Welcome_MTR_png">
+					<input offset="0" semantic="VERTEX" source="#Welcome_MTR-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Welcome_MTR-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Subway-Geometry" name="Subway-Geometry">
+			<mesh>
+				<source id="Subway-Geometry-Position">
+					<float_array count="12" id="Subway-Geometry-Position-array">2.64180 -1.67716 2.98984 13.18490 -1.67716 2.98984 13.18490 -1.67716 3.51975 2.64180 -1.67716 3.51975</float_array>
+					<technique_common>
+						<accessor count="4" source="#Subway-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Subway-Geometry-Normals">
+					<float_array count="12" id="Subway-Geometry-Normals-array">0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#Subway-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Subway-Geometry-UV">
+					<float_array count="12" id="Subway-Geometry-UV-array">0.00000 0.00000 1.00000 0.00000 1.00000 1.00000 1.00000 1.00000 0.00000 1.00000 0.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="6" source="#Subway-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Subway-Geometry-Vertex">
+					<input semantic="POSITION" source="#Subway-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Subway-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="Subway_png">
+					<input offset="0" semantic="VERTEX" source="#Subway-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Subway-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Metal_Rough-Geometry" name="Metal_Rough-Geometry">
+			<mesh>
+				<source id="Metal_Rough-Geometry-Position">
+					<float_array count="36" id="Metal_Rough-Geometry-Position-array">8.82521 -1.60498 2.47038 8.82521 -1.42083 2.47038 6.32966 -1.42083 2.47038 6.32966 -1.60498 2.47038 8.82521 -1.60498 3.00378 8.82521 -1.42083 3.00378 6.32966 -1.42083 3.00378 6.32966 -1.60498 3.00378 6.37161 -1.60498 2.56603 8.79096 -1.60498 2.56603 8.79096 -1.60498 2.92798 6.37161 -1.60498 2.92798</float_array>
+					<technique_common>
+						<accessor count="12" source="#Metal_Rough-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Metal_Rough-Geometry-Normals">
+					<float_array count="36" id="Metal_Rough-Geometry-Normals-array">-0.30149 0.90451 0.30149 -0.57735 0.57735 0.57735 0.57735 0.57735 0.57735 0.40825 0.81649 0.40825 -0.31620 0.94867 0.00000 -0.70708 0.70708 0.00000 0.70708 0.70708 0.00000 0.24253 0.97012 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="12" source="#Metal_Rough-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Metal_Rough-Geometry-UV">
+					<float_array count="96" id="Metal_Rough-Geometry-UV-array">43.43110 -7.89855 43.43110 -6.99230 31.14990 -6.99230 31.14990 -6.99230 31.14990 -7.89855 43.43110 -7.89855 6.99230 12.15740 7.89855 12.15740 7.89855 14.78240 7.89855 14.78240 6.99230 14.78240 6.99230 12.15740 -6.99230 14.78240 -7.89855 14.78240 -7.89855 12.15740 -7.89855 12.15740 -6.99230 12.15740 -6.99230 14.78240 -31.35640 12.62810 -31.14990 12.15740 -31.14990 14.78240 -31.35640 12.62810 -43.43110 12.15740 -31.14990 12.15740 -43.26260 12.62810 -43.43110 12.15740 -31.35640 12.62810 -43.43110 12.15740 -43.26260 12.62810 -43.43110 14.78240 -43.43110 14.78240 -43.26260 12.62810 -43.26260 14.40940 -43.43110 14.78240 -43.26260 14.40940 -31.14990 14.78240 -31.35640 14.40940 -31.14990 14.78240 -43.26260 14.40940 -31.35640 12.62810 -31.14990 14.78240 -31.35640 14.40940 -31.14990 14.78240 -43.43110 14.78240 -43.43110 12.15740 -43.43110 12.15740 -31.14990 12.15740 -31.14990 14.78240</float_array>
+					<technique_common>
+						<accessor count="48" source="#Metal_Rough-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Metal_Rough-Geometry-Vertex">
+					<input semantic="POSITION" source="#Metal_Rough-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Metal_Rough-Geometry-Normals"/>
+				</vertices>
+				<triangles count="16" material="Metal_Rough_jpg">
+					<input offset="0" semantic="VERTEX" source="#Metal_Rough-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Metal_Rough-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 1 6 0 7 4 8 4 9 5 10 1 11 6 12 7 13 3 14 3 15 2 16 6 17 8 18 3 19 7 20 8 21 0 22 3 23 9 24 0 25 8 26 0 27 9 28 4 29 4 30 9 31 10 32 4 33 10 34 7 35 11 36 7 37 10 38 8 39 7 40 11 41 6 42 5 43 1 44 1 45 2 46 6 47</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="_Color_000_1-Geometry" name="_Color_000_1-Geometry">
+			<mesh>
+				<source id="_Color_000_1-Geometry-Position">
+					<float_array count="24" id="_Color_000_1-Geometry-Position-array">2.64180 -2.19716 3.48148 2.09180 -2.19716 3.03148 2.64180 -2.19716 3.03148 2.09180 -2.19716 3.48148 2.09180 -1.67716 3.48148 2.09180 -1.67716 3.03148 2.64180 -1.67716 3.03148 2.64180 -1.67716 3.48148</float_array>
+					<technique_common>
+						<accessor count="8" source="#_Color_000_1-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Color_000_1-Geometry-Normals">
+					<float_array count="24" id="_Color_000_1-Geometry-Normals-array">0.70708 -0.70708 0.00000 -0.70708 -0.70708 0.00000 0.70708 -0.70708 0.00000 -0.70708 -0.70708 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="8" source="#_Color_000_1-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Color_000_1-Geometry-UV">
+					<float_array count="36" id="_Color_000_1-Geometry-UV-array">104.00800 137.06599 82.35420 119.35000 104.00800 119.35000 82.35420 119.35000 104.00800 137.06599 82.35420 137.06599 66.02980 137.06599 86.50230 119.35000 86.50230 137.06599 86.50230 119.35000 66.02980 137.06599 66.02980 119.35000 -66.02980 119.35000 -86.50230 137.06599 -86.50230 119.35000 -86.50230 137.06599 -66.02980 119.35000 -66.02980 137.06599</float_array>
+					<technique_common>
+						<accessor count="18" source="#_Color_000_1-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="_Color_000_1-Geometry-Vertex">
+					<input semantic="POSITION" source="#_Color_000_1-Geometry-Position"/>
+					<input semantic="NORMAL" source="#_Color_000_1-Geometry-Normals"/>
+				</vertices>
+				<triangles count="6" material="Metal_Seamed2_jpg">
+					<input offset="0" semantic="VERTEX" source="#_Color_000_1-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#_Color_000_1-Geometry-UV"/>
+					<p>0 0 1 1 2 2 1 3 0 4 3 5 4 6 1 7 3 8 1 9 4 10 5 11 6 12 0 13 2 14 0 15 6 16 7 17</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="_Tile_Mosaic_Multi_1-Geometry" name="_Tile_Mosaic_Multi_1-Geometry">
+			<mesh>
+				<source id="_Tile_Mosaic_Multi_1-Geometry-Position">
+					<float_array count="123" id="_Tile_Mosaic_Multi_1-Geometry-Position-array">2.02486 0.75393 -0.20016 2.02486 0.01284 -0.20016 13.18490 0.01284 -0.20016 13.18490 0.75393 -0.20016 13.18490 -1.67716 3.52984 2.02486 0.01284 3.52984 2.02486 -1.67716 3.52984 11.53660 -0.93761 3.52984 12.26660 -0.93761 3.52984 12.26660 -0.20761 3.52984 13.18490 18.49230 3.52984 11.53660 -0.20761 3.52984 2.02486 18.49230 3.52984 13.18490 0.75393 -0.12805 13.18490 0.75393 -0.06016 2.02486 0.75393 -0.06016 13.18490 5.78486 -0.20016 13.18490 3.29486 -0.20016 2.02486 1.49502 -0.20016 2.02486 2.30525 -0.20016 2.02486 3.29486 -0.20016 2.02486 5.78486 -0.20016 13.18490 1.49502 -0.06016 2.02486 1.49502 -0.06016 2.02486 1.49502 0.12984 13.18490 1.49502 0.12984 13.18490 2.30525 0.12984 2.02486 2.30525 0.12984 13.18490 2.30525 0.31984 2.02486 2.30525 0.31984 2.02486 3.29486 0.31984 13.18490 3.29486 0.31984 13.18490 4.53986 0.31984 2.02486 4.53986 0.31984 13.18490 21.15280 -0.20016 2.02486 21.15280 -0.20016 2.02486 18.49230 -0.20016 2.02486 18.49230 3.51984 13.18490 18.49230 3.51984 13.18490 21.15280 3.51984 2.02486 21.15280 3.51984</float_array>
+					<technique_common>
+						<accessor count="41" source="#_Tile_Mosaic_Multi_1-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Tile_Mosaic_Multi_1-Geometry-Normals">
+					<float_array count="123" id="_Tile_Mosaic_Multi_1-Geometry-Normals-array">0.00000 -1.00000 0.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 -0.44719 -0.89441 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 -1.00000 0.00000 0.00000 -0.89441 0.44719 0.00000 -0.70708 0.70708 0.91565 0.40172 -0.01389 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.33018 0.94333 -0.03262 0.00000 -0.70708 0.70708 0.00000 -0.70708 0.70708 0.00000 -0.70708 0.70708 0.00000 -0.70708 0.70708 0.00000 -0.70708 0.70708 0.00000 -0.70708 0.70708 0.00000 -0.70708 0.70708 0.00000 -0.44719 0.89441 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000</float_array>
+					<technique_common>
+						<accessor count="41" source="#_Tile_Mosaic_Multi_1-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Tile_Mosaic_Multi_1-Geometry-UV">
+					<float_array count="222" id="_Tile_Mosaic_Multi_1-Geometry-UV-array">4.42884 1.64902 4.42884 0.02809 28.83830 0.02809 28.83830 0.02809 28.83830 1.64902 4.42884 1.64902 28.83830 -3.66832 4.42884 0.02809 4.42884 -3.66832 4.42884 0.02809 28.83830 -3.66832 25.23320 -2.05077 25.23320 -2.05077 28.83830 -3.66832 26.82980 -2.05077 26.82980 -2.05077 28.83830 -3.66832 26.82980 -0.45409 28.83830 40.44680 26.82980 -0.45409 28.83830 -3.66832 28.83830 40.44680 25.23320 -0.45409 26.82980 -0.45409 4.42884 40.44680 25.23320 -0.45409 28.83830 40.44680 25.23320 -0.45409 4.42884 40.44680 25.23320 -2.05077 4.42884 0.02809 25.23320 -2.05077 4.42884 40.44680 28.83830 1.64902 28.83830 3.26994 4.42884 3.26994 4.42884 3.26994 4.42884 1.64902 28.83830 1.64902 4.42884 0.28398 4.42884 -0.13159 28.83830 -0.13159 28.83830 -0.13159 28.83830 0.28398 4.42884 0.28398 28.83830 5.04211 4.42884 5.04211 4.42884 3.26994 4.42884 3.26994 28.83830 3.26994 28.83830 5.04211 28.83830 0.69956 4.42884 0.69956 4.42884 0.28398 4.42884 0.28398 28.83830 0.28398 28.83830 0.69956 4.42884 40.44680 28.83830 40.44680 28.83830 46.26610 28.83830 46.26610 4.42884 46.26610 4.42884 40.44680 28.83830 46.26610 4.42884 46.26610 4.42884 40.44680 28.83830 12.65280 28.83830 46.26610 4.42884 40.44680 28.83830 12.65280 4.42884 40.44680 4.42884 12.65280 28.83830 9.92971 4.42884 9.92971 4.42884 7.20661 28.83830 7.20661 28.83830 9.92971 4.42884 7.20661 28.83830 7.20661 4.42884 7.20661 4.42884 5.04211 28.83830 5.04211 28.83830 7.20661 4.42884 5.04211 -4.42884 7.20661 -4.42884 12.65280 -28.83830 12.65280 -4.42884 7.20661 -28.83830 12.65280 -28.83830 7.20661 -4.42884 5.04211 -4.42884 7.20661 -28.83830 7.20661 -4.42884 5.04211 -28.83830 7.20661 -28.83830 1.64902 -4.42884 3.26994 -4.42884 5.04211 -28.83830 1.64902 -4.42884 1.64902 -4.42884 3.26994 -28.83830 1.64902 4.42884 -0.13159 4.42884 -0.43780 28.83830 -0.13159 28.83830 -0.13159 4.42884 -0.43780 28.83830 -0.28007 28.83830 -0.28007 4.42884 -0.43780 28.83830 -0.43780</float_array>
+					<technique_common>
+						<accessor count="111" source="#_Tile_Mosaic_Multi_1-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="_Tile_Mosaic_Multi_1-Geometry-Vertex">
+					<input semantic="POSITION" source="#_Tile_Mosaic_Multi_1-Geometry-Position"/>
+					<input semantic="NORMAL" source="#_Tile_Mosaic_Multi_1-Geometry-Normals"/>
+				</vertices>
+				<triangles count="37" material="_Tile_Mosaic_Multi_1_">
+					<input offset="0" semantic="VERTEX" source="#_Tile_Mosaic_Multi_1-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#_Tile_Mosaic_Multi_1-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 5 9 4 10 7 11 7 12 4 13 8 14 8 15 4 16 9 17 10 18 9 19 4 20 10 21 11 22 9 23 12 24 11 25 10 26 11 27 12 28 7 29 5 30 7 31 12 32 14 33 22 34 23 35 23 36 15 37 14 38 24 39 23 40 22 41 22 42 25 43 24 44 26 45 27 46 24 47 24 48 25 49 26 50 28 51 29 52 27 53 27 54 26 55 28 56 37 57 38 58 39 59 39 60 40 61 37 62 34 63 35 64 36 65 16 66 34 67 36 68 16 69 36 70 21 71 32 72 33 73 30 74 31 75 32 76 30 77 31 78 30 79 29 80 28 81 31 82 29 83 20 84 21 85 16 86 20 87 16 88 17 89 19 90 20 91 17 92 19 93 17 94 3 95 18 96 19 97 3 98 0 99 18 100 3 101 15 102 0 103 14 104 14 105 0 106 13 107 13 108 0 109 3 110</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="FrontColor-Geometry" name="FrontColor-Geometry">
+			<mesh>
+				<source id="FrontColor-Geometry-Position">
+					<float_array count="87" id="FrontColor-Geometry-Position-array">13.18490 18.49230 3.52984 13.18490 18.49230 3.51984 2.02486 18.49230 3.51984 2.02486 18.49230 3.52984 13.18490 0.03284 2.98984 2.02486 0.03284 2.98984 2.02486 0.03284 3.29984 13.18490 0.03284 3.29984 13.18490 4.53986 0.31984 2.02486 4.53986 0.31984 2.02486 4.53986 0.18984 13.18490 4.53986 0.18984 13.18490 21.15280 -0.20016 2.02486 21.15280 -0.20016 13.18490 21.15280 -0.12805 13.18490 18.49230 -0.12805 2.02486 18.49230 -0.20016 12.34660 -0.16761 3.57984 12.34660 -0.97846 3.57984 11.45660 -0.97846 3.57984 11.45660 -0.16761 3.57984 12.34660 -0.16761 4.33984 12.34660 -0.97846 4.33984 11.45660 -0.16761 4.33984 11.45660 -0.97846 4.33984 6.32966 -1.42083 3.00378 6.32966 -1.60498 3.00378 8.82521 -1.60498 3.00378 8.82521 -1.42083 3.00378</float_array>
+					<technique_common>
+						<accessor count="29" source="#FrontColor-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="FrontColor-Geometry-Normals">
+					<float_array count="87" id="FrontColor-Geometry-Normals-array">0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 1.00000 0.00000 0.00455 0.70708 -0.70708 0.00455 0.70708 -0.70708 0.00644 0.00000 -0.99997 0.00644 0.00000 -0.99997 0.40825 0.81649 -0.40825 0.57735 -0.57735 -0.57735 -0.66665 -0.66665 -0.33332 -0.57735 0.57735 -0.57735 0.70708 0.70708 0.00000 0.44719 -0.89441 0.00000 -0.70708 0.70708 0.00000 -0.70708 -0.70708 0.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000</float_array>
+					<technique_common>
+						<accessor count="29" source="#FrontColor-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="FrontColor-Geometry-UV">
+					<float_array count="126" id="FrontColor-Geometry-UV-array">-519.08899 138.97000 -519.08899 138.57600 -79.71910 138.57600 -79.71910 138.57600 -79.71910 138.97000 -519.08899 138.97000 -519.08899 117.71000 -79.71910 117.71000 -79.71910 129.91499 -79.71910 129.91499 -519.08899 129.91499 -519.08899 117.71000 519.08899 12.59200 79.71910 12.59200 79.71910 7.47391 79.71910 7.47391 519.08899 7.47391 519.08899 12.59200 -519.08899 -7.88042 -79.71910 -7.88042 -519.08899 -5.04134 832.78900 519.04602 728.04199 519.04602 728.04199 79.66650 728.04199 79.66650 832.78900 79.66650 832.78900 519.04602 -486.08701 -6.59886 -486.08701 -38.52200 -451.04700 -38.52200 -451.04700 -38.52200 -451.04700 -6.59886 -486.08701 -6.59886 -38.52200 140.93800 -6.59886 140.93800 -6.59886 170.86000 -6.59886 170.86000 -38.52200 170.86000 -38.52200 140.93800 -486.08701 140.93800 -451.04700 170.86000 -486.08701 170.86000 -451.04700 170.86000 -486.08701 140.93800 -451.04700 140.93800 38.52200 140.93800 6.59886 170.86000 6.59886 140.93800 6.59886 170.86000 38.52200 140.93800 38.52200 170.86000 451.04700 140.93800 486.08701 170.86000 451.04700 170.86000 486.08701 170.86000 451.04700 140.93800 486.08701 140.93800 249.19901 -55.93840 249.19901 -63.18840 347.44901 -63.18840 347.44901 -63.18840 347.44901 -55.93840 249.19901 -55.93840</float_array>
+					<technique_common>
+						<accessor count="63" source="#FrontColor-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="FrontColor-Geometry-Vertex">
+					<input semantic="POSITION" source="#FrontColor-Geometry-Position"/>
+					<input semantic="NORMAL" source="#FrontColor-Geometry-Normals"/>
+				</vertices>
+				<triangles count="21" material="Metal_Seamed2_jpg">
+					<input offset="0" semantic="VERTEX" source="#FrontColor-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#FrontColor-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 6 9 7 10 4 11 8 12 9 13 10 14 10 15 11 16 8 17 12 18 13 19 14 20 14 21 15 22 16 23 16 24 13 25 14 26 17 27 18 28 19 29 19 30 20 31 17 32 18 33 17 34 21 35 21 36 22 37 18 38 17 39 23 40 21 41 23 42 17 43 20 44 19 45 23 46 20 47 23 48 19 49 24 50 19 51 22 52 24 53 22 54 19 55 18 56 25 57 26 58 27 59 27 60 28 61 25 62</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="MTR_Logo-Geometry" name="MTR_Logo-Geometry">
+			<mesh>
+				<source id="MTR_Logo-Geometry-Position">
+					<float_array count="84" id="MTR_Logo-Geometry-Position-array">11.50370 -0.97846 3.59935 12.37550 -0.97846 3.59935 12.37550 -0.97846 4.30858 11.50370 -0.97846 4.30858 11.45660 -0.16761 3.57984 11.45660 -1.03707 3.57984 11.45660 -1.03707 4.28719 11.45660 -0.16761 4.28719 12.29850 -0.16761 3.60660 11.42120 -0.16761 3.60660 11.42120 -0.16761 4.32034 12.29850 -0.16761 4.32034 12.37550 -0.97846 3.59935 12.37550 -0.10049 3.59935 12.37550 -0.10049 4.31363 12.37550 -0.97846 4.31363 2.64180 -2.17716 3.03148 2.64180 -1.65716 3.03148 2.64180 -1.65716 3.45453 2.64180 -2.17716 3.45453 2.09180 -2.19716 3.03148 2.64180 -2.19716 3.03148 2.64180 -2.19716 3.47894 2.09180 -2.19716 3.47894 2.09180 -1.67716 3.03148 2.09180 -2.20664 3.03148 2.09180 -2.20664 3.46224 2.09180 -1.67716 3.46224</float_array>
+					<technique_common>
+						<accessor count="28" source="#MTR_Logo-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="MTR_Logo-Geometry-Normals">
+					<float_array count="84" id="MTR_Logo-Geometry-Normals-array">0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="28" source="#MTR_Logo-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="MTR_Logo-Geometry-UV">
+					<float_array count="84" id="MTR_Logo-Geometry-UV-array">0.00000 0.00000 1.00000 0.00000 1.00000 1.00000 1.00000 1.00000 0.00000 1.00000 0.00000 0.00000 0.00000 0.00000 1.00000 0.00000 1.00000 1.00000 1.00000 1.00000 0.00000 1.00000 0.00000 0.00000 0.00000 0.00000 1.00000 0.00000 1.00000 1.00000 1.00000 1.00000 0.00000 1.00000 0.00000 0.00000 0.00000 0.00000 1.00000 0.00000 1.00000 1.00000 1.00000 1.00000 0.00000 1.00000 0.00000 0.00000 0.00000 0.00000 1.00000 0.00000 1.00000 1.00000 1.00000 1.00000 0.00000 1.00000 0.00000 0.00000 0.00000 0.00000 1.00000 0.00000 1.00000 1.00000 1.00000 1.00000 0.00000 1.00000 0.00000 0.00000 0.00000 0.00000 1.00000 0.00000 1.00000 1.00000 1.00000 1.00000 0.00000 1.00000 0.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="42" source="#MTR_Logo-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="MTR_Logo-Geometry-Vertex">
+					<input semantic="POSITION" source="#MTR_Logo-Geometry-Position"/>
+					<input semantic="NORMAL" source="#MTR_Logo-Geometry-Normals"/>
+				</vertices>
+				<triangles count="14" material="MTR_Logo_png">
+					<input offset="0" semantic="VERTEX" source="#MTR_Logo-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#MTR_Logo-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 6 9 7 10 4 11 8 12 9 13 10 14 10 15 11 16 8 17 12 18 13 19 14 20 14 21 15 22 12 23 16 24 17 25 18 26 18 27 19 28 16 29 20 30 21 31 22 32 22 33 23 34 20 35 24 36 25 37 26 38 26 39 27 40 24 41</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Tile_Various_Tan-Geometry" name="Tile_Various_Tan-Geometry">
+			<mesh>
+				<source id="Tile_Various_Tan-Geometry-Position">
+					<float_array count="12" id="Tile_Various_Tan-Geometry-Position-array">13.18490 18.49230 -0.12805 13.18490 18.49230 3.51984 2.02486 18.49230 3.51984 2.02486 18.49230 -0.20016</float_array>
+					<technique_common>
+						<accessor count="4" source="#Tile_Various_Tan-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Tile_Various_Tan-Geometry-Normals">
+					<float_array count="12" id="Tile_Various_Tan-Geometry-Normals-array">0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#Tile_Various_Tan-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Tile_Various_Tan-Geometry-UV">
+					<float_array count="12" id="Tile_Various_Tan-Geometry-UV-array">10.81440 -0.10503 10.81440 2.88701 1.66081 2.88701 1.66081 2.88701 1.66081 -0.16418 10.81440 -0.10503</float_array>
+					<technique_common>
+						<accessor count="6" source="#Tile_Various_Tan-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Tile_Various_Tan-Geometry-Vertex">
+					<input semantic="POSITION" source="#Tile_Various_Tan-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Tile_Various_Tan-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="Tile_Various_Tan_jpg">
+					<input offset="0" semantic="VERTEX" source="#Tile_Various_Tan-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Tile_Various_Tan-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Color_I19-Geometry" name="Color_I19-Geometry">
+			<mesh>
+				<source id="Color_I19-Geometry-Position">
+					<float_array count="12" id="Color_I19-Geometry-Position-array">2.09180 -1.67716 3.03148 2.64180 -1.67716 3.03148 2.64180 -2.19716 3.03148 2.09180 -2.19716 3.03148</float_array>
+					<technique_common>
+						<accessor count="4" source="#Color_I19-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Color_I19-Geometry-Normals">
+					<float_array count="12" id="Color_I19-Geometry-Normals-array">0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#Color_I19-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Color_I19-Geometry-UV">
+					<float_array count="12" id="Color_I19-Geometry-UV-array">-82.35420 -66.02980 -104.00800 -66.02980 -104.00800 -86.50230 -104.00800 -86.50230 -82.35420 -86.50230 -82.35420 -66.02980</float_array>
+					<technique_common>
+						<accessor count="6" source="#Color_I19-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Color_I19-Geometry-Vertex">
+					<input semantic="POSITION" source="#Color_I19-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Color_I19-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="Metal_Seamed2_jpg">
+					<input offset="0" semantic="VERTEX" source="#Color_I19-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Color_I19-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_images>
+		<image id="Metal_Seamed_jpg-image" name="Metal_Seamed_jpg-image">
+			<init_from>../images/mtr/Metal_Seamed.jpg</init_from>
+		</image>
+		<image id="Tile_Mosaic_Multi_jpg-image" name="Tile_Mosaic_Multi_jpg-image">
+			<init_from>../images/mtr/Tile_Mosaic_Multi.jpg</init_from>
+		</image>
+		<image id="Metal_Seamed2_jpg-image" name="Metal_Seamed2_jpg-image">
+			<init_from>../images/mtr/Metal_Seamed2.jpg</init_from>
+		</image>
+		<image id="Welcome_MTR_png-image" name="Welcome_MTR_png-image">
+			<init_from>../images/mtr/Welcome_MTR.jpg</init_from>
+		</image>
+		<image id="Subway_png-image" name="Subway_png-image">
+			<init_from>../images/mtr/Subway.jpg</init_from>
+		</image>
+		<image id="Metal_Rough_jpg-image" name="Metal_Rough_jpg-image">
+			<init_from>../images/mtr/Metal_Rough.jpg</init_from>
+		</image>
+		<image id="Metal_Seamed2_jpg-image" name="Metal_Seamed2_jpg-image">
+			<init_from>../images/mtr/Metal_Seamed2.jpg</init_from>
+		</image>
+		<image id="_Tile_Mosaic_Multi_1_-image" name="_Tile_Mosaic_Multi_1_-image">
+			<init_from>../images/mtr/_Tile_Mosaic_Multi_1.jpg</init_from>
+		</image>
+		<image id="Metal_Seamed2_jpg-image" name="Metal_Seamed2_jpg-image">
+			<init_from>../images/mtr/Metal_Seamed2.jpg</init_from>
+		</image>
+		<image id="MTR_Logo_png-image" name="MTR_Logo_png-image">
+			<init_from>../images/mtr/MTR_Logo.jpg</init_from>
+		</image>
+		<image id="Tile_Various_Tan_jpg-image" name="Tile_Various_Tan_jpg-image">
+			<init_from>../images/mtr/Tile_Various_Tan.jpg</init_from>
+		</image>
+		<image id="Metal_Seamed2_jpg-image" name="Metal_Seamed2_jpg-image">
+			<init_from>../images/mtr/Metal_Seamed2.jpg</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="Metal_Seamed_jpg" name="Metal_Seamed_jpg">
+			<instance_effect url="#Metal_Seamed_jpg-fx"/>
+		</material>
+		<material id="Tile_Mosaic_Multi_jpg" name="Tile_Mosaic_Multi_jpg">
+			<instance_effect url="#Tile_Mosaic_Multi_jpg-fx"/>
+		</material>
+		<material id="Welcome_MTR_png" name="Welcome_MTR_png">
+			<instance_effect url="#Welcome_MTR_png-fx"/>
+		</material>
+		<material id="Subway_png" name="Subway_png">
+			<instance_effect url="#Subway_png-fx"/>
+		</material>
+		<material id="Metal_Rough_jpg" name="Metal_Rough_jpg">
+			<instance_effect url="#Metal_Rough_jpg-fx"/>
+		</material>
+		<material id="_Tile_Mosaic_Multi_1_" name="_Tile_Mosaic_Multi_1_">
+			<instance_effect url="#_Tile_Mosaic_Multi_1_-fx"/>
+		</material>
+		<material id="MTR_Logo_png" name="MTR_Logo_png">
+			<instance_effect url="#MTR_Logo_png-fx"/>
+		</material>
+		<material id="Tile_Various_Tan_jpg" name="Tile_Various_Tan_jpg">
+			<instance_effect url="#Tile_Various_Tan_jpg-fx"/>
+		</material>
+		<material id="Metal_Seamed2_jpg" name="Metal_Seamed2_jpg">
+			<instance_effect url="#Metal_Seamed2_jpg-fx"/>
+		</material>
+
+	</library_materials>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node layer="L1" id="Metal_Seamed" name="Metal_Seamed">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Metal_Seamed-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Metal_Seamed_jpg" target="#Metal_Seamed_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Tile_Mosaic_Multi" name="Tile_Mosaic_Multi">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Tile_Mosaic_Multi-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Tile_Mosaic_Multi_jpg" target="#Tile_Mosaic_Multi_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Color_008" name="Color_008">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Color_008-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Metal_Seamed2_jpg" target="#Metal_Seamed2_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Welcome_MTR" name="Welcome_MTR">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Welcome_MTR-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Welcome_MTR_png" target="#Welcome_MTR_png"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Subway" name="Subway">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Subway-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Subway_png" target="#Subway_png"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Metal_Rough" name="Metal_Rough">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Metal_Rough-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Metal_Rough_jpg" target="#Metal_Rough_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="_Color_000_1" name="_Color_000_1">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#_Color_000_1-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Metal_Seamed2_jpg" target="#Metal_Seamed2_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="_Tile_Mosaic_Multi_1" name="_Tile_Mosaic_Multi_1">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#_Tile_Mosaic_Multi_1-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_Tile_Mosaic_Multi_1_" target="#_Tile_Mosaic_Multi_1_"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="FrontColor" name="FrontColor">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#FrontColor-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Metal_Seamed2_jpg" target="#Metal_Seamed2_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="MTR_Logo" name="MTR_Logo">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#MTR_Logo-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="MTR_Logo_png" target="#MTR_Logo_png"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Tile_Various_Tan" name="Tile_Various_Tan">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Tile_Various_Tan-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Tile_Various_Tan_jpg" target="#Tile_Various_Tan_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Color_I19" name="Color_I19">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Color_I19-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Metal_Seamed2_jpg" target="#Metal_Seamed2_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

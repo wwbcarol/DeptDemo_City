@@ -1,9 +1,45 @@
-﻿Build started 2013/7/13 17:07:19.
+﻿Build started 2013/7/14 16:23:16.
      1>Project "F:\Dep.Demo\repos\City\City\City.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\City.unsuccessfulbuild" because "AlwaysCreate" was specified.
        ClCompile:
-         All outputs are up-to-date.
+         d:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IF:\Dep.Demo\repos\City\lib/include/VTK /IF:\Dep.Demo\repos\City\lib/include/rapidXML /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt City.cpp
+         City.cpp
+     1>City.cpp(94): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(108): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(215): warning C4101: 'comma' : unreferenced local variable
+     1>City.cpp(226): warning C4101: 'comma' : unreferenced local variable
+     1>City.cpp(424): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(447): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(564): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(850): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(856): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1166): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1179): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1194): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1204): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1220): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1226): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1241): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1249): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1262): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1278): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1290): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1307): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1323): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1326): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1351): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1356): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1367): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1371): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1384): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1388): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1393): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1398): warning C4018: '<' : signed/unsigned mismatch
+     1>City.cpp(1403): warning C4018: '<' : signed/unsigned mismatch
+     1>F:\Dep.Demo\repos\City\lib\include\rapidXML\rapidxml_utils.hpp(40): warning C4244: 'initializing' : conversion from 'std::streamoff' to 'size_t', possible loss of data
+                 F:\Dep.Demo\repos\City\lib\include\rapidXML\rapidxml_utils.hpp(28) : while compiling class template member function 'rapidxml::file<>::file(const char *)'
+                 City.cpp(285) : see reference to class template instantiation 'rapidxml::file<>' being compiled
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
@@ -23,4 +59,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.39
+Time Elapsed 00:00:04.25

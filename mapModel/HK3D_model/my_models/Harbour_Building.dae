@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:248 - Illusoft Collada Exporter v:0.3.108</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file://C://</source_data>
+		</contributor>
+		<created>2009-01-22T16:37:48.921000</created>
+		<modified>2009-01-22T16:37:48.921000</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="MDHQ_jpg-fx" name="MDHQ_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="MDHQ_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="grey_jpg-fx" name="grey_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="grey_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="MDHQ-Geometry" name="MDHQ-Geometry">
+			<mesh>
+				<source id="MDHQ-Geometry-Position">
+					<float_array count="24" id="MDHQ-Geometry-Position-array">-37.47360 -3.06896 0.00000 17.36520 -39.36600 0.00000 17.36520 -39.36600 84.64000 -37.47360 -3.06896 84.64000 29.86200 -20.48550 0.00000 -24.97690 15.81160 0.00000 -24.97690 15.81160 84.64000 29.86200 -20.48550 84.64000</float_array>
+					<technique_common>
+						<accessor count="8" source="#MDHQ-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="MDHQ-Geometry-Normals">
+					<float_array count="24" id="MDHQ-Geometry-Normals-array">-0.55193 -0.83386 0.00000 -0.55193 -0.83386 0.00000 -0.55193 -0.83386 0.00000 -0.55193 -0.83386 0.00000 0.55193 0.83386 0.00000 0.55193 0.83386 0.00000 0.55193 0.83386 0.00000 0.55193 0.83386 0.00000</float_array>
+					<technique_common>
+						<accessor count="8" source="#MDHQ-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="MDHQ-Geometry-UV">
+					<float_array count="24" id="MDHQ-Geometry-UV-array">-1.00000 0.00000 0.00000 0.00000 0.00000 0.99111 0.00000 0.99111 -1.00000 0.99111 -1.00000 0.00000 0.00000 0.00000 1.00866 0.00000 1.00866 0.99969 1.00866 0.99969 0.00000 0.99969 0.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="12" source="#MDHQ-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="MDHQ-Geometry-Vertex">
+					<input semantic="POSITION" source="#MDHQ-Geometry-Position"/>
+					<input semantic="NORMAL" source="#MDHQ-Geometry-Normals"/>
+				</vertices>
+				<triangles count="4" material="MDHQ_jpg">
+					<input offset="0" semantic="VERTEX" source="#MDHQ-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#MDHQ-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 6 9 7 10 4 11</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Material2-Geometry" name="Material2-Geometry">
+			<mesh>
+				<source id="Material2-Geometry-Position">
+					<float_array count="24" id="Material2-Geometry-Position-array">-24.97690 15.81160 0.00000 -37.47360 -3.06896 0.00000 -37.47360 -3.06896 84.64000 -24.97690 15.81160 84.64000 17.36520 -39.36600 0.00000 29.86200 -20.48550 0.00000 29.86200 -20.48550 84.64000 17.36520 -39.36600 84.64000</float_array>
+					<technique_common>
+						<accessor count="8" source="#Material2-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Material2-Geometry-Normals">
+					<float_array count="24" id="Material2-Geometry-Normals-array">-0.83386 0.55193 0.00000 -0.83386 0.55193 0.00000 -0.58962 0.39027 0.70708 -0.58962 0.39027 0.70708 0.83386 -0.55193 0.00000 0.83386 -0.55193 0.00000 0.58962 -0.39027 0.70708 0.58962 -0.39027 0.70708</float_array>
+					<technique_common>
+						<accessor count="8" source="#Material2-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Material2-Geometry-UV">
+					<float_array count="36" id="Material2-Geometry-UV-array">23.64680 0.00000 915.04901 0.00000 915.04901 3332.28003 915.04901 3332.28003 23.64680 3332.28003 23.64680 0.00000 -915.04901 0.00000 -23.64680 0.00000 -23.64680 3332.28003 -23.64680 3332.28003 -915.04901 3332.28003 -915.04901 0.00000 -983.34198 622.50299 -1475.33997 -120.82500 683.66998 -1549.83997 683.66998 -1549.83997 1175.67004 -806.51501 -983.34198 622.50299</float_array>
+					<technique_common>
+						<accessor count="18" source="#Material2-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Material2-Geometry-Vertex">
+					<input semantic="POSITION" source="#Material2-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Material2-Geometry-Normals"/>
+				</vertices>
+				<triangles count="6" material="grey_jpg">
+					<input offset="0" semantic="VERTEX" source="#Material2-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Material2-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 6 9 7 10 4 11 3 12 2 13 7 14 7 15 6 16 3 17</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_images>
+		<image id="MDHQ_jpg-image" name="MDHQ_jpg-image">
+			<init_from>../images/Harbour_Building/MDHQ.jpg</init_from>
+		</image>
+		<image id="grey_jpg-image" name="grey_jpg-image">
+			<init_from>../images/Harbour_Building/grey.jpg</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="MDHQ_jpg" name="MDHQ_jpg">
+			<instance_effect url="#MDHQ_jpg-fx"/>
+		</material>
+		<material id="grey_jpg" name="grey_jpg">
+			<instance_effect url="#grey_jpg-fx"/>
+		</material>
+	</library_materials>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node layer="L1" id="MDHQ" name="MDHQ">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#MDHQ-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="MDHQ_jpg" target="#MDHQ_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Material2" name="Material2">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Material2-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="grey_jpg" target="#grey_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

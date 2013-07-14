@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:248 - Illusoft Collada Exporter v:0.3.108</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file://C://</source_data>
+		</contributor>
+		<created>2009-04-16T03:42:36</created>
+		<modified>2009-04-16T03:42:36</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="White_JPG-fx" name="White_JPG-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="White_JPG-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="75-Geometry" name="75-Geometry">
+			<mesh>
+				<source id="75-Geometry-Position">
+					<float_array count="12" id="75-Geometry-Position-array">0.00000 11.31000 0.00000 0.00000 0.00000 0.00000 11.31000 0.00000 0.00000 11.31000 11.31000 0.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#75-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="75-Geometry-Normals">
+					<float_array count="12" id="75-Geometry-Normals-array">0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#75-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="75-Geometry-UV">
+					<float_array count="12" id="75-Geometry-UV-array">0.00000 1.01500 0.00000 0.00000 0.94250 0.00000 0.94250 0.00000 0.94250 1.01500 0.00000 1.01500</float_array>
+					<technique_common>
+						<accessor count="6" source="#75-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="75-Geometry-Vertex">
+					<input semantic="POSITION" source="#75-Geometry-Position"/>
+					<input semantic="NORMAL" source="#75-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="White_JPG">
+					<input offset="0" semantic="VERTEX" source="#75-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#75-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_images>
+		<image id="White_JPG-image" name="White_JPG-image">
+			<init_from>../images/75/White.JPG</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="White_JPG" name="White_JPG">
+			<instance_effect url="#White_JPG-fx"/>
+		</material>
+	</library_materials>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node layer="L1" id="75" name="75">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#75-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="White_JPG" target="#White_JPG"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

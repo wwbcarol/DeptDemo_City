@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:248 - Illusoft Collada Exporter v:0.3.108</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file://C://</source_data>
+		</contributor>
+		<created>2009-04-14T02:41:06.203000</created>
+		<modified>2009-04-14T02:41:06.203000</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="op_left_jpg-fx" name="op_left_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="op_left_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="books_jpg-fx" name="books_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="books_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="_GAF_Country_Mansion_-fx" name="_GAF_Country_Mansion_-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="_GAF_Country_Mansion_-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="_Siding2__jpg-fx" name="_Siding2__jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="_Siding2__jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="baku_jpg-fx" name="baku_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="baku_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="book_front_jpg-fx" name="book_front_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="book_front_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="right_jpg-fx" name="right_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="right_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="_Brick_dark_grout__jp-fx" name="_Brick_dark_grout__jp-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="_Brick_dark_grout__jp-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="op_left1_jpg-fx" name="op_left1_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="op_left1_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="op_left-Geometry" name="op_left-Geometry">
+			<mesh>
+				<source id="op_left-Geometry-Position">
+					<float_array count="12" id="op_left-Geometry-Position-array">-60.12630 -580.44897 0.00005 -61.14280 -677.51099 0.00005 -61.14280 -677.51099 132.00000 -60.12630 -580.44897 132.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#op_left-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="op_left-Geometry-Normals">
+					<float_array count="12" id="op_left-Geometry-Normals-array">-0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#op_left-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="op_left-Geometry-UV">
+					<float_array count="12" id="op_left-Geometry-UV-array">-272.92801 27.08780 -272.47000 27.06860 -272.44901 27.86120 -272.44901 27.86120 -272.90701 27.88040 -272.92801 27.08780</float_array>
+					<technique_common>
+						<accessor count="6" source="#op_left-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="op_left-Geometry-Vertex">
+					<input semantic="POSITION" source="#op_left-Geometry-Position"/>
+					<input semantic="NORMAL" source="#op_left-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="op_left_jpg">
+					<input offset="0" semantic="VERTEX" source="#op_left-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#op_left-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="books-Geometry" name="books-Geometry">
+			<mesh>
+				<source id="books-Geometry-Position">
+					<float_array count="12" id="books-Geometry-Position-array">-56.35640 -220.46899 0.00005 -58.24140 -400.45901 0.00005 -58.24140 -400.45901 132.00000 -56.35640 -220.46899 132.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#books-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="books-Geometry-Normals">
+					<float_array count="12" id="books-Geometry-Normals-array">-0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#books-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="books-Geometry-UV">
+					<float_array count="12" id="books-Geometry-UV-array">-248.97301 26.99740 -248.00000 26.99740 -248.00000 27.99740 -248.00000 27.99740 -248.97301 27.99740 -248.97301 26.99740</float_array>
+					<technique_common>
+						<accessor count="6" source="#books-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="books-Geometry-Vertex">
+					<input semantic="POSITION" source="#books-Geometry-Position"/>
+					<input semantic="NORMAL" source="#books-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="books_jpg">
+					<input offset="0" semantic="VERTEX" source="#books-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#books-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="_GAF_Country_Mansion_-Geometry" name="_GAF_Country_Mansion_-Geometry">
+			<mesh>
+				<source id="_GAF_Country_Mansion_-Geometry-Position">
+					<float_array count="15" id="_GAF_Country_Mansion_-Geometry-Position-array">497.87500 -10.26150 144.00000 -72.09360 -4.29256 144.00000 -83.65440 -1108.22998 144.00000 -65.65540 -1108.42004 144.00000 486.31400 -1114.19995 144.00000</float_array>
+					<technique_common>
+						<accessor count="5" source="#_GAF_Country_Mansion_-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_GAF_Country_Mansion_-Geometry-Normals">
+					<float_array count="15" id="_GAF_Country_Mansion_-Geometry-Normals-array">0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000</float_array>
+					<technique_common>
+						<accessor count="5" source="#_GAF_Country_Mansion_-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_GAF_Country_Mansion_-Geometry-UV">
+					<float_array count="18" id="_GAF_Country_Mansion_-Geometry-UV-array">-1701.30005 2074.31006 -1727.20996 2073.79004 -1726.19995 2023.62000 -1700.29004 2024.14001 -1701.30005 2074.31006 -1726.19995 2023.62000 -1700.29004 2024.14001 -1726.19995 2023.62000 -1725.38000 2023.63000</float_array>
+					<technique_common>
+						<accessor count="9" source="#_GAF_Country_Mansion_-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="_GAF_Country_Mansion_-Geometry-Vertex">
+					<input semantic="POSITION" source="#_GAF_Country_Mansion_-Geometry-Position"/>
+					<input semantic="NORMAL" source="#_GAF_Country_Mansion_-Geometry-Normals"/>
+				</vertices>
+				<triangles count="3" material="_GAF_Country_Mansion_-Material">
+					<input offset="0" semantic="VERTEX" source="#_GAF_Country_Mansion_-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#_GAF_Country_Mansion_-Geometry-UV"/>
+					<p>0 0 1 1 2 2 4 3 0 4 2 5 4 6 2 7 3 8</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="_Siding2_-Geometry" name="_Siding2_-Geometry">
+			<mesh>
+				<source id="_Siding2_-Geometry-Position">
+					<float_array count="63" id="_Siding2_-Geometry-Position-array">-72.09360 -4.29256 132.00000 -66.09390 -4.35539 132.00000 -68.30800 -215.78101 132.00000 -56.30870 -215.90700 132.00000 -56.35640 -220.46899 132.00000 -68.35580 -220.34399 132.00000 -74.35550 -220.28101 132.00000 -76.24040 -400.27100 132.00000 -78.12530 -580.26099 132.00000 -81.64380 -916.24298 132.00000 -83.65440 -1108.22998 132.00000 -83.65440 -1108.22998 144.00000 -72.09360 -4.29256 144.00000 -70.24070 -400.33401 132.00000 -60.12630 -580.44897 132.00000 -61.14280 -677.51099 132.00000 -63.77050 -928.42999 132.00000 -64.35850 -930.08899 132.00000 -64.49220 -997.34399 132.00000 -65.65540 -1108.42004 132.00000 -58.24140 -400.45901 132.00000</float_array>
+					<technique_common>
+						<accessor count="21" source="#_Siding2_-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Siding2_-Geometry-Normals">
+					<float_array count="63" id="_Siding2_-Geometry-Normals-array">-0.70705 0.00739 -0.70708 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 -0.17798 -0.93451 0.30818 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 -0.44719 0.00467 -0.89441 -0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000</float_array>
+					<technique_common>
+						<accessor count="21" source="#_Siding2_-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Siding2_-Geometry-UV">
+					<float_array count="144" id="_Siding2_-Geometry-UV-array">999.84802 1194.93005 999.69098 1194.93005 999.59497 1190.19995 999.59497 1190.19995 999.75299 1190.18994 999.84802 1194.93005 999.00000 1176.31006 998.96301 1174.50000 999.01398 1176.27002 999.65802 1185.45996 999.75299 1190.18994 999.59497 1190.19995 999.65802 1185.45996 999.59497 1190.19995 999.27899 1190.19995 999.65802 1185.45996 999.27899 1190.19995 999.18402 1185.46997 999.37799 1171.56995 999.47900 1176.62000 999.01398 1176.27002 999.01398 1176.27002 999.47900 1176.62000 999.00000 1176.31006 999.37799 1171.56995 999.01398 1176.27002 998.96301 1174.50000 999.37799 1171.56995 998.96301 1174.50000 998.90399 1171.57996 999.47900 1176.62000 999.65802 1185.45996 999.18402 1185.46997 999.47900 1176.62000 999.18402 1185.46997 999.13300 1182.91003 999.47900 1176.62000 999.13300 1182.91003 999.00000 1176.31006 -1191.45996 97.26340 -1191.45996 97.57920 -1220.51001 97.57920 -1220.51001 97.57920 -1220.51001 97.26340 -1191.45996 97.26340 -1191.45996 97.26340 -1220.51001 97.26340 -1196.51001 97.26340 -1196.51001 97.26340 -1220.51001 97.26340 -1205.35999 97.26340 -1205.35999 97.26340 -1220.51001 97.26340 -1210.08997 97.26340 -1210.08997 97.26340 -1220.51001 97.26340 -1214.82996 97.26340 999.84802 1194.93005 999.96301 1200.60999 999.80499 1200.62000 999.84802 1194.93005 999.80499 1200.62000 999.69299 1195.05005 999.84802 1194.93005 999.69299 1195.05005 999.37701 1195.06006 999.84802 1194.93005 999.37701 1195.06006 999.37500 1194.93994 999.69098 1194.93005 999.84802 1194.93005 999.37500 1194.93994</float_array>
+					<technique_common>
+						<accessor count="72" source="#_Siding2_-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="_Siding2_-Geometry-Vertex">
+					<input semantic="POSITION" source="#_Siding2_-Geometry-Position"/>
+					<input semantic="NORMAL" source="#_Siding2_-Geometry-Normals"/>
+				</vertices>
+				<triangles count="24" material="_Siding2__jpg">
+					<input offset="0" semantic="VERTEX" source="#_Siding2_-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#_Siding2_-Geometry-UV"/>
+					<p>6 0 5 1 13 2 13 3 7 4 6 5 16 6 18 7 17 8 8 9 7 10 13 11 8 12 13 13 20 14 8 15 20 16 14 17 10 18 9 19 17 20 17 21 9 22 16 23 10 24 17 25 18 26 10 27 18 28 19 29 9 30 8 31 14 32 9 33 14 34 15 35 9 36 15 37 16 38 10 39 11 40 12 41 12 42 0 43 10 44 10 45 0 46 9 47 9 48 0 49 8 50 8 51 0 52 7 53 7 54 0 55 6 56 6 57 0 58 1 59 6 60 1 61 2 62 6 63 2 64 3 65 6 66 3 67 4 68 5 69 6 70 4 71</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="baku-Geometry" name="baku-Geometry">
+			<mesh>
+				<source id="baku-Geometry-Position">
+					<float_array count="12" id="baku-Geometry-Position-array">-60.12630 -580.44897 0.00005 -60.12630 -580.44897 132.00000 -58.24140 -400.45901 132.00000 -58.24140 -400.45901 0.00005</float_array>
+					<technique_common>
+						<accessor count="4" source="#baku-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="baku-Geometry-Normals">
+					<float_array count="12" id="baku-Geometry-Normals-array">-0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#baku-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="baku-Geometry-UV">
+					<float_array count="12" id="baku-Geometry-UV-array">-254.00101 27.00110 -254.00101 28.00110 -255.00101 28.00110 -255.00101 28.00110 -255.00101 27.00110 -254.00101 27.00110</float_array>
+					<technique_common>
+						<accessor count="6" source="#baku-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="baku-Geometry-Vertex">
+					<input semantic="POSITION" source="#baku-Geometry-Position"/>
+					<input semantic="NORMAL" source="#baku-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="baku_jpg">
+					<input offset="0" semantic="VERTEX" source="#baku-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#baku-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="book_front-Geometry" name="book_front-Geometry">
+			<mesh>
+				<source id="book_front-Geometry-Position">
+					<float_array count="15" id="book_front-Geometry-Position-array">-56.35640 -220.46899 132.00000 -56.30870 -215.90700 132.00000 -54.09450 -4.48106 132.00000 -54.09450 -4.48106 0.00005 -56.35640 -220.46899 0.00005</float_array>
+					<technique_common>
+						<accessor count="5" source="#book_front-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="book_front-Geometry-Normals">
+					<float_array count="15" id="book_front-Geometry-Normals-array">-0.99994 0.01044 0.00000 -0.99994 0.01044 0.00000 -0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000 -0.99994 0.01044 0.00000</float_array>
+					<technique_common>
+						<accessor count="5" source="#book_front-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="book_front-Geometry-UV">
+					<float_array count="18" id="book_front-Geometry-UV-array">-214.00200 27.00120 -214.00200 28.00120 -214.02299 28.00120 -214.00200 27.00120 -214.02299 28.00120 -215.00200 28.00120 -214.00200 27.00120 -215.00200 28.00120 -215.00200 27.00120</float_array>
+					<technique_common>
+						<accessor count="9" source="#book_front-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="book_front-Geometry-Vertex">
+					<input semantic="POSITION" source="#book_front-Geometry-Position"/>
+					<input semantic="NORMAL" source="#book_front-Geometry-Normals"/>
+				</vertices>
+				<triangles count="3" material="book_front_jpg">
+					<input offset="0" semantic="VERTEX" source="#book_front-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#book_front-Geometry-UV"/>
+					<p>4 0 0 1 1 2 4 3 1 4 2 5 4 6 2 7 3 8</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="FrontColor-Geometry" name="FrontColor-Geometry">
+			<mesh>
+				<source id="FrontColor-Geometry-Position">
+					<float_array count="72" id="FrontColor-Geometry-Position-array">-66.09390 -4.35539 132.00000 -54.09450 -4.48106 132.00000 -56.30870 -215.90700 132.00000 -68.30800 -215.78101 132.00000 -64.71290 -1108.42004 0.00005 486.31400 -1114.19995 0.00005 497.87500 -10.26150 0.00005 -54.09450 -4.48106 0.00005 -56.35640 -220.46899 0.00005 -58.24140 -400.45901 0.00005 -60.12630 -580.44897 0.00005 -61.14280 -677.51099 0.00005 -63.77050 -928.42999 0.00005 -64.35850 -930.08899 0.00005 486.31400 -1114.19995 144.00000 -64.71290 -1108.42004 132.00000 -56.35640 -220.46899 132.00000 -58.24140 -400.45901 132.00000 -70.24070 -400.33401 132.00000 -68.35580 -220.34399 132.00000 -83.65440 -1108.22998 132.00000 -65.65540 -1108.42004 132.00000 -65.65540 -1108.42004 144.00000 -83.65440 -1108.22998 144.00000</float_array>
+					<technique_common>
+						<accessor count="24" source="#FrontColor-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="FrontColor-Geometry-Normals">
+					<float_array count="72" id="FrontColor-Geometry-Normals-array">0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 -0.00742 -0.70705 0.70708 -0.00146 -0.14139 0.98993 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 -0.00803 -0.99393 -0.10956 -0.00537 -0.97488 -0.22254 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 -0.01050 -0.99994 0.00195 -0.00540 -0.97534 -0.22056 -0.01047 -0.99994 -0.00012 -0.01047 -0.99994 -0.00012</float_array>
+					<technique_common>
+						<accessor count="24" source="#FrontColor-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="FrontColor-Geometry-UV">
+					<float_array count="108" id="FrontColor-Geometry-UV-array">37992.60156 45623.39844 37980.60156 45623.69922 37976.30078 45412.30078 37976.30078 45412.30078 37988.30078 45412.00000 37992.60156 45623.39844 -37053.69922 3564.01001 -36502.60156 3564.01001 -36502.60156 3708.01001 -36502.60156 3708.01001 -37053.69922 3696.01001 -37053.69922 3564.01001 37976.19922 45407.69922 37972.60156 45227.80078 37984.60156 45227.50000 37984.60156 45227.50000 37988.19922 45407.50000 37976.19922 45407.69922 -37071.80078 3696.01001 -37053.80078 3696.01001 -36501.80078 3708.01001 -36576.69922 -16486.00000 -36025.69922 -16472.69922 -36577.69922 -16486.00000 -36501.80078 3708.01001 -37053.80078 3708.01001 -37071.80078 3708.01001 -37071.80078 3708.01001 -37071.80078 3696.01001 -36501.80078 3708.01001 -37428.69922 45634.80078 -37980.60156 45623.69922 -37976.19922 45407.69922 -37406.50000 44531.00000 -37428.69922 45634.80078 -37976.19922 45407.69922 -37406.50000 44531.00000 -37976.19922 45407.69922 -37972.60156 45227.80078 -37406.50000 44531.00000 -37972.60156 45227.80078 -37969.00000 45047.80078 -37406.50000 44531.00000 -37969.00000 45047.80078 -37967.00000 44950.69922 -37406.50000 44531.00000 -37967.00000 44950.69922 -37962.00000 44699.89844 -37406.50000 44531.00000 -37962.00000 44699.89844 -37962.50000 44698.19922 -37406.50000 44531.00000 -37962.50000 44698.19922 -37957.39844 44519.89844</float_array>
+					<technique_common>
+						<accessor count="54" source="#FrontColor-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="FrontColor-Geometry-Vertex">
+					<input semantic="POSITION" source="#FrontColor-Geometry-Position"/>
+					<input semantic="NORMAL" source="#FrontColor-Geometry-Normals"/>
+				</vertices>
+				<triangles count="18" material="_GAF_Country_Mansion_-Material">
+					<input offset="0" semantic="VERTEX" source="#FrontColor-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#FrontColor-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 14 8 14 9 15 10 4 11 16 12 17 13 18 14 18 15 19 16 16 17 20 18 21 19 14 20 15 21 14 22 21 23 14 24 22 25 23 26 23 27 20 28 14 29 6 30 7 31 8 32 5 33 6 34 8 35 5 36 8 37 9 38 5 39 9 40 10 41 5 42 10 43 11 44 5 45 11 46 12 47 5 48 12 49 13 50 5 51 13 52 4 53</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="right-Geometry" name="right-Geometry">
+			<mesh>
+				<source id="right-Geometry-Position">
+					<float_array count="15" id="right-Geometry-Position-array">-64.71290 -1108.42004 0.00005 -64.71290 -1108.42004 132.00000 -64.49220 -997.34399 132.00000 -64.35850 -930.08899 132.00000 -64.35850 -930.08899 0.00005</float_array>
+					<technique_common>
+						<accessor count="5" source="#right-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="right-Geometry-Normals">
+					<float_array count="15" id="right-Geometry-Normals-array">-0.99997 0.00198 0.00000 -0.99997 0.00198 0.00000 -0.99997 0.00198 0.00000 -0.99997 0.00198 0.00000 -0.99997 0.00198 0.00000</float_array>
+					<technique_common>
+						<accessor count="5" source="#right-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="right-Geometry-UV">
+					<float_array count="18" id="right-Geometry-UV-array">-362.99899 42.99620 -362.99899 44.00590 -363.61899 44.00590 -362.99899 42.99620 -363.61899 44.00590 -363.99301 44.00590 -362.99899 42.99620 -363.99301 44.00590 -363.99301 42.99620</float_array>
+					<technique_common>
+						<accessor count="9" source="#right-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="right-Geometry-Vertex">
+					<input semantic="POSITION" source="#right-Geometry-Position"/>
+					<input semantic="NORMAL" source="#right-Geometry-Normals"/>
+				</vertices>
+				<triangles count="3" material="right_jpg">
+					<input offset="0" semantic="VERTEX" source="#right-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#right-Geometry-UV"/>
+					<p>0 0 1 1 2 2 0 3 2 4 3 5 0 6 3 7 4 8</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="_Brick_dark_grout_-Geometry" name="_Brick_dark_grout_-Geometry">
+			<mesh>
+				<source id="_Brick_dark_grout_-Geometry-Position">
+					<float_array count="39" id="_Brick_dark_grout_-Geometry-Position-array">-54.09450 -4.48106 0.00005 -54.09450 -4.48106 132.00000 -66.09390 -4.35539 132.00000 -72.09360 -4.29256 132.00000 -72.09360 -4.29256 144.00000 497.87500 -10.26150 144.00000 497.87500 -10.26150 0.00005 486.31400 -1114.19995 0.00005 486.31400 -1114.19995 144.00000 -64.35850 -930.08899 132.00000 -63.77050 -928.42999 132.00000 -63.77050 -928.42999 0.00005 -64.35850 -930.08899 0.00005</float_array>
+					<technique_common>
+						<accessor count="13" source="#_Brick_dark_grout_-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Brick_dark_grout_-Geometry-Normals">
+					<float_array count="39" id="_Brick_dark_grout_-Geometry-Normals-array">0.01047 0.99994 0.00000 0.01047 0.99994 0.00000 0.01047 0.99994 0.00000 0.01047 0.99994 0.00000 0.01047 0.99994 0.00000 0.25266 0.96753 0.00000 0.45653 0.88968 0.00000 0.99994 -0.01047 0.00000 0.99994 -0.01047 0.00000 -0.94253 0.33406 0.00000 -0.94253 0.33406 0.00000 -0.94253 0.33406 0.00000 -0.94253 0.33406 0.00000</float_array>
+					<technique_common>
+						<accessor count="13" source="#_Brick_dark_grout_-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Brick_dark_grout_-Geometry-UV">
+					<float_array count="54" id="_Brick_dark_grout_-Geometry-UV-array">808.49103 111.37500 828.20599 111.37500 828.20599 115.87500 828.20599 115.87500 808.49103 115.87500 808.49103 111.37500 -553.18903 115.50000 -553.21997 115.50000 -553.21997 111.37500 -553.21997 111.37500 -553.18903 111.37500 -553.18903 115.50000 661.99701 115.50000 661.99701 115.87500 651.81799 115.87500 661.99701 115.50000 651.81799 115.87500 661.89001 115.50000 661.89001 115.50000 651.81799 115.87500 661.67499 115.50000 661.67499 115.50000 651.81799 115.87500 651.81799 111.37500 661.67499 111.37500 661.67499 115.50000 651.81799 111.37500</float_array>
+					<technique_common>
+						<accessor count="27" source="#_Brick_dark_grout_-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="_Brick_dark_grout_-Geometry-Vertex">
+					<input semantic="POSITION" source="#_Brick_dark_grout_-Geometry-Position"/>
+					<input semantic="NORMAL" source="#_Brick_dark_grout_-Geometry-Normals"/>
+				</vertices>
+				<triangles count="9" material="_Brick_dark_grout__jp">
+					<input offset="0" semantic="VERTEX" source="#_Brick_dark_grout_-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#_Brick_dark_grout_-Geometry-UV"/>
+					<p>7 0 6 1 5 2 5 3 8 4 7 5 9 6 10 7 11 8 11 9 12 10 9 11 3 12 4 13 5 14 3 15 5 16 2 17 2 18 5 19 1 20 1 21 5 22 6 23 0 24 1 25 6 26</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="op_left1-Geometry" name="op_left1-Geometry">
+			<mesh>
+				<source id="op_left1-Geometry-Position">
+					<float_array count="12" id="op_left1-Geometry-Position-array">-63.77050 -928.42999 132.00000 -61.14280 -677.51099 132.00000 -61.14280 -677.51099 0.00005 -63.77050 -928.42999 0.00005</float_array>
+					<technique_common>
+						<accessor count="4" source="#op_left1-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="op_left1-Geometry-Normals">
+					<float_array count="12" id="op_left1-Geometry-Normals-array">-0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000 -0.99994 0.01047 0.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#op_left1-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="op_left1-Geometry-UV">
+					<float_array count="12" id="op_left1-Geometry-UV-array">-241.03700 33.88290 -241.99800 33.89200 -242.00101 33.00940 -242.00101 33.00940 -241.03999 33.00040 -241.03700 33.88290</float_array>
+					<technique_common>
+						<accessor count="6" source="#op_left1-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="op_left1-Geometry-Vertex">
+					<input semantic="POSITION" source="#op_left1-Geometry-Position"/>
+					<input semantic="NORMAL" source="#op_left1-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="op_left1_jpg">
+					<input offset="0" semantic="VERTEX" source="#op_left1-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#op_left1-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_images>
+		<image id="op_left_jpg-image" name="op_left_jpg-image">
+			<init_from>../images/shops/op_left.jpg</init_from>
+		</image>
+		<image id="books_jpg-image" name="books_jpg-image">
+			<init_from>../images/shops/books.jpg</init_from>
+		</image>
+		<image id="_GAF_Country_Mansion_-image" name="_GAF_Country_Mansion_-image">
+			<init_from>../images/shops/_GAF_Country_Mansion_.jpg</init_from>
+		</image>
+		<image id="_Siding2__jpg-image" name="_Siding2__jpg-image">
+			<init_from>../images/shops/_Siding2_.jpg</init_from>
+		</image>
+		<image id="baku_jpg-image" name="baku_jpg-image">
+			<init_from>../images/shops/baku.jpg</init_from>
+		</image>
+		<image id="book_front_jpg-image" name="book_front_jpg-image">
+			<init_from>../images/shops/book_front.jpg</init_from>
+		</image>
+		<image id="_GAF_Country_Mansion_-image" name="_GAF_Country_Mansion_-image">
+			<init_from>../images/shops/_GAF_Country_Mansion_.jpg</init_from>
+		</image>
+		<image id="right_jpg-image" name="right_jpg-image">
+			<init_from>../images/shops/right.jpg</init_from>
+		</image>
+		<image id="_Brick_dark_grout__jp-image" name="_Brick_dark_grout__jp-image">
+			<init_from>../images/shops/_Brick_dark_grout_.jpg</init_from>
+		</image>
+		<image id="op_left1_jpg-image" name="op_left1_jpg-image">
+			<init_from>../images/shops/op_left1.jpg</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="op_left_jpg" name="op_left_jpg">
+			<instance_effect url="#op_left_jpg-fx"/>
+		</material>
+		<material id="books_jpg" name="books_jpg">
+			<instance_effect url="#books_jpg-fx"/>
+		</material>
+		<material id="_GAF_Country_Mansion_-Material" name="_GAF_Country_Mansion_-Material">
+			<instance_effect url="#_GAF_Country_Mansion_-fx"/>
+		</material>
+		<material id="_Siding2__jpg" name="_Siding2__jpg">
+			<instance_effect url="#_Siding2__jpg-fx"/>
+		</material>
+		<material id="baku_jpg" name="baku_jpg">
+			<instance_effect url="#baku_jpg-fx"/>
+		</material>
+		<material id="book_front_jpg" name="book_front_jpg">
+			<instance_effect url="#book_front_jpg-fx"/>
+		</material>
+		<material id="right_jpg" name="right_jpg">
+			<instance_effect url="#right_jpg-fx"/>
+		</material>
+		<material id="_Brick_dark_grout__jp" name="_Brick_dark_grout__jp">
+			<instance_effect url="#_Brick_dark_grout__jp-fx"/>
+		</material>
+		<material id="op_left1_jpg" name="op_left1_jpg">
+			<instance_effect url="#op_left1_jpg-fx"/>
+		</material>
+	</library_materials>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node layer="L1" id="op_left" name="op_left">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#op_left-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="op_left_jpg" target="#op_left_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="books" name="books">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#books-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="books_jpg" target="#books_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="_GAF_Country_Mansion_" name="_GAF_Country_Mansion_">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#_GAF_Country_Mansion_-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_GAF_Country_Mansion_-Material" target="#_GAF_Country_Mansion_-Material"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="_Siding2_" name="_Siding2_">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#_Siding2_-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_Siding2__jpg" target="#_Siding2__jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="baku" name="baku">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#baku-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="baku_jpg" target="#baku_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="book_front" name="book_front">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#book_front-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="book_front_jpg" target="#book_front_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="FrontColor" name="FrontColor">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#FrontColor-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_GAF_Country_Mansion_-Material" target="#_GAF_Country_Mansion_-Material"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="right" name="right">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#right-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="right_jpg" target="#right_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="_Brick_dark_grout_" name="_Brick_dark_grout_">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#_Brick_dark_grout_-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_Brick_dark_grout__jp" target="#_Brick_dark_grout__jp"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="op_left1" name="op_left1">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#op_left1-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="op_left1_jpg" target="#op_left1_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

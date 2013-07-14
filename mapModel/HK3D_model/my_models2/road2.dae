@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:248 - Illusoft Collada Exporter v:0.3.108</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file://C://</source_data>
+		</contributor>
+		<created>2009-03-29T03:42:37.312000</created>
+		<modified>2009-03-29T03:42:37.312000</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="Color_E02_JPG-fx" name="Color_E02_JPG-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="Color_E02_JPG-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Asphalt_New_jpg-fx" name="Asphalt_New_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="Asphalt_New_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="_Color_E02__1_JPG-fx" name="_Color_E02__1_JPG-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="_Color_E02__1_JPG-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="_Color_E02__2_JPG-fx" name="_Color_E02__2_JPG-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="_Color_E02__2_JPG-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="Color_E02_002-Geometry" name="Color_E02_002-Geometry">
+			<mesh>
+				<source id="Color_E02_002-Geometry-Position">
+					<float_array count="36" id="Color_E02_002-Geometry-Position-array">96.00000 960.00000 0.00000 91.00000 960.00000 0.00000 91.00000 0.00000 0.00000 96.00000 0.00000 0.00000 300.00000 960.00000 0.00000 291.00000 960.00000 0.00000 291.00000 0.00000 0.00000 300.00000 0.00000 0.00000 485.00000 960.00000 0.00000 480.00000 960.00000 0.00000 480.00000 0.00000 0.00000 485.00000 0.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="12" source="#Color_E02_002-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Color_E02_002-Geometry-Normals">
+					<float_array count="36" id="Color_E02_002-Geometry-Normals-array">0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000</float_array>
+					<technique_common>
+						<accessor count="12" source="#Color_E02_002-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Color_E02_002-Geometry-UV">
+					<float_array count="36" id="Color_E02_002-Geometry-UV-array">10.66670 80.00000 10.11110 80.00000 10.11110 0.00000 10.11110 0.00000 10.66670 0.00000 10.66670 80.00000 33.33330 80.00000 32.33330 80.00000 32.33330 0.00000 32.33330 0.00000 33.33330 0.00000 33.33330 80.00000 53.88890 80.00000 53.33330 80.00000 53.33330 0.00000 53.33330 0.00000 53.88890 0.00000 53.88890 80.00000</float_array>
+					<technique_common>
+						<accessor count="18" source="#Color_E02_002-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Color_E02_002-Geometry-Vertex">
+					<input semantic="POSITION" source="#Color_E02_002-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Color_E02_002-Geometry-Normals"/>
+				</vertices>
+				<triangles count="6" material="Color_E02_JPG">
+					<input offset="0" semantic="VERTEX" source="#Color_E02_002-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Color_E02_002-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 6 9 7 10 4 11 8 12 9 13 10 14 10 15 11 16 8 17</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Asphalt_New_002-Geometry" name="Asphalt_New_002-Geometry">
+			<mesh>
+				<source id="Asphalt_New_002-Geometry-Position">
+					<float_array count="84" id="Asphalt_New_002-Geometry-Position-array">276.00000 960.00000 0.00000 195.00000 960.00000 0.00000 195.00000 0.00000 0.00000 276.00000 0.00000 0.00000 96.00000 0.00000 0.00000 186.00000 0.00000 0.00000 186.00000 960.00000 0.00000 96.00000 960.00000 0.00000 60.00000 0.00000 0.00000 91.00000 0.00000 0.00000 91.00000 960.00000 0.00000 60.00000 960.00000 0.00000 285.00000 0.00000 0.00000 291.00000 0.00000 0.00000 291.00000 960.00000 0.00000 285.00000 960.00000 0.00000 300.00000 0.00000 0.00000 390.00000 0.00000 0.00000 390.00000 960.00000 0.00000 300.00000 960.00000 0.00000 480.00000 960.00000 0.00000 399.00000 960.00000 0.00000 399.00000 0.00000 0.00000 480.00000 0.00000 0.00000 485.00000 0.00000 0.00000 516.00000 0.00000 0.00000 516.00000 960.00000 0.00000 485.00000 960.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="28" source="#Asphalt_New_002-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Asphalt_New_002-Geometry-Normals">
+					<float_array count="84" id="Asphalt_New_002-Geometry-Normals-array">0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000</float_array>
+					<technique_common>
+						<accessor count="28" source="#Asphalt_New_002-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Asphalt_New_002-Geometry-UV">
+					<float_array count="84" id="Asphalt_New_002-Geometry-UV-array">23.00000 80.00000 16.25000 80.00000 16.25000 0.00000 16.25000 0.00000 23.00000 0.00000 23.00000 80.00000 8.00000 0.00000 15.50000 0.00000 15.50000 80.00000 15.50000 80.00000 8.00000 80.00000 8.00000 0.00000 5.00000 0.00000 7.58333 0.00000 7.58333 80.00000 7.58333 80.00000 5.00000 80.00000 5.00000 0.00000 23.75000 0.00000 24.25000 0.00000 24.25000 80.00000 24.25000 80.00000 23.75000 80.00000 23.75000 0.00000 25.00000 0.00000 32.50000 0.00000 32.50000 80.00000 32.50000 80.00000 25.00000 80.00000 25.00000 0.00000 40.00000 80.00000 33.25000 80.00000 33.25000 0.00000 33.25000 0.00000 40.00000 0.00000 40.00000 80.00000 40.41670 0.00000 43.00000 0.00000 43.00000 80.00000 43.00000 80.00000 40.41670 80.00000 40.41670 0.00000</float_array>
+					<technique_common>
+						<accessor count="42" source="#Asphalt_New_002-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Asphalt_New_002-Geometry-Vertex">
+					<input semantic="POSITION" source="#Asphalt_New_002-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Asphalt_New_002-Geometry-Normals"/>
+				</vertices>
+				<triangles count="14" material="Asphalt_New_jpg">
+					<input offset="0" semantic="VERTEX" source="#Asphalt_New_002-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Asphalt_New_002-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 6 9 7 10 4 11 8 12 9 13 10 14 10 15 11 16 8 17 12 18 13 19 14 20 14 21 15 22 12 23 16 24 17 25 18 26 18 27 19 28 16 29 20 30 21 31 22 32 22 33 23 34 20 35 24 36 25 37 26 38 26 39 27 40 24 41</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Color_002_002-Geometry" name="Color_002_002-Geometry">
+			<mesh>
+				<source id="Color_002_002-Geometry-Position">
+					<float_array count="228" id="Color_002_002-Geometry-Position-array">60.00000 0.00000 0.00000 60.00000 960.00000 0.00000 60.00000 960.00000 17.00000 60.00000 0.00000 17.00000 0.00000 960.00000 0.00000 0.00000 960.00000 17.00000 48.00000 960.00000 17.00000 48.00000 960.00000 6.00000 48.01700 960.00000 5.87059 48.06700 960.00000 5.75000 48.14640 960.00000 5.64645 48.25000 960.00000 5.56699 48.37060 960.00000 5.51704 48.50000 960.00000 5.50000 48.62940 960.00000 5.51704 48.75000 960.00000 5.56699 48.85360 960.00000 5.64645 48.93300 960.00000 5.75000 48.98300 960.00000 5.87059 49.00000 960.00000 6.00000 49.00000 960.00000 17.00000 0.00000 0.00000 0.00000 0.00000 0.00000 17.00000 48.01700 0.00000 5.87059 48.00000 0.00000 6.00000 48.00000 0.00000 17.00000 49.00000 0.00000 17.00000 49.00000 0.00000 6.00000 48.98300 0.00000 5.87059 48.93300 0.00000 5.75000 48.85360 0.00000 5.64645 48.75000 0.00000 5.56699 48.62940 0.00000 5.51704 48.50000 0.00000 5.50000 48.37060 0.00000 5.51704 48.25000 0.00000 5.56699 48.14640 0.00000 5.64645 48.06700 0.00000 5.75000 516.00000 960.00000 0.00000 516.00000 0.00000 0.00000 516.00000 0.00000 15.00000 516.00000 960.00000 15.00000 527.01703 0.00000 5.87059 527.00000 0.00000 6.00000 527.00000 0.00000 15.00000 576.00000 0.00000 0.00000 576.00000 0.00000 15.00000 528.00000 0.00000 15.00000 528.00000 0.00000 6.00000 527.98297 0.00000 5.87059 527.93298 0.00000 5.75000 527.85400 0.00000 5.64645 527.75000 0.00000 5.56699 527.62903 0.00000 5.51704 527.50000 0.00000 5.50000 527.37097 0.00000 5.51704 527.25000 0.00000 5.56699 527.14600 0.00000 5.64645 527.06702 0.00000 5.75000 527.01703 960.00000 5.87059 527.00000 960.00000 6.00000 527.06702 960.00000 5.75000 527.14600 960.00000 5.64645 527.25000 960.00000 5.56699 527.37097 960.00000 5.51704 527.50000 960.00000 5.50000 527.62903 960.00000 5.51704 527.75000 960.00000 5.56699 527.85400 960.00000 5.64645 527.93298 960.00000 5.75000 527.98297 960.00000 5.87059 528.00000 960.00000 6.00000 528.00000 960.00000 15.00000 576.00000 960.00000 15.00000 576.00000 960.00000 0.00000 527.00000 960.00000 15.00000</float_array>
+					<technique_common>
+						<accessor count="76" source="#Color_002_002-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Color_002_002-Geometry-Normals">
+					<float_array count="228" id="Color_002_002-Geometry-Normals-array">0.12403 -0.99225 0.00000 0.12403 0.99225 0.00000 0.40825 0.81649 0.40825 0.40825 -0.81649 0.40825 -0.11042 0.99387 0.00000 -0.57735 0.57735 0.57735 0.40825 0.81649 0.40825 0.52767 0.79489 0.29945 0.35606 0.92956 0.09540 0.31925 0.92956 0.18433 0.26066 0.92956 0.26063 0.18427 0.92956 0.31925 0.09540 0.92956 0.35606 0.00000 0.89593 0.44414 -0.11493 0.89593 0.42900 -0.18427 0.92956 0.31925 -0.26066 0.92956 0.26063 -0.31925 0.92956 0.18433 -0.35606 0.92956 0.09540 -0.36210 0.90918 0.20551 -0.57735 0.57735 0.57735 -0.11042 -0.99387 0.00000 -0.57735 -0.57735 0.57735 0.35606 -0.92956 0.09540 0.52767 -0.79489 0.29945 0.40825 -0.81649 0.40825 -0.57735 -0.57735 0.57735 -0.36210 -0.90918 0.20551 -0.35606 -0.92956 0.09540 -0.31925 -0.92956 0.18433 -0.26066 -0.92956 0.26063 -0.18427 -0.92956 0.31925 -0.11493 -0.89593 0.42900 0.00000 -0.89593 0.44414 0.09540 -0.92956 0.35606 0.18427 -0.92956 0.31925 0.26066 -0.92956 0.26063 0.31925 -0.92956 0.18433 -0.11042 0.99387 0.00000 -0.11042 -0.99387 0.00000 -0.57735 -0.57735 0.57735 -0.57735 0.57735 0.57735 0.68004 -0.71014 0.18229 0.70482 -0.70785 0.04617 0.40825 -0.81649 0.40825 0.12403 -0.99225 0.00000 0.40825 -0.81649 0.40825 -0.57735 -0.57735 0.57735 -0.55269 -0.83258 0.03619 -0.68004 -0.71014 0.18229 -0.61025 -0.71004 0.35124 -0.49794 -0.71023 0.49754 -0.35105 -0.71010 0.61031 -0.18198 -0.71007 0.68017 0.00000 -0.83422 0.55138 0.18198 -0.71007 0.68017 0.35105 -0.71010 0.61031 0.49794 -0.71023 0.49754 0.61025 -0.71004 0.35124 0.68004 0.71014 0.18229 0.70482 0.70785 0.04617 0.61025 0.71004 0.35124 0.49794 0.71023 0.49754 0.35105 0.71010 0.61031 0.18198 0.71007 0.68017 0.00000 0.83422 0.55138 -0.18198 0.71007 0.68017 -0.35105 0.71010 0.61031 -0.49794 0.71023 0.49754 -0.61025 0.71004 0.35124 -0.68004 0.71014 0.18229 -0.55269 0.83258 0.03619 -0.57735 0.57735 0.57735 0.40825 0.81649 0.40825 0.12403 0.99225 0.00000 0.40825 0.81649 0.40825</float_array>
+					<technique_common>
+						<accessor count="76" source="#Color_002_002-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Color_002_002-Geometry-UV">
+					<float_array count="984" id="Color_002_002-Geometry-UV-array">0.00000 0.00000 960.00000 0.00000 960.00000 17.00000 960.00000 17.00000 0.00000 17.00000 0.00000 0.00000 -960.00000 0.00000 0.00000 0.00000 0.00000 17.00000 0.00000 17.00000 -960.00000 17.00000 -960.00000 0.00000 0.00000 -0.31659 0.00000 -0.44711 960.00000 -0.44711 960.00000 -0.44711 960.00000 -0.31659 0.00000 -0.31659 49.00000 960.00000 48.00000 960.00000 48.00000 0.00000 48.00000 0.00000 49.00000 0.00000 49.00000 960.00000 0.00000 12.21390 0.00000 12.34450 -960.00000 12.34450 -960.00000 12.34450 -960.00000 12.21390 0.00000 12.21390 -960.00000 6.00000 0.00000 6.00000 0.00000 17.00000 0.00000 17.00000 -960.00000 17.00000 -960.00000 6.00000 60.00000 960.00000 49.00000 960.00000 49.00000 0.00000 49.00000 0.00000 60.00000 0.00000 60.00000 960.00000 0.00000 24.03820 0.00000 24.16870 -960.00000 24.16870 -960.00000 24.16870 -960.00000 24.03820 0.00000 24.03820 0.00000 34.21980 0.00000 34.35030 -960.00000 34.35030 -960.00000 34.35030 -960.00000 34.21980 0.00000 34.21980 0.00000 42.06490 0.00000 42.19550 -960.00000 42.19550 -960.00000 42.19550 -960.00000 42.06490 0.00000 42.06490 0.00000 47.03900 0.00000 47.16950 -960.00000 47.16950 -960.00000 47.16950 -960.00000 47.03900 0.00000 47.03900 0.00000 48.80300 0.00000 48.93350 -960.00000 48.93350 -960.00000 48.93350 -960.00000 48.80300 0.00000 48.80300 0.00000 -47.23670 0.00000 -47.36720 960.00000 -47.36720 960.00000 -47.36720 960.00000 -47.23670 0.00000 -47.23670 0.00000 -42.44680 0.00000 -42.57730 960.00000 -42.57730 960.00000 -42.57730 960.00000 -42.44680 0.00000 -42.44680 0.00000 -34.75980 0.00000 -34.89030 960.00000 -34.89030 960.00000 -34.89030 960.00000 -34.75980 0.00000 -34.75980 0.00000 -24.69950 0.00000 -24.83010 960.00000 -24.83010 960.00000 -24.83010 960.00000 -24.69950 0.00000 -24.69950 0.00000 -12.95160 0.00000 -13.08210 960.00000 -13.08210 960.00000 -13.08210 960.00000 -12.95160 0.00000 -12.95160 0.00000 6.00000 960.00000 6.00000 960.00000 17.00000 960.00000 17.00000 0.00000 17.00000 0.00000 6.00000 48.00000 960.00000 0.00000 960.00000 0.00000 0.00000 0.00000 0.00000 48.00000 0.00000 48.00000 960.00000 -960.00000 0.00000 0.00000 0.00000 0.00000 15.00000 0.00000 15.00000 -960.00000 15.00000 -960.00000 0.00000 0.00000 -62.83860 0.00000 -62.96920 960.00000 -62.96920 960.00000 -62.96920 960.00000 -62.83860 0.00000 -62.83860 0.00000 -196.25700 0.00000 -196.38699 960.00000 -196.38699 960.00000 -196.38699 960.00000 -196.25700 0.00000 -196.25700 0.00000 -316.29599 0.00000 -316.42700 960.00000 -316.42700 960.00000 -316.42700 960.00000 -316.29599 0.00000 -316.29599 0.00000 -414.77600 0.00000 -414.90701 960.00000 -414.90701 960.00000 -414.90701 960.00000 -414.77600 0.00000 -414.77600 0.00000 -484.98499 0.00000 -485.11600 960.00000 -485.11600 960.00000 -485.11600 960.00000 -484.98499 0.00000 -484.98499 0.00000 -522.13898 0.00000 -522.26898 960.00000 -522.26898 960.00000 -522.26898 960.00000 -522.13898 0.00000 -522.13898 0.00000 523.70502 0.00000 523.83600 -960.00000 523.83600 -960.00000 523.83600 -960.00000 523.70502 0.00000 523.70502 0.00000 489.57700 0.00000 489.70801 -960.00000 489.70801 -960.00000 489.70801 -960.00000 489.57700 0.00000 489.57700 0.00000 422.08099 0.00000 422.21201 -960.00000 422.21201 -960.00000 422.21201 -960.00000 422.08099 0.00000 422.08099 0.00000 325.81699 0.00000 325.94699 -960.00000 325.94699 -960.00000 325.94699 -960.00000 325.81699 0.00000 325.81699 0.00000 207.34399 0.00000 207.47400 -960.00000 207.47400 -960.00000 207.47400 -960.00000 207.34399 0.00000 207.34399 0.00000 74.73600 0.00000 74.86650 -960.00000 74.86650 -960.00000 74.86650 -960.00000 74.73600 0.00000 74.73600 -960.00000 6.00000 0.00000 6.00000 0.00000 15.00000 0.00000 15.00000 -960.00000 15.00000 -960.00000 6.00000 576.00000 960.00000 528.00000 960.00000 528.00000 0.00000 528.00000 0.00000 576.00000 0.00000 576.00000 960.00000 527.00000 960.00000 516.00000 960.00000 516.00000 0.00000 516.00000 0.00000 527.00000 0.00000 527.00000 960.00000 0.00000 6.00000 960.00000 6.00000 960.00000 15.00000 960.00000 15.00000 0.00000 15.00000 0.00000 6.00000 0.00000 0.00000 960.00000 0.00000 960.00000 15.00000 960.00000 15.00000 0.00000 15.00000 0.00000 0.00000 -516.00000 0.00000 -516.00000 15.00000 -527.00000 15.00000 -516.00000 0.00000 -527.00000 15.00000 -527.00000 6.00000 -528.00000 6.00000 -528.00000 15.00000 -576.00000 15.00000 -528.00000 6.00000 -576.00000 15.00000 -576.00000 0.00000 -516.00000 0.00000 -527.00000 6.00000 -527.01703 5.87059 -527.98297 5.87059 -528.00000 6.00000 -576.00000 0.00000 -516.00000 0.00000 -527.01703 5.87059 -527.06702 5.75000 -527.93298 5.75000 -527.98297 5.87059 -576.00000 0.00000 -516.00000 0.00000 -527.06702 5.75000 -527.14600 5.64645 -527.85400 5.64645 -527.93298 5.75000 -576.00000 0.00000 -516.00000 0.00000 -527.14600 5.64645 -527.25000 5.56699 -527.75000 5.56699 -527.85400 5.64645 -576.00000 0.00000 -516.00000 0.00000 -527.25000 5.56699 -527.37097 5.51704 -527.62903 5.51704 -527.75000 5.56699 -576.00000 0.00000 -516.00000 0.00000 -527.37097 5.51704 -527.50000 5.50000 -527.50000 5.50000 -527.62903 5.51704 -576.00000 0.00000 -516.00000 0.00000 -527.50000 5.50000 -576.00000 0.00000 527.00000 15.00000 516.00000 15.00000 516.00000 0.00000 527.00000 6.00000 527.00000 15.00000 516.00000 0.00000 576.00000 15.00000 528.00000 15.00000 528.00000 6.00000 576.00000 0.00000 576.00000 15.00000 528.00000 6.00000 527.01703 5.87059 527.00000 6.00000 516.00000 0.00000 576.00000 0.00000 528.00000 6.00000 527.98297 5.87059 527.06702 5.75000 527.01703 5.87059 516.00000 0.00000 576.00000 0.00000 527.98297 5.87059 527.93298 5.75000 527.14600 5.64645 527.06702 5.75000 516.00000 0.00000 576.00000 0.00000 527.93298 5.75000 527.85400 5.64645 527.25000 5.56699 527.14600 5.64645 516.00000 0.00000 576.00000 0.00000 527.85400 5.64645 527.75000 5.56699 527.37097 5.51704 527.25000 5.56699 516.00000 0.00000 576.00000 0.00000 527.75000 5.56699 527.62903 5.51704 527.50000 5.50000 527.37097 5.51704 516.00000 0.00000 576.00000 0.00000 527.62903 5.51704 527.50000 5.50000 576.00000 0.00000 527.50000 5.50000 516.00000 0.00000 -48.01700 5.87059 -48.00000 6.00000 -49.00000 6.00000 -48.01700 5.87059 -49.00000 6.00000 -48.98300 5.87059 -48.06700 5.75000 -48.01700 5.87059 -48.98300 5.87059 -48.06700 5.75000 -48.98300 5.87059 -48.93300 5.75000 -48.14640 5.64645 -48.06700 5.75000 -48.93300 5.75000 -48.14640 5.64645 -48.93300 5.75000 -48.85360 5.64645 -48.25000 5.56699 -48.14640 5.64645 -48.85360 5.64645 -48.25000 5.56699 -48.85360 5.64645 -48.75000 5.56699 -48.37060 5.51704 -48.25000 5.56699 -48.75000 5.56699 -48.37060 5.51704 -48.75000 5.56699 -48.62940 5.51704 -48.50000 5.50000 -48.37060 5.51704 -48.62940 5.51704 49.00000 6.00000 48.00000 6.00000 48.01700 5.87059 48.98300 5.87059 49.00000 6.00000 48.01700 5.87059 48.98300 5.87059 48.01700 5.87059 48.06700 5.75000 48.93300 5.75000 48.98300 5.87059 48.06700 5.75000 48.93300 5.75000 48.06700 5.75000 48.14640 5.64645 48.85360 5.64645 48.93300 5.75000 48.14640 5.64645 48.85360 5.64645 48.14640 5.64645 48.25000 5.56699 48.75000 5.56699 48.85360 5.64645 48.25000 5.56699 48.75000 5.56699 48.25000 5.56699 48.37060 5.51704 48.62940 5.51704 48.75000 5.56699 48.37060 5.51704 48.62940 5.51704 48.37060 5.51704 48.50000 5.50000 48.00000 17.00000 0.00000 17.00000 0.00000 0.00000 48.00000 6.00000 48.00000 17.00000 0.00000 0.00000 60.00000 17.00000 49.00000 17.00000 49.00000 6.00000 60.00000 0.00000 60.00000 17.00000 49.00000 6.00000 48.01700 5.87059 48.00000 6.00000 0.00000 0.00000 60.00000 0.00000 49.00000 6.00000 48.98300 5.87059 48.06700 5.75000 48.01700 5.87059 0.00000 0.00000 60.00000 0.00000 48.98300 5.87059 48.93300 5.75000 48.14640 5.64645 48.06700 5.75000 0.00000 0.00000 60.00000 0.00000 48.93300 5.75000 48.85360 5.64645 48.25000 5.56699 48.14640 5.64645 0.00000 0.00000 60.00000 0.00000 48.85360 5.64645 48.75000 5.56699 48.37060 5.51704 48.25000 5.56699 0.00000 0.00000 60.00000 0.00000 48.75000 5.56699 48.62940 5.51704 48.50000 5.50000 48.37060 5.51704 0.00000 0.00000 60.00000 0.00000 48.62940 5.51704 48.50000 5.50000 60.00000 0.00000 48.50000 5.50000 0.00000 0.00000 0.00000 0.00000 0.00000 17.00000 -48.00000 17.00000 0.00000 0.00000 -48.00000 17.00000 -48.00000 6.00000 -49.00000 6.00000 -49.00000 17.00000 -60.00000 17.00000 -49.00000 6.00000 -60.00000 17.00000 -60.00000 0.00000 0.00000 0.00000 -48.00000 6.00000 -48.01700 5.87059 -48.98300 5.87059 -49.00000 6.00000 -60.00000 0.00000 0.00000 0.00000 -48.01700 5.87059 -48.06700 5.75000 -48.93300 5.75000 -48.98300 5.87059 -60.00000 0.00000 0.00000 0.00000 -48.06700 5.75000 -48.14640 5.64645 -48.85360 5.64645 -48.93300 5.75000 -60.00000 0.00000 0.00000 0.00000 -48.14640 5.64645 -48.25000 5.56699 -48.75000 5.56699 -48.85360 5.64645 -60.00000 0.00000 0.00000 0.00000 -48.25000 5.56699 -48.37060 5.51704 -48.62940 5.51704 -48.75000 5.56699 -60.00000 0.00000 0.00000 0.00000 -48.37060 5.51704 -48.50000 5.50000 -48.50000 5.50000 -48.62940 5.51704 -60.00000 0.00000 0.00000 0.00000 -48.50000 5.50000 -60.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="492" source="#Color_002_002-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Color_002_002-Geometry-Vertex">
+					<input semantic="POSITION" source="#Color_002_002-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Color_002_002-Geometry-Normals"/>
+				</vertices>
+				<triangles count="164" material="_Color_E02__2_JPG">
+					<input offset="0" semantic="VERTEX" source="#Color_002_002-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Color_002_002-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 21 7 22 8 22 9 5 10 4 11 24 12 23 13 8 14 8 15 7 16 24 17 19 18 7 19 24 20 24 21 27 22 19 23 28 24 27 25 19 26 19 27 18 28 28 29 19 30 27 31 26 32 26 33 20 34 19 35 2 36 20 37 26 38 26 39 3 40 2 41 29 42 28 43 18 44 18 45 17 46 29 47 30 48 29 49 17 50 17 51 16 52 30 53 31 54 30 55 16 56 16 57 15 58 31 59 32 60 31 61 15 62 15 63 14 64 32 65 33 66 32 67 14 68 14 69 13 70 33 71 34 72 33 73 13 74 13 75 12 76 34 77 35 78 34 79 12 80 12 81 11 82 35 83 36 84 35 85 11 86 11 87 10 88 36 89 37 90 36 91 10 92 10 93 9 94 37 95 23 96 37 97 9 98 9 99 8 100 23 101 24 102 7 103 6 104 6 105 25 106 24 107 6 108 5 109 22 110 22 111 25 112 6 113 38 114 39 115 40 116 40 117 41 118 38 119 43 120 42 121 59 122 59 123 60 124 43 125 42 126 58 127 61 128 61 129 59 130 42 131 58 132 57 133 62 134 62 135 61 136 58 137 57 138 56 139 63 140 63 141 62 142 57 143 56 144 55 145 64 146 64 147 63 148 56 149 55 150 54 151 65 152 65 153 64 154 55 155 54 156 53 157 66 158 66 159 65 160 54 161 53 162 52 163 67 164 67 165 66 166 53 167 52 168 51 169 68 170 68 171 67 172 52 173 51 174 50 175 69 176 69 177 68 178 51 179 50 180 49 181 70 182 70 183 69 184 50 185 49 186 48 187 71 188 71 189 70 190 49 191 71 192 48 193 47 194 47 195 72 196 71 197 73 198 72 199 47 200 47 201 46 202 73 203 75 204 41 205 40 206 40 207 44 208 75 209 43 210 60 211 75 212 75 213 44 214 43 215 45 216 74 217 73 218 73 219 46 220 45 221 38 222 41 223 75 224 38 225 75 226 60 227 71 228 72 229 73 230 71 231 73 232 74 233 38 234 60 235 59 236 70 237 71 238 74 239 38 240 59 241 61 242 69 243 70 244 74 245 38 246 61 247 62 248 68 249 69 250 74 251 38 252 62 253 63 254 67 255 68 256 74 257 38 258 63 259 64 260 66 261 67 262 74 263 38 264 64 265 65 266 65 267 66 268 74 269 38 270 65 271 74 272 44 273 40 274 39 275 43 276 44 277 39 278 46 279 47 280 48 281 45 282 46 283 48 284 42 285 43 286 39 287 45 288 48 289 49 290 58 291 42 292 39 293 45 294 49 295 50 296 57 297 58 298 39 299 45 300 50 301 51 302 56 303 57 304 39 305 45 306 51 307 52 308 55 309 56 310 39 311 45 312 52 313 53 314 54 315 55 316 39 317 45 318 53 319 54 320 45 321 54 322 39 323 8 324 7 325 19 326 8 327 19 328 18 329 9 330 8 331 18 332 9 333 18 334 17 335 10 336 9 337 17 338 10 339 17 340 16 341 11 342 10 343 16 344 11 345 16 346 15 347 12 348 11 349 15 350 12 351 15 352 14 353 13 354 12 355 14 356 27 357 24 358 23 359 28 360 27 361 23 362 28 363 23 364 37 365 29 366 28 367 37 368 29 369 37 370 36 371 30 372 29 373 36 374 30 375 36 376 35 377 31 378 30 379 35 380 31 381 35 382 34 383 32 384 31 385 34 386 32 387 34 388 33 389 25 390 22 391 21 392 24 393 25 394 21 395 3 396 26 397 27 398 0 399 3 400 27 401 23 402 24 403 21 404 0 405 27 406 28 407 37 408 23 409 21 410 0 411 28 412 29 413 36 414 37 415 21 416 0 417 29 418 30 419 35 420 36 421 21 422 0 423 30 424 31 425 34 426 35 427 21 428 0 429 31 430 32 431 33 432 34 433 21 434 0 435 32 436 33 437 0 438 33 439 21 440 4 441 5 442 6 443 4 444 6 445 7 446 19 447 20 448 2 449 19 450 2 451 1 452 4 453 7 454 8 455 18 456 19 457 1 458 4 459 8 460 9 461 17 462 18 463 1 464 4 465 9 466 10 467 16 468 17 469 1 470 4 471 10 472 11 473 15 474 16 475 1 476 4 477 11 478 12 479 14 480 15 481 1 482 4 483 12 484 13 485 13 486 14 487 1 488 4 489 13 490 1 491</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Color_000-Geometry" name="Color_000-Geometry">
+			<mesh>
+				<source id="Color_000-Geometry-Position">
+					<float_array count="12" id="Color_000-Geometry-Position-array">276.00000 960.00000 0.00000 276.00000 0.00000 0.00000 285.00000 0.00000 0.00000 285.00000 960.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#Color_000-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Color_000-Geometry-Normals">
+					<float_array count="12" id="Color_000-Geometry-Normals-array">0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000</float_array>
+					<technique_common>
+						<accessor count="4" source="#Color_000-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Color_000-Geometry-UV">
+					<float_array count="12" id="Color_000-Geometry-UV-array">276.00000 960.00000 276.00000 0.00000 285.00000 0.00000 285.00000 0.00000 285.00000 960.00000 276.00000 960.00000</float_array>
+					<technique_common>
+						<accessor count="6" source="#Color_000-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Color_000-Geometry-Vertex">
+					<input semantic="POSITION" source="#Color_000-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Color_000-Geometry-Normals"/>
+				</vertices>
+				<triangles count="2" material="Color_E02_JPG">
+					<input offset="0" semantic="VERTEX" source="#Color_000-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Color_000-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="FrontColor_002-Geometry" name="FrontColor_002-Geometry">
+			<mesh>
+				<source id="FrontColor_002-Geometry-Position">
+					<float_array count="15" id="FrontColor_002-Geometry-Position-array">60.00000 960.00000 0.00000 60.00000 0.00000 0.00000 49.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 960.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="5" source="#FrontColor_002-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="FrontColor_002-Geometry-Normals">
+					<float_array count="15" id="FrontColor_002-Geometry-Normals-array">0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000 1.00000 0.00000 0.00000 0.00000 0.00000 -1.00000 0.00000 0.00000 -1.00000</float_array>
+					<technique_common>
+						<accessor count="5" source="#FrontColor_002-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="FrontColor_002-Geometry-UV">
+					<float_array count="18" id="FrontColor_002-Geometry-UV-array">0.00000 960.00000 -60.00000 960.00000 0.00000 0.00000 0.00000 0.00000 -60.00000 960.00000 -60.00000 0.00000 -49.00000 0.00000 0.00000 0.00000 -60.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="9" source="#FrontColor_002-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="FrontColor_002-Geometry-Vertex">
+					<input semantic="POSITION" source="#FrontColor_002-Geometry-Position"/>
+					<input semantic="NORMAL" source="#FrontColor_002-Geometry-Normals"/>
+				</vertices>
+				<triangles count="3" material="_Color_E02__1_JPG">
+					<input offset="0" semantic="VERTEX" source="#FrontColor_002-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#FrontColor_002-Geometry-UV"/>
+					<p>4 0 0 1 3 2 3 3 0 4 1 5 2 6 3 7 1 8</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="_Color_E02__1_002-Geometry" name="_Color_E02__1_002-Geometry">
+			<mesh>
+				<source id="_Color_E02__1_002-Geometry-Position">
+					<float_array count="24" id="_Color_E02__1_002-Geometry-Position-array">195.00000 960.00000 0.00000 186.00000 960.00000 0.00000 186.00000 0.00000 0.00000 195.00000 0.00000 0.00000 399.00000 960.00000 0.00000 390.00000 960.00000 0.00000 390.00000 0.00000 0.00000 399.00000 0.00000 0.00000</float_array>
+					<technique_common>
+						<accessor count="8" source="#_Color_E02__1_002-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Color_E02__1_002-Geometry-Normals">
+					<float_array count="24" id="_Color_E02__1_002-Geometry-Normals-array">0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000</float_array>
+					<technique_common>
+						<accessor count="8" source="#_Color_E02__1_002-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Color_E02__1_002-Geometry-UV">
+					<float_array count="24" id="_Color_E02__1_002-Geometry-UV-array">9.68538 9.05676 0.68538 9.05676 0.68538 0.00625 0.68538 0.00625 9.68538 0.00625 9.68538 9.05676 9.68538 9.05676 0.68538 9.05676 0.68538 0.00625 0.68538 0.00625 9.68538 0.00625 9.68538 9.05676</float_array>
+					<technique_common>
+						<accessor count="12" source="#_Color_E02__1_002-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="_Color_E02__1_002-Geometry-Vertex">
+					<input semantic="POSITION" source="#_Color_E02__1_002-Geometry-Position"/>
+					<input semantic="NORMAL" source="#_Color_E02__1_002-Geometry-Normals"/>
+				</vertices>
+				<triangles count="4" material="_Color_E02__1_JPG">
+					<input offset="0" semantic="VERTEX" source="#_Color_E02__1_002-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#_Color_E02__1_002-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 6 9 7 10 4 11</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_images>
+		<image id="Color_E02_JPG-image" name="Color_E02_JPG-image">
+			<init_from>../images/road2/Color_E02.JPG</init_from>
+		</image>
+		<image id="Asphalt_New_jpg-image" name="Asphalt_New_jpg-image">
+			<init_from>../images/road2/Asphalt_New.jpg</init_from>
+		</image>
+		<image id="_Color_E02__1_JPG-image" name="_Color_E02__1_JPG-image">
+			<init_from>../images/road2/texture3.JPG</init_from>
+		</image>
+		<image id="Color_E02_JPG-image" name="Color_E02_JPG-image">
+			<init_from>../images/road2/Color_E02.JPG</init_from>
+		</image>
+		<image id="_Color_E02__2_JPG-image" name="_Color_E02__2_JPG-image">
+			<init_from>../images/road2/Color_E02.JPG</init_from>
+		</image>
+		<image id="_Color_E02__2_JPG-image" name="_Color_E02__2_JPG-image">
+			<init_from>../images/road2/_Color_E02__1.JPG</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="Color_E02_JPG" name="Color_E02_JPG">
+			<instance_effect url="#Color_E02_JPG-fx"/>
+		</material>
+		<material id="Asphalt_New_jpg" name="Asphalt_New_jpg">
+			<instance_effect url="#Asphalt_New_jpg-fx"/>
+		</material>
+		<material id="_Color_E02__1_JPG" name="_Color_E02__1_JPG">
+			<instance_effect url="#_Color_E02__1_JPG-fx"/>
+		</material>
+		<material id="_Color_E02__2_JPG" name="_Color_E02__2_JPG">
+			<instance_effect url="#_Color_E02__2_JPG-fx"/>
+		</material>
+	</library_materials>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node layer="L1" id="Color_E02_002" name="Color_E02_002">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Color_E02_002-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Color_E02_JPG" target="#Color_E02_JPG"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Asphalt_New_002" name="Asphalt_New_002">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Asphalt_New_002-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Asphalt_New_jpg" target="#Asphalt_New_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Color_002_002" name="Color_002_002">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Color_002_002-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_Color_E02__2_JPG" target="#_Color_E02__2_JPG"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Color_000" name="Color_000">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Color_000-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Color_E02_JPG" target="#Color_E02_JPG"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="FrontColor_002" name="FrontColor_002">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#FrontColor_002-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_Color_E02__1_JPG" target="#_Color_E02__1_JPG"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="_Color_E02__1_002" name="_Color_E02__1_002">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#_Color_E02__1_002-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_Color_E02__1_JPG" target="#_Color_E02__1_JPG"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>

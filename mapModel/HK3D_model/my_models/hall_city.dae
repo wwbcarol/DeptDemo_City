@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.0" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+	<asset>
+		<contributor>
+			<author>Illusoft Collada 1.4.0 plugin for Blender - http://colladablender.illusoft.com</author>
+			<authoring_tool>Blender v:248 - Illusoft Collada Exporter v:0.3.108</authoring_tool>
+			<comments></comments>
+			<copyright></copyright>
+			<source_data>file://C://</source_data>
+		</contributor>
+		<created>2009-01-21T00:00:06.281000</created>
+		<modified>2009-01-21T00:00:06.281000</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="_Beige_1_bmp-fx" name="_Beige_1_bmp-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="_Beige_1_bmp-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Color_005_jpg-fx" name="Color_005_jpg-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="Color_005_jpg-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="_Brown__bmp-fx" name="_Brown__bmp-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="_Brown__bmp-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="Sketchy_Brick_Pavers_-fx" name="Sketchy_Brick_Pavers_-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="Sketchy_Brick_Pavers_-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="_Black__bmp-fx" name="_Black__bmp-fx">
+			<profile_COMMON>
+				<technique sid="blender">
+					<lambert>
+						<diffuse>
+							<texture texture="_Black__bmp-image"/>
+						</diffuse>
+					</lambert>
+				</technique>
+			</profile_COMMON>
+		</effect>
+	</library_effects>
+	<library_geometries>
+		<geometry id="_Beige_1-Geometry" name="_Beige_1-Geometry">
+			<mesh>
+				<source id="_Beige_1-Geometry-Position">
+					<float_array count="24" id="_Beige_1-Geometry-Position-array">8.81993 13.61070 0.00000 -17.46270 22.38950 0.00000 -17.46270 22.38950 59.73660 8.81993 13.61070 59.73660 3.74932 -5.32209 59.73660 -22.96810 1.83342 59.73660 -22.96810 1.83342 0.00000 3.74932 -5.32209 0.00000</float_array>
+					<technique_common>
+						<accessor count="8" source="#_Beige_1-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Beige_1-Geometry-Normals">
+					<float_array count="24" id="_Beige_1-Geometry-Normals-array">0.31678 0.94848 0.00000 0.31678 0.94848 0.00000 0.31678 0.94848 0.00000 0.31678 0.94848 0.00000 -0.25867 -0.96594 0.00000 -0.25867 -0.96594 0.00000 -0.25867 -0.96594 0.00000 -0.25867 -0.96594 0.00000</float_array>
+					<technique_common>
+						<accessor count="8" source="#_Beige_1-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Beige_1-Geometry-UV">
+					<float_array count="24" id="_Beige_1-Geometry-UV-array">-1.19247 -0.02464 5.10526 -0.02464 5.10526 10.97870 5.10526 10.97870 -1.19247 10.97870 -1.19247 -0.02464 7.15497 11.00330 0.86883 11.00330 0.86883 0.00000 0.86883 0.00000 7.15497 0.00000 7.15497 11.00330</float_array>
+					<technique_common>
+						<accessor count="12" source="#_Beige_1-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="_Beige_1-Geometry-Vertex">
+					<input semantic="POSITION" source="#_Beige_1-Geometry-Position"/>
+					<input semantic="NORMAL" source="#_Beige_1-Geometry-Normals"/>
+				</vertices>
+				<triangles count="4" material="_Beige_1_bmp">
+					<input offset="0" semantic="VERTEX" source="#_Beige_1-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#_Beige_1-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 6 9 7 10 4 11</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Color_005-Geometry" name="Color_005-Geometry">
+			<mesh>
+				<source id="Color_005-Geometry-Position">
+					<float_array count="36" id="Color_005-Geometry-Position-array">3.74932 -5.32209 65.95050 -27.25170 3.79018 65.95050 -28.84200 3.40660 65.95050 3.45128 -3.97610 65.95050 7.82610 13.31920 65.95050 8.81993 13.61070 65.95050 -23.24110 24.31960 65.95050 -22.34480 23.18920 65.95050 -27.25170 3.79018 65.33450 -22.34480 23.18920 65.33450 3.45128 -3.97610 65.33450 7.82610 13.31920 65.33450</float_array>
+					<technique_common>
+						<accessor count="12" source="#Color_005-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Color_005-Geometry-Normals">
+					<float_array count="36" id="Color_005-Geometry-Normals-array">0.00000 0.00000 1.00000 0.28629 0.17069 0.94281 0.00000 0.00000 1.00000 -0.29566 0.49590 0.81649 -0.38365 -0.21131 0.89895 0.00000 0.00000 1.00000 0.00000 0.00000 1.00000 0.19977 -0.36274 0.91018 0.70128 0.41813 0.57735 0.38917 -0.70660 0.59096 -0.41813 0.70128 0.57735 -0.72292 -0.39818 0.56462</float_array>
+					<technique_common>
+						<accessor count="12" source="#Color_005-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Color_005-Geometry-UV">
+					<float_array count="108" id="Color_005-Geometry-UV-array">-0.36012 0.35252 -0.71219 0.36217 -0.72786 0.35247 -0.71219 0.36217 -0.36012 0.35252 -0.36705 0.36769 -0.36705 0.36769 -0.36012 0.35252 -0.36979 0.58888 -0.36979 0.58888 -0.36012 0.35252 -0.36015 0.59556 -0.72788 0.62094 -0.71526 0.61027 -0.36015 0.59556 -0.72788 0.62094 -0.71219 0.36217 -0.71526 0.61027 -0.71219 0.36217 -0.72788 0.62094 -0.72786 0.35247 -0.47723 1.48468 -0.68789 1.42046 -0.68563 1.41088 -0.68563 1.41088 -0.47497 1.47510 -0.47723 1.48468 -0.36829 1.51789 -0.70170 1.41625 -0.69945 1.40667 -0.69945 1.40667 -0.36604 1.50831 -0.36829 1.51789 -0.62454 1.43977 -0.81236 1.38252 -0.81010 1.37294 -0.81010 1.37294 -0.62229 1.43019 -0.62454 1.43977 -0.62151 1.44070 -0.95570 1.33882 -0.95344 1.32924 -0.95344 1.32924 -0.61925 1.43112 -0.62151 1.44070 -0.36015 0.59556 -0.71526 0.61027 -0.36979 0.58888 -0.36979 0.58888 -0.71526 0.61027 -0.71219 0.36217 -0.71219 0.36217 -0.36705 0.36769 -0.36979 0.58888</float_array>
+					<technique_common>
+						<accessor count="54" source="#Color_005-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Color_005-Geometry-Vertex">
+					<input semantic="POSITION" source="#Color_005-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Color_005-Geometry-Normals"/>
+				</vertices>
+				<triangles count="18" material="Color_005_jpg">
+					<input offset="0" semantic="VERTEX" source="#Color_005-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Color_005-Geometry-UV"/>
+					<p>0 0 1 1 2 2 1 3 0 4 3 5 3 6 0 7 4 8 4 9 0 10 5 11 6 12 7 13 5 14 6 15 1 16 7 17 1 18 6 19 2 20 7 21 1 22 8 23 8 24 9 25 7 26 1 27 3 28 10 29 10 30 8 31 1 32 3 33 4 34 11 35 11 36 10 37 3 38 4 39 7 40 9 41 9 42 11 43 4 44 5 45 7 46 4 47 11 48 9 49 8 50 8 51 10 52 11 53</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="_Brown_-Geometry" name="_Brown_-Geometry">
+			<mesh>
+				<source id="_Brown_-Geometry-Position">
+					<float_array count="24" id="_Brown_-Geometry-Position-array">-23.24110 24.31960 0.00000 -23.24110 24.31960 59.73660 -17.46270 22.38950 59.73660 -17.46270 22.38950 0.00000 -28.84200 3.40660 0.00000 -22.96810 1.83342 0.00000 -22.96810 1.83342 59.73660 -28.84200 3.40660 59.73660</float_array>
+					<technique_common>
+						<accessor count="8" source="#_Brown_-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Brown_-Geometry-Normals">
+					<float_array count="24" id="_Brown_-Geometry-Normals-array">0.31681 0.94848 0.00000 0.31681 0.94848 0.00000 0.31681 0.94848 0.00000 0.31681 0.94848 0.00000 -0.25871 -0.96594 0.00000 -0.25871 -0.96594 0.00000 -0.25871 -0.96594 0.00000 -0.25871 -0.96594 0.00000</float_array>
+					<technique_common>
+						<accessor count="8" source="#_Brown_-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Brown_-Geometry-UV">
+					<float_array count="24" id="_Brown_-Geometry-UV-array">0.90630 -0.00000 0.90630 16.55590 -0.44753 16.55590 -0.44753 16.55590 -0.44753 -0.00000 0.90630 -0.00000 -0.50181 -0.00000 0.84952 -0.00000 0.84952 16.55590 0.84952 16.55590 -0.50181 16.55590 -0.50181 -0.00000</float_array>
+					<technique_common>
+						<accessor count="12" source="#_Brown_-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="_Brown_-Geometry-Vertex">
+					<input semantic="POSITION" source="#_Brown_-Geometry-Position"/>
+					<input semantic="NORMAL" source="#_Brown_-Geometry-Normals"/>
+				</vertices>
+				<triangles count="4" material="_Brown__bmp">
+					<input offset="0" semantic="VERTEX" source="#_Brown_-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#_Brown_-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 6 9 7 10 4 11</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="Sketchy_Brick_Pavers_-Geometry" name="Sketchy_Brick_Pavers_-Geometry">
+			<mesh>
+				<source id="Sketchy_Brick_Pavers_-Geometry-Position">
+					<float_array count="36" id="Sketchy_Brick_Pavers_-Geometry-Position-array">3.74932 -5.32209 65.95050 3.74932 -5.32209 59.73660 8.81993 13.61070 59.73660 8.81993 13.61070 65.95050 -23.24110 24.31960 65.95050 -23.24110 24.31960 59.73660 -28.84200 3.40660 59.73660 -28.84200 3.40660 65.95050 -28.84200 3.40660 0.00000 -23.24110 24.31960 0.00000 8.81993 13.61070 0.00000 3.74932 -5.32209 0.00000</float_array>
+					<technique_common>
+						<accessor count="12" source="#Sketchy_Brick_Pavers_-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Sketchy_Brick_Pavers_-Geometry-Normals">
+					<float_array count="36" id="Sketchy_Brick_Pavers_-Geometry-Normals-array">0.96594 -0.25867 0.00000 0.96594 -0.25867 0.00000 0.96594 -0.25867 0.00000 0.96594 -0.25867 0.00000 -0.96594 0.25867 0.00000 -0.96594 0.25867 0.00000 -0.96594 0.25867 0.00000 -0.96594 0.25867 0.00000 -0.96594 0.25867 0.00000 -0.96594 0.25867 0.00000 0.96594 -0.25867 0.00000 0.96594 -0.25867 0.00000</float_array>
+					<technique_common>
+						<accessor count="12" source="#Sketchy_Brick_Pavers_-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="Sketchy_Brick_Pavers_-Geometry-UV">
+					<float_array count="48" id="Sketchy_Brick_Pavers_-Geometry-UV-array">4.21577 42.82500 4.21577 38.79000 14.01580 38.79000 14.01580 38.79000 14.01580 42.82500 4.21577 42.82500 -15.04080 42.82500 -15.04080 38.79000 -4.21577 38.79000 -4.21577 38.79000 -4.21577 42.82500 -15.04080 42.82500 -4.21577 -0.00000 -4.21577 38.79000 -15.04080 38.79000 -15.04080 38.79000 -15.04080 -0.00000 -4.21577 -0.00000 14.01580 -0.00000 14.01580 38.79000 4.21577 38.79000 4.21577 38.79000 4.21577 -0.00000 14.01580 -0.00000</float_array>
+					<technique_common>
+						<accessor count="24" source="#Sketchy_Brick_Pavers_-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="Sketchy_Brick_Pavers_-Geometry-Vertex">
+					<input semantic="POSITION" source="#Sketchy_Brick_Pavers_-Geometry-Position"/>
+					<input semantic="NORMAL" source="#Sketchy_Brick_Pavers_-Geometry-Normals"/>
+				</vertices>
+				<triangles count="8" material="Sketchy_Brick_Pavers_-Material">
+					<input offset="0" semantic="VERTEX" source="#Sketchy_Brick_Pavers_-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#Sketchy_Brick_Pavers_-Geometry-UV"/>
+					<p>0 0 1 1 2 2 2 3 3 4 0 5 4 6 5 7 6 8 6 9 7 10 4 11 8 12 6 13 5 14 5 15 9 16 8 17 10 18 2 19 1 20 1 21 11 22 10 23</p>
+				</triangles>
+			</mesh>
+		</geometry>
+		<geometry id="_Black_-Geometry" name="_Black_-Geometry">
+			<mesh>
+				<source id="_Black_-Geometry-Position">
+					<float_array count="30" id="_Black_-Geometry-Position-array">3.74932 -5.32209 59.73660 3.74932 -5.32209 65.95050 -28.84200 3.40660 65.95050 -28.84200 3.40660 59.73660 -22.96810 1.83342 59.73660 8.81993 13.61070 59.73660 -17.46270 22.38950 59.73660 -23.24110 24.31960 59.73660 -23.24110 24.31960 65.95050 8.81993 13.61070 65.95050</float_array>
+					<technique_common>
+						<accessor count="10" source="#_Black_-Geometry-Position-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Black_-Geometry-Normals">
+					<float_array count="30" id="_Black_-Geometry-Normals-array">-0.18293 -0.68300 0.70708 -0.25867 -0.96594 0.00000 -0.25867 -0.96594 0.00000 -0.23139 -0.86395 0.44719 0.00000 0.00000 1.00000 0.22401 0.67067 -0.70708 0.00000 0.00000 -1.00000 0.28333 0.84835 -0.44719 0.31678 0.94848 0.00000 0.31678 0.94848 0.00000</float_array>
+					<technique_common>
+						<accessor count="10" source="#_Black_-Geometry-Normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="_Black_-Geometry-UV">
+					<float_array count="36" id="_Black_-Geometry-UV-array">4.51784 11.75470 4.51784 13.00840 -0.52727 13.00840 4.51784 11.75470 -0.52727 13.00840 -0.52727 11.75470 3.60855 11.75470 4.51784 11.75470 -0.52727 11.75470 0.73281 12.97510 -4.30301 12.97510 -4.30301 11.72150 0.73281 11.72150 0.73281 12.97510 -4.30301 11.72150 0.73281 11.72150 -4.30301 11.72150 -3.39540 11.72150</float_array>
+					<technique_common>
+						<accessor count="18" source="#_Black_-Geometry-UV-array" stride="2">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="_Black_-Geometry-Vertex">
+					<input semantic="POSITION" source="#_Black_-Geometry-Position"/>
+					<input semantic="NORMAL" source="#_Black_-Geometry-Normals"/>
+				</vertices>
+				<triangles count="6" material="_Black__bmp">
+					<input offset="0" semantic="VERTEX" source="#_Black_-Geometry-Vertex"/>
+					<input offset="1" semantic="TEXCOORD" source="#_Black_-Geometry-UV"/>
+					<p>7 0 8 1 9 2 7 3 9 4 5 5 6 6 7 7 5 8 1 9 2 10 3 11 0 12 1 13 3 14 0 15 3 16 4 17</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_images>
+		<image id="_Beige_1_bmp-image" name="_Beige_1_bmp-image">
+			<init_from>../images/Hall_city/_Beige_1.jpg</init_from>
+		</image>
+		<image id="Color_005_jpg-image" name="Color_005_jpg-image">
+			<init_from>../images/Hall_city/Color_005.jpg</init_from>
+		</image>
+		<image id="_Brown__bmp-image" name="_Brown__bmp-image">
+			<init_from>../images/Hall_city/_Brown_.jpg</init_from>
+		</image>
+		<image id="Sketchy_Brick_Pavers_-image" name="Sketchy_Brick_Pavers_-image">
+			<init_from>../images/Hall_city/Sketchy_Brick_Pavers_Herringbone.jpg</init_from>
+		</image>
+		<image id="_Black__bmp-image" name="_Black__bmp-image">
+			<init_from>../images/Hall_city/_Black_.jpg</init_from>
+		</image>
+	</library_images>
+	<library_materials>
+		<material id="_Beige_1_bmp" name="_Beige_1_bmp">
+			<instance_effect url="#_Beige_1_bmp-fx"/>
+		</material>
+		<material id="Color_005_jpg" name="Color_005_jpg">
+			<instance_effect url="#Color_005_jpg-fx"/>
+		</material>
+		<material id="_Brown__bmp" name="_Brown__bmp">
+			<instance_effect url="#_Brown__bmp-fx"/>
+		</material>
+		<material id="Sketchy_Brick_Pavers_-Material" name="Sketchy_Brick_Pavers_-Material">
+			<instance_effect url="#Sketchy_Brick_Pavers_-fx"/>
+		</material>
+		<material id="_Black__bmp" name="_Black__bmp">
+			<instance_effect url="#_Black__bmp-fx"/>
+		</material>
+	</library_materials>
+	<library_visual_scenes>
+		<visual_scene id="Scene" name="Scene">
+			<node layer="L1" id="_Beige_1" name="_Beige_1">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#_Beige_1-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_Beige_1_bmp" target="#_Beige_1_bmp"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Color_005" name="Color_005">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Color_005-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Color_005_jpg" target="#Color_005_jpg"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="_Brown_" name="_Brown_">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#_Brown_-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_Brown__bmp" target="#_Brown__bmp"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="Sketchy_Brick_Pavers_" name="Sketchy_Brick_Pavers_">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#Sketchy_Brick_Pavers_-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="Sketchy_Brick_Pavers_-Material" target="#Sketchy_Brick_Pavers_-Material"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node layer="L1" id="_Black_" name="_Black_">
+				<translate sid="translate">0.00000 0.00000 0.00000</translate>
+				<rotate sid="rotateZ">0 0 1 0.00000</rotate>
+				<rotate sid="rotateY">0 1 0 -0.00000</rotate>
+				<rotate sid="rotateX">1 0 0 0.00000</rotate>
+				<scale sid="scale">1.00000 1.00000 1.00000</scale>
+				<instance_geometry url="#_Black_-Geometry">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_Black__bmp" target="#_Black__bmp"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#Scene"/>
+	</scene>
+</COLLADA>
