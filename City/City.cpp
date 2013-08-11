@@ -17,9 +17,6 @@ const double CLIP_PLANE_BIRD_NEAR = 1000.0 ;
 
 City::City()
 {
-
-	cout<<"constructor"<<endl;
-
 	cellNumCounter = 0;
 	m_iCounter = 0;
 	m_dMapHeight = 0.05;
@@ -136,7 +133,7 @@ void City::AddActor(vtkRenderer* ren)
 	double *center;
 	center = actor->GetCenter();
 	radius = center[0];
-	cout<<"sphere center:"<<center[0]<<" "<<center[1]<<" "<<center[2]<<endl;
+	
 	ren->AddActor(CreateTexturedSemiSphere("..\\mapModel\\clouds.jpg",radius,center));
 
 	//this actors is for buildings over the map
@@ -148,7 +145,7 @@ void City::AddActor(vtkRenderer* ren)
 	int num_buildings = actors.size();
 
 	// Height
-	cout<<"num_of_buildings:"<<actors.size()<<endl;
+	
 
 	float* buildingHeight = new float[num_buildings];
 
@@ -167,7 +164,7 @@ void City::AddActor(vtkRenderer* ren)
 			highest = buildingHeight[i];
 		}
 	}
-	cout<< "Highest building is"<< highest << endl;
+	
 
 
 	for (i=0;i<actors.size();i++)
@@ -580,7 +577,7 @@ void City::getAllBuilding(const char fileName[]){
 	//for dae file, we collection 
 	m_vCollection.clear();
 	string tmp = fileName;
-	cout<<"(f)getAllBuilding, fileName :" << fileName<<endl;
+	
 	int index = 0;
 	for (index = tmp.size()-1; index>=0; index--) {
 		if (tmp.at(index)=='\\') {
@@ -592,7 +589,7 @@ void City::getAllBuilding(const char fileName[]){
 	}
 	m_sPath = tmp;
 
-	cout<<"\tm_sPath :" << m_sPath << endl;
+	
 
 	rapidxml::file<> kmlFile(fileName);
 	rapidxml::xml_document<> kmlDoc;
@@ -606,7 +603,7 @@ void City::getAllBuilding(const char fileName[]){
 	createTexturedActorList();
 	createSimpleActorList4();
 
-	cout<<"End of findAll" << endl;
+
 	int number = 0;
 	number += m_vSimpleActors.size();
 	number += m_vTexturedActors.size();
@@ -1206,24 +1203,16 @@ void City::loadThreeItems(const xml_node<> * node, double ray[]){
 
 void City::getTexturedActorList(vector<vtkActor*>& collection){
 
-	if(m_bIsNewKML == true)
-	cout<<"\n(f)getTexturedActorList:\nm_bIsNewKML:true\n";
-	else
-	cout<<"\n(f)getTexturedActorList:\nm_bIsNewKML:false\n";
-
 	if (m_bIsNewKML)
 	{
-		cout<<"\ncall (f)getAllBuilding\n";
+
 		getAllBuilding(m_sKMLFileName.c_str());
-		cout<<"\n(f)getTexturedActorList: End of getAllBuilding\n";
 		m_bIsNewKML = false;
 	}
-	cout<<"\n(f)getTexturedActorList:\nm_vTexturedActors.size:"<<m_vTexturedActors.size();
 	for (int i = 0; i<m_vTexturedActors.size(); i++)
 	{
 		collection.push_back(m_vTexturedActors[i]);
 	}
-	cout<<"End of getTexturedActorList"<<endl;
 }
 
 void City::getSimpleActorList(vector<vtkActor*>& collection){
