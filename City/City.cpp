@@ -10,6 +10,10 @@ const double BUILDING_MAT_SPECULAR_COLOR[] = {0.0,0.0,0.0} ;
 const double BUILDING_MAT_AMBIENT_COEF = 0.4 ;
 const double BUILDING_MAT_DIFFUSE_COEF = 0.9 ;
 const bool BUILDING_BACKFACE_CULLING = false ;
+const double CLIP_PLANE_3D_FAR = 50000.0 ;
+const double CLIP_PLANE_3D_NEAR = 1.0  ;
+const double CLIP_PLANE_BIRD_FAR = 50000.0 ;
+const double CLIP_PLANE_BIRD_NEAR = 1000.0 ;
 
 City::City()
 {
@@ -48,6 +52,66 @@ City::~City()
 	this->m_vTexturedActors.clear();
 }
 
+vtkActor* City::CreateTexturedSemiSphere(const char* texFileName, double radius, double center[3])
+{
+	vtkSphereSource* sphere = vtkSphereSource::New();
+	sphere->SetPhiResolution(50);
+	sphere->SetThetaResolution(50);
+	sphere->SetEndPhi(180);
+	sphere->SetRadius(radius);
+	sphere->SetCenter(center);
+
+	vtkTextureMapToSphere* tmap = vtkTextureMapToSphere::New();
+	tmap->PreventSeamOn();
+	tmap->SetInputConnection(sphere->GetOutputPort());
+
+	vtkTransformTextureCoords* transTex = vtkTransformTextureCoords::New();	
+	transTex->SetInput(tmap->GetOutput());
+
+	vtkPolyDataMapper* sphereMapper = vtkPolyDataMapper::New();
+	sphereMapper->SetInputConnection(transTex->GetOutputPort());
+
+
+	vtkActor* sphereActor = vtkActor::New();
+	sphereActor->SetMapper(sphereMapper);
+
+	vtkJPEGReader* reader = vtkJPEGReader::New();
+
+	std::string tmp = texFileName;
+	if (tmp.at(tmp.size()-3) == 'j'&&
+		tmp.at(tmp.size()-2) == 'p'&&
+		tmp.at(tmp.size()-1) == 'g')
+	{
+		reader->SetFileName(texFileName);
+	}
+	else
+	{
+		cout<<"read the sphere texture map error"<<endl;
+		return NULL;
+	}
+	reader->Update();
+	vtkTexture * texture = vtkTexture::New();
+	texture->SetInputConnection(reader->GetOutputPort());
+	texture->InterpolateOn();	
+	sphereActor->SetTexture(texture);
+
+	sphereActor->GetProperty()->SetDiffuseColor(0.9, 0.9, 0.9);
+	sphereActor->GetProperty()->SetAmbientColor(0.9, 0.9, 0.9);
+	sphereActor->GetProperty()->SetDiffuse(1.0);
+	sphereActor->GetProperty()->SetAmbient(1.0);
+	sphereActor->GetProperty()->SetSpecular(0.0);
+
+	//deleting
+	sphere->Delete();
+	tmap->Delete();
+	transTex->Delete();
+	sphereMapper->Delete();
+	reader->Delete();
+	texture->Delete();
+
+	return sphereActor ;
+}
+
 void City::AddActor(vtkRenderer* ren)
 {
 
@@ -73,13 +137,14 @@ void City::AddActor(vtkRenderer* ren)
 	center = actor->GetCenter();
 	radius = center[0];
 	cout<<"sphere center:"<<center[0]<<" "<<center[1]<<" "<<center[2]<<endl;
+	ren->AddActor(CreateTexturedSemiSphere("..\\mapModel\\clouds.jpg",radius,center));
 
 	//this actors is for buildings over the map
 	std::vector<vtkActor*> actors;
 	actors.clear();
 	this->getTexturedActorList(actors);
 	int index_EndOfTectureBuilding = actors.size();
-	this->getSimpleActorList(actors);
+	//this->getSimpleActorList(actors);
 	int num_buildings = actors.size();
 
 	// Height
@@ -143,26 +208,17 @@ void City::AddActor(vtkRenderer* ren)
 
 	// Camera initial settting...
 	ren->GetActiveCamera()->SetViewUp(0,1,0); // define the camera up vector
-	ren->GetActiveCamera()->SetClippingRange(1,50000); // set nearest and farest distance can be viewed
-	ren->GetActiveCamera()->SetPosition(center[0],center[1], radius/2.0);
+	ren->GetActiveCamera()->SetClippingRange(0.1,500); // set nearest and farest distance can be viewed
+	ren->GetActiveCamera()->SetPosition(center[0]-250,center[1], radius/2.0);
 	ren->GetActiveCamera()->SetFocalPoint(center);
 
+	ren->GetActiveCamera()->SetViewUp(0,0,1); // define the camera up vector
 
-	//vtkActor * newactor[13];
-	//vtkActor * actor = getActorFromModelFile(m_sModeFileName.c_str(), newactor, geo);
-	//for(int i=0;i<geo;i++)
-	//{
-	//	newactor[i]->GetProperty()->SetBackfaceCulling(1);
-	//	m_vTexturedActors.push_back(newactor[i]);
+	// set nearest and farest distance can be viewed in 3D view
+	ren->GetActiveCamera()->SetClippingRange(CLIP_PLANE_3D_NEAR ,CLIP_PLANE_3D_FAR ); 
 
-	//}
-
-	//actor->GetProperty()->SetBackfaceCulling(1);
-	//m_vTexturedActors.push_back(actor);
-
-	//for(int i=0;i<m_vTexturedActors.size();i++){
-	//	ren->AddActor(m_vTexturedActors[i]);
-	//}
+	// set nearest and farest distance can be viewed in bird view
+	ren->GetActiveCamera()->SetClippingRange(CLIP_PLANE_BIRD_NEAR,CLIP_PLANE_BIRD_FAR ); 
 }
 
 bool City::isName(const xml_node<>* node, const char* name){

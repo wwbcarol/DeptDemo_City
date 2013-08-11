@@ -8,6 +8,7 @@
 #include "rapidxml.hpp"
 #include "rapidxml_utils.hpp"
 
+
 #include "vtkPoints.h"
 #include "vtkPolyData.h"
 #include "vtkActor.h"
@@ -33,6 +34,10 @@
 #include "vtkRenderWindow.h"
 #include "vtkRenderWindowInteractor.h"
 #include "vtkInteractorStyleTrackballCamera.h"
+
+#include "vtkSphereSource.h"
+#include "vtkTextureMapToSphere.h"
+#include "vtkTransformTextureCoords.h"
 
 
 #include "vtkCamera.h"
@@ -167,7 +172,7 @@ private:
 	void readCoordinateFromLine(const char line[], vector<int> & coor);
 	string findTextureName(const char * source);
 	vtkActor * getActorFromModelFile(const char * name, vtkActor * newactor[],int& geo);
-
+	vtkActor* CreateTexturedSemiSphere(const char* texFileName, double radius, double center[3]);
 private:
 	int geo;
 	string m_sPath;

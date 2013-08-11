@@ -1,6 +1,5 @@
 <../images/1IFC_1024x1024.jpg> <../images/1IFC_1024x1024.jpg>
 <../images/2IFC_1024x1024.jpg> <../images/2IFC_1024x1024.jpg>
-<../images/AsiaWorldExpo_1024x1024.jpg> <../images/AsiaWorldExpo_1024x1024.jpg>
 <../images/BOC_1024x1024.jpg> <../images/BOC_1024x1024.jpg>
 <../images/CentralPlaza_1024x1024.jpg> <../images/CentralPlaza_1024x1024.jpg>
 <../images/CheungKong_1024x1024.jpg> <../images/CheungKong_1024x1024.jpg>
